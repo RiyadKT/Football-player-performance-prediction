@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_097d7c6c89c24c2cd2d7707cf8cb4f85 {
+                #map_51321fc7ef7166b3ae93e0996c0d446c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,18 +35,19 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_097d7c6c89c24c2cd2d7707cf8cb4f85" ></div>
+            <div class="folium-map" id="map_51321fc7ef7166b3ae93e0996c0d446c" ></div>
         
 </body>
 <script>
     
     
-            var map_097d7c6c89c24c2cd2d7707cf8cb4f85 = L.map(
-                "map_097d7c6c89c24c2cd2d7707cf8cb4f85",
+            var map_51321fc7ef7166b3ae93e0996c0d446c = L.map(
+                "map_51321fc7ef7166b3ae93e0996c0d446c",
                 {
                     center: [52.40285565217392, -1.154223652173913],
                     crs: L.CRS.EPSG3857,
@@ -63,7 +64,7 @@
 
         
     
-            var tile_layer_0bc63177cbb8e9629047d6125f0248cd = L.tileLayer(
+            var tile_layer_07d25f50fb766c0e7824d074d8b7156e = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -80,536 +81,2292 @@
             );
         
     
-            tile_layer_0bc63177cbb8e9629047d6125f0248cd.addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            tile_layer_07d25f50fb766c0e7824d074d8b7156e.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-            var circle_marker_9b549f95268592d522aeb416370a79bb = L.circleMarker(
+            var circle_marker_abba70b5fa164e86d448c4d8e97c4cf4 = L.circleMarker(
                 [53.483959, -2.242631],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_999d48c0b511badc3f42008a33c18546 = L.popup({
+        var popup_8110d1181e9854ed93277407d1ae183b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_31312453c9bf314a93883e0c35cff6df = $(`<div id="html_31312453c9bf314a93883e0c35cff6df" style="width: 100.0%; height: 100.0%;">Manchester City: 166M€   Départs: 141M€   Arrivées : 25M€</div>`)[0];
-                popup_999d48c0b511badc3f42008a33c18546.setContent(html_31312453c9bf314a93883e0c35cff6df);
+                var html_fa24dc620b538d7fc1a7d7d189156174 = $(`<div id="html_fa24dc620b538d7fc1a7d7d189156174" style="width: 100.0%; height: 100.0%;">Manchester City: 166M€   Départs: 141M€   Arrivées : 25M€</div>`)[0];
+                popup_8110d1181e9854ed93277407d1ae183b.setContent(html_fa24dc620b538d7fc1a7d7d189156174);
             
         
 
-        circle_marker_9b549f95268592d522aeb416370a79bb.bindPopup(popup_999d48c0b511badc3f42008a33c18546)
+        circle_marker_abba70b5fa164e86d448c4d8e97c4cf4.bindPopup(popup_8110d1181e9854ed93277407d1ae183b)
         ;
 
         
     
     
-            var circle_marker_4b645fea2351bbf528fd6cbd1651d789 = L.circleMarker(
+            var feature_group_000a5baed8d63ae67fe8d3dc749fb276 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_b4725c649e162ce15d6c96984146e86e = L.polyline(
+                [[53.483959, -2.242631], [52.03194, 1.08458]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_000a5baed8d63ae67fe8d3dc749fb276);
+        
+    
+            var regular_polygon_marker_afde586a829a527be992f1239a1cf910 = new L.RegularPolygonMarker(
+                [52.03194, 1.08458],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_000a5baed8d63ae67fe8d3dc749fb276);
+        
+    
+            feature_group_000a5baed8d63ae67fe8d3dc749fb276.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_d100df0d6a14ed51b712fa65f3f3ff81 = L.circleMarker(
                 [53.463062, -2.29134],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_3689e39ec6479e8ca6459de47e4026c0 = L.popup({
+        var popup_0b4cd79eb822db9b47d3efc12ae67228 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_027edd98c81bd0a347d27775b6c20c1e = $(`<div id="html_027edd98c81bd0a347d27775b6c20c1e" style="width: 100.0%; height: 100.0%;">Manchester United: 318M€   Départs: 103M€   Arrivées : 214M€</div>`)[0];
-                popup_3689e39ec6479e8ca6459de47e4026c0.setContent(html_027edd98c81bd0a347d27775b6c20c1e);
+                var html_ae14b9fd5ab8bc9451bb9d1ef0510290 = $(`<div id="html_ae14b9fd5ab8bc9451bb9d1ef0510290" style="width: 100.0%; height: 100.0%;">Manchester United: 318M€   Départs: 103M€   Arrivées : 214M€</div>`)[0];
+                popup_0b4cd79eb822db9b47d3efc12ae67228.setContent(html_ae14b9fd5ab8bc9451bb9d1ef0510290);
             
         
 
-        circle_marker_4b645fea2351bbf528fd6cbd1651d789.bindPopup(popup_3689e39ec6479e8ca6459de47e4026c0)
+        circle_marker_d100df0d6a14ed51b712fa65f3f3ff81.bindPopup(popup_0b4cd79eb822db9b47d3efc12ae67228)
         ;
 
         
     
     
-            var circle_marker_076f7ce6fc4b421d1f0fe3ab8d01a280 = L.circleMarker(
+            var feature_group_2ac607b21f879577b40b6793f08e8744 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_d7a4756a8c910d3f63836b05817bace1 = L.polyline(
+                [[53.463062, -2.29134], [53.777907, -1.572868]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_2ac607b21f879577b40b6793f08e8744);
+        
+    
+            var regular_polygon_marker_cc3c799615f90da1da49df766b75dba2 = new L.RegularPolygonMarker(
+                [53.777907, -1.572868],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_2ac607b21f879577b40b6793f08e8744);
+        
+    
+            var poly_line_fdf20a0b0f2b591d27d78b7100892f93 = L.polyline(
+                [[53.463062, -2.29134], [53.789152, -2.230662]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_2ac607b21f879577b40b6793f08e8744);
+        
+    
+            var regular_polygon_marker_5b7d87a4a838b28c9b2ce5b5f862ae9c = new L.RegularPolygonMarker(
+                [53.789152, -2.230662],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_2ac607b21f879577b40b6793f08e8744);
+        
+    
+            feature_group_2ac607b21f879577b40b6793f08e8744.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_d0902b2551490299b6c16042ba11d2ae = L.circleMarker(
                 [51.481667, -0.190833],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_05d4027e80a4924ef805f5b74c76fa41 = L.popup({
+        var popup_d4c7ca4384787c8a834c06ec3256dae9 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_717234306f0520ad5136f23c92de5541 = $(`<div id="html_717234306f0520ad5136f23c92de5541" style="width: 100.0%; height: 100.0%;">Chelsea FC: 436M€   Départs: 198M€   Arrivées : 238M€</div>`)[0];
-                popup_05d4027e80a4924ef805f5b74c76fa41.setContent(html_717234306f0520ad5136f23c92de5541);
+                var html_0fb36f1caa5b32545dbae1df96ad4d95 = $(`<div id="html_0fb36f1caa5b32545dbae1df96ad4d95" style="width: 100.0%; height: 100.0%;">Chelsea FC: 436M€   Départs: 198M€   Arrivées : 238M€</div>`)[0];
+                popup_d4c7ca4384787c8a834c06ec3256dae9.setContent(html_0fb36f1caa5b32545dbae1df96ad4d95);
             
         
 
-        circle_marker_076f7ce6fc4b421d1f0fe3ab8d01a280.bindPopup(popup_05d4027e80a4924ef805f5b74c76fa41)
+        circle_marker_d0902b2551490299b6c16042ba11d2ae.bindPopup(popup_d4c7ca4384787c8a834c06ec3256dae9)
         ;
 
         
     
     
-            var circle_marker_bb3936ca6fb20090f09c92147a1daa57 = L.circleMarker(
+            var feature_group_407ac71f3fa8f882f3b5940cead3728c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_8bacb5c61c958499f6858a4a80d327e1 = L.polyline(
+                [[51.481667, -0.190833], [51.554888, -0.108438]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var regular_polygon_marker_9297e7793d107d096f8d5178c8fa819a = new L.RegularPolygonMarker(
+                [51.554888, -0.108438],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var poly_line_1580cf64c3c3b9a22ab9279ff0d8a0f3 = L.polyline(
+                [[51.481667, -0.190833], [53.438787, -2.966298]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var regular_polygon_marker_4a0b027619e3728a9d9756704d186b23 = new L.RegularPolygonMarker(
+                [53.438787, -2.966298],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var poly_line_a94803701c1d8434ba2ee0254dcae9d6 = L.polyline(
+                [[51.481667, -0.190833], [51.398333, -0.085278]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var regular_polygon_marker_cca6f857ee07c1f5174c5e2c5656ed35 = new L.RegularPolygonMarker(
+                [51.398333, -0.085278],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var poly_line_fe1505d84e3782a0987787fa181f7802 = L.polyline(
+                [[51.481667, -0.190833], [52.509064, -1.884357]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var regular_polygon_marker_e03a1edc826759ece1b6adbff291de14 = new L.RegularPolygonMarker(
+                [52.509064, -1.884357],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var poly_line_f8a6a6c26b3928baeeb2329ecb59d703 = L.polyline(
+                [[51.481667, -0.190833], [52.03194, 1.08458]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var regular_polygon_marker_82e17c2817dc31da6aed5c993d113319 = new L.RegularPolygonMarker(
+                [52.03194, 1.08458],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var poly_line_7985f23e966a7e0849fa9bac219b2f47 = L.polyline(
+                [[51.481667, -0.190833], [53.789152, -2.230662]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var regular_polygon_marker_0078b0805d3416b814ab9897d0b58095 = new L.RegularPolygonMarker(
+                [53.789152, -2.230662],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var poly_line_d45612fc5ff49fd33110b861a77d395d = L.polyline(
+                [[51.481667, -0.190833], [52.03194, 1.08458]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            var regular_polygon_marker_d6a1aad27d00fd3cbba38d0a7469a4e2 = new L.RegularPolygonMarker(
+                [52.03194, 1.08458],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_407ac71f3fa8f882f3b5940cead3728c);
+        
+    
+            feature_group_407ac71f3fa8f882f3b5940cead3728c.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_76859fb8c6092c063834087aeea3ca11 = L.circleMarker(
                 [51.554888, -0.108438],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_4af7e1e74743fb3333b264486a9d5da3 = L.popup({
+        var popup_1aada5206895ae807160eaa95b8bb6fa = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_42c73e38956deab07ec7ecb86b9ab448 = $(`<div id="html_42c73e38956deab07ec7ecb86b9ab448" style="width: 100.0%; height: 100.0%;">Arsenal FC: 193M€   Départs: 84M€   Arrivées : 109M€</div>`)[0];
-                popup_4af7e1e74743fb3333b264486a9d5da3.setContent(html_42c73e38956deab07ec7ecb86b9ab448);
+                var html_43ae715f242e3569980ee1a7daeddbdb = $(`<div id="html_43ae715f242e3569980ee1a7daeddbdb" style="width: 100.0%; height: 100.0%;">Arsenal FC: 193M€   Départs: 84M€   Arrivées : 109M€</div>`)[0];
+                popup_1aada5206895ae807160eaa95b8bb6fa.setContent(html_43ae715f242e3569980ee1a7daeddbdb);
             
         
 
-        circle_marker_bb3936ca6fb20090f09c92147a1daa57.bindPopup(popup_4af7e1e74743fb3333b264486a9d5da3)
+        circle_marker_76859fb8c6092c063834087aeea3ca11.bindPopup(popup_1aada5206895ae807160eaa95b8bb6fa)
         ;
 
         
     
     
-            var circle_marker_2089c9f581347e56e62d03da21ebfbe1 = L.circleMarker(
+            var feature_group_4172c58db5c3432bc8754eed5406e62c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_f80bb7d1cd24c1b2a72de0beaeb84948 = L.polyline(
+                [[51.554888, -0.108438], [51.398333, -0.085278]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_4172c58db5c3432bc8754eed5406e62c);
+        
+    
+            var regular_polygon_marker_e8f0321091b890fed561273c01837023 = new L.RegularPolygonMarker(
+                [51.398333, -0.085278],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_4172c58db5c3432bc8754eed5406e62c);
+        
+    
+            var poly_line_d6c84faa2de30a8b28f9f8e5505dc7d2 = L.polyline(
+                [[51.554888, -0.108438], [51.474434, -0.221405]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_4172c58db5c3432bc8754eed5406e62c);
+        
+    
+            var regular_polygon_marker_0bced81dc5db6cf4ede6ccd6f8a0274e = new L.RegularPolygonMarker(
+                [51.474434, -0.221405],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_4172c58db5c3432bc8754eed5406e62c);
+        
+    
+            var poly_line_c4b029b9d0c21d61bee3c3db0a29a8c2 = L.polyline(
+                [[51.554888, -0.108438], [51.29258, -0.17195]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_4172c58db5c3432bc8754eed5406e62c);
+        
+    
+            var regular_polygon_marker_98c9b99cb5057c924b622e78c0765a70 = new L.RegularPolygonMarker(
+                [51.29258, -0.17195],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_4172c58db5c3432bc8754eed5406e62c);
+        
+    
+            feature_group_4172c58db5c3432bc8754eed5406e62c.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_229822ad76e307092cd5bd17e59e059d = L.circleMarker(
                 [51.603231, -0.065735],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_b007cf13d62541fc8b83c439358e2f99 = L.popup({
+        var popup_b2fcd5fadc7fd6482122af653944e614 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_98b293365d53bc88dba3d3e655f0697b = $(`<div id="html_98b293365d53bc88dba3d3e655f0697b" style="width: 100.0%; height: 100.0%;">Tottenham Hotspur: 204M€   Départs: 55M€   Arrivées : 149M€</div>`)[0];
-                popup_b007cf13d62541fc8b83c439358e2f99.setContent(html_98b293365d53bc88dba3d3e655f0697b);
+                var html_898cd9ea6d5871cb3e962af3216f7f4d = $(`<div id="html_898cd9ea6d5871cb3e962af3216f7f4d" style="width: 100.0%; height: 100.0%;">Tottenham Hotspur: 204M€   Départs: 55M€   Arrivées : 149M€</div>`)[0];
+                popup_b2fcd5fadc7fd6482122af653944e614.setContent(html_898cd9ea6d5871cb3e962af3216f7f4d);
             
         
 
-        circle_marker_2089c9f581347e56e62d03da21ebfbe1.bindPopup(popup_b007cf13d62541fc8b83c439358e2f99)
+        circle_marker_229822ad76e307092cd5bd17e59e059d.bindPopup(popup_b2fcd5fadc7fd6482122af653944e614)
         ;
 
         
     
     
-            var circle_marker_357d8805f1a4cd88f486da2115caf325 = L.circleMarker(
+            var feature_group_fefb0c3c71d2f7e17020c4d980a2cd11 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_2fcad437c819962fc6a6fea8971751dc = L.polyline(
+                [[51.603231, -0.065735], [51.474434, -0.221405]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_fefb0c3c71d2f7e17020c4d980a2cd11);
+        
+    
+            var regular_polygon_marker_30b8f484b518dbd49044ee4feaa82a2b = new L.RegularPolygonMarker(
+                [51.474434, -0.221405],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_fefb0c3c71d2f7e17020c4d980a2cd11);
+        
+    
+            var poly_line_6b80285bfa0e5c13504b28df54097b73 = L.polyline(
+                [[51.603231, -0.065735], [53.777907, -1.572868]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_fefb0c3c71d2f7e17020c4d980a2cd11);
+        
+    
+            var regular_polygon_marker_66772f4108c322c2b3c9387520f8e6a3 = new L.RegularPolygonMarker(
+                [53.777907, -1.572868],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_fefb0c3c71d2f7e17020c4d980a2cd11);
+        
+    
+            var poly_line_92ef88eb8fb774d7d2e646c62fde072e = L.polyline(
+                [[51.603231, -0.065735], [53.777907, -1.572868]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_fefb0c3c71d2f7e17020c4d980a2cd11);
+        
+    
+            var regular_polygon_marker_c887bf27074daaba67c6f6476dc11ef2 = new L.RegularPolygonMarker(
+                [53.777907, -1.572868],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_fefb0c3c71d2f7e17020c4d980a2cd11);
+        
+    
+            var poly_line_9e618e2507111e778e3e3f88c118320d = L.polyline(
+                [[51.603231, -0.065735], [52.62037, -1.142196]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_fefb0c3c71d2f7e17020c4d980a2cd11);
+        
+    
+            var regular_polygon_marker_0c454405571d6e400bfcc81591a0d898 = new L.RegularPolygonMarker(
+                [52.62037, -1.142196],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_fefb0c3c71d2f7e17020c4d980a2cd11);
+        
+    
+            feature_group_fefb0c3c71d2f7e17020c4d980a2cd11.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_6070ed44b21ffbabaf702f97bc8f20a4 = L.circleMarker(
                 [53.430829, -2.96083],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_59ef768dcf5660605d1865f8f7dbd10a = L.popup({
+        var popup_1183eae33d128c5db494a1eef4cd7372 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_adddcc732d5e216e2f519e67d64fc83a = $(`<div id="html_adddcc732d5e216e2f519e67d64fc83a" style="width: 100.0%; height: 100.0%;">Liverpool FC: 89M€   Départs: 47M€   Arrivées : 42M€</div>`)[0];
-                popup_59ef768dcf5660605d1865f8f7dbd10a.setContent(html_adddcc732d5e216e2f519e67d64fc83a);
+                var html_3720339b76c23d52d6cfcd3c152109b1 = $(`<div id="html_3720339b76c23d52d6cfcd3c152109b1" style="width: 100.0%; height: 100.0%;">Liverpool FC: 89M€   Départs: 47M€   Arrivées : 42M€</div>`)[0];
+                popup_1183eae33d128c5db494a1eef4cd7372.setContent(html_3720339b76c23d52d6cfcd3c152109b1);
             
         
 
-        circle_marker_357d8805f1a4cd88f486da2115caf325.bindPopup(popup_59ef768dcf5660605d1865f8f7dbd10a)
+        circle_marker_6070ed44b21ffbabaf702f97bc8f20a4.bindPopup(popup_1183eae33d128c5db494a1eef4cd7372)
         ;
 
         
     
     
-            var circle_marker_c94d9bd82ca37266466d7325cd04245b = L.circleMarker(
+            var feature_group_30b44d19623e19552dd1c83c8e5b18f5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_030314473ca870c9a52d3070c7b559d5 = L.polyline(
+                [[53.430829, -2.96083], [51.29258, -0.17195]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_30b44d19623e19552dd1c83c8e5b18f5);
+        
+    
+            var regular_polygon_marker_67a1dbcb5618a6f85ccc5d1fbd001f69 = new L.RegularPolygonMarker(
+                [51.29258, -0.17195],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_30b44d19623e19552dd1c83c8e5b18f5);
+        
+    
+            feature_group_30b44d19623e19552dd1c83c8e5b18f5.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_58e637b880ea9a44f68a0f7ce854f4e4 = L.circleMarker(
                 [53.438787, -2.966298],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_55713334fe56dd5ef5809ede8a233549 = L.popup({
+        var popup_ffb63484c00afc22ac054ca8840f500b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b61e6dfe8f5ba437d72a1854b76950dc = $(`<div id="html_b61e6dfe8f5ba437d72a1854b76950dc" style="width: 100.0%; height: 100.0%;">Everton FC: 134M€   Départs: 84M€   Arrivées : 50M€</div>`)[0];
-                popup_55713334fe56dd5ef5809ede8a233549.setContent(html_b61e6dfe8f5ba437d72a1854b76950dc);
+                var html_7cbb868bf90b9beffc38be9ba0c600fe = $(`<div id="html_7cbb868bf90b9beffc38be9ba0c600fe" style="width: 100.0%; height: 100.0%;">Everton FC: 134M€   Départs: 84M€   Arrivées : 50M€</div>`)[0];
+                popup_ffb63484c00afc22ac054ca8840f500b.setContent(html_7cbb868bf90b9beffc38be9ba0c600fe);
             
         
 
-        circle_marker_c94d9bd82ca37266466d7325cd04245b.bindPopup(popup_55713334fe56dd5ef5809ede8a233549)
+        circle_marker_58e637b880ea9a44f68a0f7ce854f4e4.bindPopup(popup_ffb63484c00afc22ac054ca8840f500b)
         ;
 
         
     
     
-            var circle_marker_5ebc82722c62787d7ef688be8372a6ad = L.circleMarker(
+            var feature_group_4c643cf84ef5e315e46156fe0c2e4991 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_d5c1796030642c1839668b678a8c4919 = L.polyline(
+                [[53.438787, -2.966298], [52.509064, -1.884357]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_4c643cf84ef5e315e46156fe0c2e4991);
+        
+    
+            var regular_polygon_marker_d47de0dd9508bc398221a3d63e7e2ddc = new L.RegularPolygonMarker(
+                [52.509064, -1.884357],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_4c643cf84ef5e315e46156fe0c2e4991);
+        
+    
+            var poly_line_1c8d8932ed8fdaa14450c1dc9df91aa8 = L.polyline(
+                [[53.438787, -2.966298], [52.509064, -1.884357]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_4c643cf84ef5e315e46156fe0c2e4991);
+        
+    
+            var regular_polygon_marker_674860c56751e27915e003488016a3e9 = new L.RegularPolygonMarker(
+                [52.509064, -1.884357],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_4c643cf84ef5e315e46156fe0c2e4991);
+        
+    
+            feature_group_4c643cf84ef5e315e46156fe0c2e4991.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_8e48d458fcf0e0d1de4198e5fa3dde7a = L.circleMarker(
                 [53.777907, -1.572868],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_6a5d7f02868a3dcc988a6c2a99cc9106 = L.popup({
+        var popup_88c2ed26be5116e8c9cb482d04d7ed32 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_84504adaba08d91908b09760a569e703 = $(`<div id="html_84504adaba08d91908b09760a569e703" style="width: 100.0%; height: 100.0%;">Leeds United: 10M€   Départs: 5M€   Arrivées : 5M€</div>`)[0];
-                popup_6a5d7f02868a3dcc988a6c2a99cc9106.setContent(html_84504adaba08d91908b09760a569e703);
+                var html_370305978e064f6fbdae0637887c16c9 = $(`<div id="html_370305978e064f6fbdae0637887c16c9" style="width: 100.0%; height: 100.0%;">Leeds United: 0M€   Départs: 0M€   Arrivées : 0M€</div>`)[0];
+                popup_88c2ed26be5116e8c9cb482d04d7ed32.setContent(html_370305978e064f6fbdae0637887c16c9);
             
         
 
-        circle_marker_5ebc82722c62787d7ef688be8372a6ad.bindPopup(popup_6a5d7f02868a3dcc988a6c2a99cc9106)
+        circle_marker_8e48d458fcf0e0d1de4198e5fa3dde7a.bindPopup(popup_88c2ed26be5116e8c9cb482d04d7ed32)
         ;
 
         
     
     
-            var circle_marker_3a7e74d9644e8e29bf5fd8e4f73a147b = L.circleMarker(
+            var circle_marker_5a8686ccdd2481338711377cb5caeef0 = L.circleMarker(
                 [52.590275, -2.130423],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_40e1931a2389f68668912c294b1e3130 = L.popup({
+        var popup_0a01d1505a1470032243f5a98a45082c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ba661c6f308a07bbf56881d5e758aebd = $(`<div id="html_ba661c6f308a07bbf56881d5e758aebd" style="width: 100.0%; height: 100.0%;">Wolverhampton Wanderers: 187M€   Départs: 112M€   Arrivées : 74M€</div>`)[0];
-                popup_40e1931a2389f68668912c294b1e3130.setContent(html_ba661c6f308a07bbf56881d5e758aebd);
+                var html_197b2e134520f64b0457b0bfe582b8eb = $(`<div id="html_197b2e134520f64b0457b0bfe582b8eb" style="width: 100.0%; height: 100.0%;">Wolverhampton Wanderers: 187M€   Départs: 112M€   Arrivées : 74M€</div>`)[0];
+                popup_0a01d1505a1470032243f5a98a45082c.setContent(html_197b2e134520f64b0457b0bfe582b8eb);
             
         
 
-        circle_marker_3a7e74d9644e8e29bf5fd8e4f73a147b.bindPopup(popup_40e1931a2389f68668912c294b1e3130)
+        circle_marker_5a8686ccdd2481338711377cb5caeef0.bindPopup(popup_0a01d1505a1470032243f5a98a45082c)
         ;
 
         
     
     
-            var circle_marker_389d58df7b0479eb207741424fa3e505 = L.circleMarker(
+            var feature_group_1d88b55cb4d3fa4a0dcbe6a78eca1a92 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_f494a666511549d736ba8827b8d93599 = L.polyline(
+                [[52.590275, -2.130423], [51.538611, 0.012778]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_1d88b55cb4d3fa4a0dcbe6a78eca1a92);
+        
+    
+            var regular_polygon_marker_f7b334a83d7f99cc9b2f63fb60390866 = new L.RegularPolygonMarker(
+                [51.538611, 0.012778],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_1d88b55cb4d3fa4a0dcbe6a78eca1a92);
+        
+    
+            feature_group_1d88b55cb4d3fa4a0dcbe6a78eca1a92.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_ce979614062dfadae82712612b449ddf = L.circleMarker(
                 [52.62037, -1.142196],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_331d89437d0563facf319bfb0fb4e595 = L.popup({
+        var popup_7dcbfef30ca427ea3b207708e3ebf0aa = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_7b4e1b0962b105fe0c95e79cb340f76a = $(`<div id="html_7b4e1b0962b105fe0c95e79cb340f76a" style="width: 100.0%; height: 100.0%;">Leicester City: 121M€   Départs: 35M€   Arrivées : 86M€</div>`)[0];
-                popup_331d89437d0563facf319bfb0fb4e595.setContent(html_7b4e1b0962b105fe0c95e79cb340f76a);
+                var html_e47c91f67d683c0abaeb0c1a370225a9 = $(`<div id="html_e47c91f67d683c0abaeb0c1a370225a9" style="width: 100.0%; height: 100.0%;">Leicester City: 121M€   Départs: 35M€   Arrivées : 86M€</div>`)[0];
+                popup_7dcbfef30ca427ea3b207708e3ebf0aa.setContent(html_e47c91f67d683c0abaeb0c1a370225a9);
             
         
 
-        circle_marker_389d58df7b0479eb207741424fa3e505.bindPopup(popup_331d89437d0563facf319bfb0fb4e595)
+        circle_marker_ce979614062dfadae82712612b449ddf.bindPopup(popup_7dcbfef30ca427ea3b207708e3ebf0aa)
         ;
 
         
     
     
-            var circle_marker_f1459446a94d54730fdaf2418f42e257 = L.circleMarker(
+            var feature_group_2a992c54c23922c79cb34b35904a13a9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_0ea2c0275900c4df94e6697b8b54cbf1 = L.polyline(
+                [[52.62037, -1.142196], [53.370277, -1.470833]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_2a992c54c23922c79cb34b35904a13a9);
+        
+    
+            var regular_polygon_marker_e53441926a563de24ebd240dcc062cc6 = new L.RegularPolygonMarker(
+                [53.370277, -1.470833],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_2a992c54c23922c79cb34b35904a13a9);
+        
+    
+            var poly_line_41471c3667ca4cfd09d4d86d4e0894b2 = L.polyline(
+                [[52.62037, -1.142196], [51.398333, -0.085278]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_2a992c54c23922c79cb34b35904a13a9);
+        
+    
+            var regular_polygon_marker_2bb27a0c5f38be32ccef9eab8f58f69f = new L.RegularPolygonMarker(
+                [51.398333, -0.085278],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_2a992c54c23922c79cb34b35904a13a9);
+        
+    
+            feature_group_2a992c54c23922c79cb34b35904a13a9.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_f7f612da4085c9591a2391ed8675ee35 = L.circleMarker(
                 [52.509064, -1.884357],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_5b87ef9c908d77d3a8e5b4cdfbb3cf2a = L.popup({
+        var popup_f459cd9d5183a6dd5fd5d682250b3c92 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_004d4470d6a4bd2f388ebe79962a782d = $(`<div id="html_004d4470d6a4bd2f388ebe79962a782d" style="width: 100.0%; height: 100.0%;">Aston Villa: 321M€   Départs: 145M€   Arrivées : 176M€</div>`)[0];
-                popup_5b87ef9c908d77d3a8e5b4cdfbb3cf2a.setContent(html_004d4470d6a4bd2f388ebe79962a782d);
+                var html_ab3f32174f2ad31e4313fd83c83121c5 = $(`<div id="html_ab3f32174f2ad31e4313fd83c83121c5" style="width: 100.0%; height: 100.0%;">Aston Villa: 321M€   Départs: 145M€   Arrivées : 176M€</div>`)[0];
+                popup_f459cd9d5183a6dd5fd5d682250b3c92.setContent(html_ab3f32174f2ad31e4313fd83c83121c5);
             
         
 
-        circle_marker_f1459446a94d54730fdaf2418f42e257.bindPopup(popup_5b87ef9c908d77d3a8e5b4cdfbb3cf2a)
+        circle_marker_f7f612da4085c9591a2391ed8675ee35.bindPopup(popup_f459cd9d5183a6dd5fd5d682250b3c92)
         ;
 
         
     
     
-            var circle_marker_38dbc6963c9159fa57c33b43eecefa68 = L.circleMarker(
+            var feature_group_44dc2ff5994a50edb20f29a7234d4de7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_65749e606ac4e5e47f9fef6b7ba0a387 = L.polyline(
+                [[52.509064, -1.884357], [53.438787, -2.966298]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_44dc2ff5994a50edb20f29a7234d4de7);
+        
+    
+            var regular_polygon_marker_06173d0ea77740f7b005cc0095e148d1 = new L.RegularPolygonMarker(
+                [53.438787, -2.966298],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_44dc2ff5994a50edb20f29a7234d4de7);
+        
+    
+            var poly_line_35c7f41718184f5588951923802f809a = L.polyline(
+                [[52.509064, -1.884357], [52.939583, -1.132472]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_44dc2ff5994a50edb20f29a7234d4de7);
+        
+    
+            var regular_polygon_marker_5052e61b2a7fc1d9d7fdb5ba6c6ac90e = new L.RegularPolygonMarker(
+                [52.939583, -1.132472],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_44dc2ff5994a50edb20f29a7234d4de7);
+        
+    
+            feature_group_44dc2ff5994a50edb20f29a7234d4de7.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_85dd3a47f4c53c2a87663bb2ed650782 = L.circleMarker(
                 [54.975556, -1.621667],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_d30395aaf129cd733f657fa631f32841 = L.popup({
+        var popup_d592d23b5655c6869d5004af3a65b15d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8f654871def4edba58b497d85c198e04 = $(`<div id="html_8f654871def4edba58b497d85c198e04" style="width: 100.0%; height: 100.0%;">Newcastle United: 144M€   Départs: 76M€   Arrivées : 68M€</div>`)[0];
-                popup_d30395aaf129cd733f657fa631f32841.setContent(html_8f654871def4edba58b497d85c198e04);
+                var html_8c4bbd477bbd0ed101c07e5d843303f4 = $(`<div id="html_8c4bbd477bbd0ed101c07e5d843303f4" style="width: 100.0%; height: 100.0%;">Newcastle United: 144M€   Départs: 76M€   Arrivées : 68M€</div>`)[0];
+                popup_d592d23b5655c6869d5004af3a65b15d.setContent(html_8c4bbd477bbd0ed101c07e5d843303f4);
             
         
 
-        circle_marker_38dbc6963c9159fa57c33b43eecefa68.bindPopup(popup_d30395aaf129cd733f657fa631f32841)
+        circle_marker_85dd3a47f4c53c2a87663bb2ed650782.bindPopup(popup_d592d23b5655c6869d5004af3a65b15d)
         ;
 
         
     
     
-            var circle_marker_e6a219e43be5475521d5cc72143de55a = L.circleMarker(
+            var feature_group_981691d42b01a26a40f8402d0d1d3a1f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_bd0eb17f75b0d65c7189ea085d0f45e1 = L.polyline(
+                [[54.975556, -1.621667], [50.860911, -0.083689]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_981691d42b01a26a40f8402d0d1d3a1f);
+        
+    
+            var regular_polygon_marker_f57ba9a3a60cc08756cbec4b3a8d5bce = new L.RegularPolygonMarker(
+                [50.860911, -0.083689],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_981691d42b01a26a40f8402d0d1d3a1f);
+        
+    
+            var poly_line_9cb605eaf931ae37f4b38d4605111d31 = L.polyline(
+                [[54.975556, -1.621667], [51.481667, -0.190833]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_981691d42b01a26a40f8402d0d1d3a1f);
+        
+    
+            var regular_polygon_marker_44e787e3a570b75c6d740425793e2065 = new L.RegularPolygonMarker(
+                [51.481667, -0.190833],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_981691d42b01a26a40f8402d0d1d3a1f);
+        
+    
+            var poly_line_ed1250eb60740c7ff6a5c1b8ffbb223c = L.polyline(
+                [[54.975556, -1.621667], [53.777907, -1.572868]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_981691d42b01a26a40f8402d0d1d3a1f);
+        
+    
+            var regular_polygon_marker_ead98bb2115c161d62cdd74569b8af23 = new L.RegularPolygonMarker(
+                [53.777907, -1.572868],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_981691d42b01a26a40f8402d0d1d3a1f);
+        
+    
+            feature_group_981691d42b01a26a40f8402d0d1d3a1f.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_e3f55508ca1d80ebdfde9568a007b37d = L.circleMarker(
                 [51.538611, 0.012778],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_8532d64e7c4a9f0d0f8d554201510491 = L.popup({
+        var popup_6ca524e1c85ed0db1eed7e25e4b1c59e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_237a2d27b437d8b802341a16b99d494e = $(`<div id="html_237a2d27b437d8b802341a16b99d494e" style="width: 100.0%; height: 100.0%;">West Ham United: 189M€   Départs: 45M€   Arrivées : 144M€</div>`)[0];
-                popup_8532d64e7c4a9f0d0f8d554201510491.setContent(html_237a2d27b437d8b802341a16b99d494e);
+                var html_5e95f6d30a9c9a132c3154b3868ec272 = $(`<div id="html_5e95f6d30a9c9a132c3154b3868ec272" style="width: 100.0%; height: 100.0%;">West Ham United: 189M€   Départs: 45M€   Arrivées : 144M€</div>`)[0];
+                popup_6ca524e1c85ed0db1eed7e25e4b1c59e.setContent(html_5e95f6d30a9c9a132c3154b3868ec272);
             
         
 
-        circle_marker_e6a219e43be5475521d5cc72143de55a.bindPopup(popup_8532d64e7c4a9f0d0f8d554201510491)
+        circle_marker_e3f55508ca1d80ebdfde9568a007b37d.bindPopup(popup_6ca524e1c85ed0db1eed7e25e4b1c59e)
         ;
 
         
     
     
-            var circle_marker_3baa596e87d2d4e94db5351d29320d96 = L.circleMarker(
+            var feature_group_71f2dd67749d661f8f7c8ff967aef325 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_4e5de7025c71ee89cc907f5472902f85 = L.polyline(
+                [[51.538611, 0.012778], [52.939583, -1.132472]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_71f2dd67749d661f8f7c8ff967aef325);
+        
+    
+            var regular_polygon_marker_5ab9d6c97a1efed20799e99a610fec8d = new L.RegularPolygonMarker(
+                [52.939583, -1.132472],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_71f2dd67749d661f8f7c8ff967aef325);
+        
+    
+            var poly_line_1f05ccbe4143796fa896bb18e1b8d770 = L.polyline(
+                [[51.538611, 0.012778], [50.90506, -1.23246]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_71f2dd67749d661f8f7c8ff967aef325);
+        
+    
+            var regular_polygon_marker_b6a5cbf5d9376b42b1acd1e8810c731e = new L.RegularPolygonMarker(
+                [50.90506, -1.23246],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_71f2dd67749d661f8f7c8ff967aef325);
+        
+    
+            var poly_line_c6326a36c3cd41517a43849f6dc3d4fb = L.polyline(
+                [[51.538611, 0.012778], [53.483959, -2.242631]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_71f2dd67749d661f8f7c8ff967aef325);
+        
+    
+            var regular_polygon_marker_c9068c5b6179d57694783d339b8e2957 = new L.RegularPolygonMarker(
+                [53.483959, -2.242631],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_71f2dd67749d661f8f7c8ff967aef325);
+        
+    
+            var poly_line_a98ae2dfb67a505d71d58ce7d82c79d1 = L.polyline(
+                [[51.538611, 0.012778], [52.03194, 1.08458]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_71f2dd67749d661f8f7c8ff967aef325);
+        
+    
+            var regular_polygon_marker_6d7337e3f0a534fecfd824152ca7ae2f = new L.RegularPolygonMarker(
+                [52.03194, 1.08458],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_71f2dd67749d661f8f7c8ff967aef325);
+        
+    
+            feature_group_71f2dd67749d661f8f7c8ff967aef325.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_6a5da48ea0d347809d7125e5e9d412c3 = L.circleMarker(
                 [51.398333, -0.085278],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_091c40b026f4d70de8daba301147a34c = L.popup({
+        var popup_88a9564b669c399fcbe52defccaff6e6 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_50b13a65dcaa0b72d7b03b1450076d99 = $(`<div id="html_50b13a65dcaa0b72d7b03b1450076d99" style="width: 100.0%; height: 100.0%;">Crystal Palace: 178M€   Départs: 101M€   Arrivées : 78M€</div>`)[0];
-                popup_091c40b026f4d70de8daba301147a34c.setContent(html_50b13a65dcaa0b72d7b03b1450076d99);
+                var html_71c1f925ce31d3fcefb4ebd1b9029d41 = $(`<div id="html_71c1f925ce31d3fcefb4ebd1b9029d41" style="width: 100.0%; height: 100.0%;">Crystal Palace: 178M€   Départs: 101M€   Arrivées : 78M€</div>`)[0];
+                popup_88a9564b669c399fcbe52defccaff6e6.setContent(html_71c1f925ce31d3fcefb4ebd1b9029d41);
             
         
 
-        circle_marker_3baa596e87d2d4e94db5351d29320d96.bindPopup(popup_091c40b026f4d70de8daba301147a34c)
+        circle_marker_6a5da48ea0d347809d7125e5e9d412c3.bindPopup(popup_88a9564b669c399fcbe52defccaff6e6)
         ;
 
         
     
     
-            var circle_marker_6387a6ada9eac975877d4d65c5d9307a = L.circleMarker(
+            var feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_8a44e14fb17de5d9ae83c78d99555895 = L.polyline(
+                [[51.398333, -0.085278], [51.474434, -0.221405]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a);
+        
+    
+            var regular_polygon_marker_791e9f3d159d641be807ea5f1cc9a0da = new L.RegularPolygonMarker(
+                [51.474434, -0.221405],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a);
+        
+    
+            var poly_line_6d5587f808d8162d12777fec9772447f = L.polyline(
+                [[51.398333, -0.085278], [52.62037, -1.142196]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a);
+        
+    
+            var regular_polygon_marker_25bb28c1ac18f2cfd43bb7a3f17f88b7 = new L.RegularPolygonMarker(
+                [52.62037, -1.142196],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a);
+        
+    
+            var poly_line_7b03ff7238aee7b2622315c76d2ad3aa = L.polyline(
+                [[51.398333, -0.085278], [52.62037, -1.142196]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a);
+        
+    
+            var regular_polygon_marker_9ba787cc0da152c2f7ce4879017af74e = new L.RegularPolygonMarker(
+                [52.62037, -1.142196],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a);
+        
+    
+            var poly_line_913ba137bbdf5d0277c5940dea59a0c1 = L.polyline(
+                [[51.398333, -0.085278], [52.62037, -1.142196]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a);
+        
+    
+            var regular_polygon_marker_490c6a540eeca98e6542c62d78a80f59 = new L.RegularPolygonMarker(
+                [52.62037, -1.142196],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a);
+        
+    
+            feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_da4f537a5ae1013d9d8e8e617d0577ef = L.circleMarker(
                 [52.939583, -1.132472],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_97b6afdbe23994d8e1e2666889c00aa3 = L.popup({
+        var popup_2c828240cf6f0df50287462330255d1b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_6f04d07c112d72fee68737132586c8e3 = $(`<div id="html_6f04d07c112d72fee68737132586c8e3" style="width: 100.0%; height: 100.0%;">Nottingham Forest: 192M€   Départs: 87M€   Arrivées : 106M€</div>`)[0];
-                popup_97b6afdbe23994d8e1e2666889c00aa3.setContent(html_6f04d07c112d72fee68737132586c8e3);
+                var html_7c57b03358821f6e7ef9b24e2947be82 = $(`<div id="html_7c57b03358821f6e7ef9b24e2947be82" style="width: 100.0%; height: 100.0%;">Nottingham Forest: 192M€   Départs: 87M€   Arrivées : 106M€</div>`)[0];
+                popup_2c828240cf6f0df50287462330255d1b.setContent(html_7c57b03358821f6e7ef9b24e2947be82);
             
         
 
-        circle_marker_6387a6ada9eac975877d4d65c5d9307a.bindPopup(popup_97b6afdbe23994d8e1e2666889c00aa3)
+        circle_marker_da4f537a5ae1013d9d8e8e617d0577ef.bindPopup(popup_2c828240cf6f0df50287462330255d1b)
         ;
 
         
     
     
-            var circle_marker_9ba7295a701058d9d740e4fdc6194a9f = L.circleMarker(
+            var feature_group_e6ed25097342b0dc78f6ac809c4dec45 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_19fdf53f602752c9fa57fa535a1e8fc0 = L.polyline(
+                [[52.939583, -1.132472], [54.975556, -1.621667]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e6ed25097342b0dc78f6ac809c4dec45);
+        
+    
+            var regular_polygon_marker_a44b48566df9ab4d1f2df82f1fdb8bba = new L.RegularPolygonMarker(
+                [54.975556, -1.621667],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_e6ed25097342b0dc78f6ac809c4dec45);
+        
+    
+            var poly_line_46ec39a00382f892add7d5dd054c3f74 = L.polyline(
+                [[52.939583, -1.132472], [52.509064, -1.884357]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e6ed25097342b0dc78f6ac809c4dec45);
+        
+    
+            var regular_polygon_marker_222e6660265511e9f5630f9baa29bc71 = new L.RegularPolygonMarker(
+                [52.509064, -1.884357],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_e6ed25097342b0dc78f6ac809c4dec45);
+        
+    
+            var poly_line_1f716b32311ae52e4e088e1edefef590 = L.polyline(
+                [[52.939583, -1.132472], [51.398333, -0.085278]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e6ed25097342b0dc78f6ac809c4dec45);
+        
+    
+            var regular_polygon_marker_67d21de15bd6051460f9fe360926420d = new L.RegularPolygonMarker(
+                [51.398333, -0.085278],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_e6ed25097342b0dc78f6ac809c4dec45);
+        
+    
+            var poly_line_978a62a15081070d5c0ea5730df2f997 = L.polyline(
+                [[52.939583, -1.132472], [51.398333, -0.085278]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e6ed25097342b0dc78f6ac809c4dec45);
+        
+    
+            var regular_polygon_marker_f95acd62dead7576e933f0004d37e5b1 = new L.RegularPolygonMarker(
+                [51.398333, -0.085278],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_e6ed25097342b0dc78f6ac809c4dec45);
+        
+    
+            feature_group_e6ed25097342b0dc78f6ac809c4dec45.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_b04d01684b566560d4e776b26a2b8754 = L.circleMarker(
                 [51.474434, -0.221405],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_57d56449cd09e0158130ea9c914a673e = L.popup({
+        var popup_2329c87f72388595d96086ffefed2fbd = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_e7a63156c4c1ed43426c303e36d3f80d = $(`<div id="html_e7a63156c4c1ed43426c303e36d3f80d" style="width: 100.0%; height: 100.0%;">Fulham FC: 160M€   Départs: 69M€   Arrivées : 92M€</div>`)[0];
-                popup_57d56449cd09e0158130ea9c914a673e.setContent(html_e7a63156c4c1ed43426c303e36d3f80d);
+                var html_2cc0bd8ca4c64c0d8f3c340b3e33f468 = $(`<div id="html_2cc0bd8ca4c64c0d8f3c340b3e33f468" style="width: 100.0%; height: 100.0%;">Fulham FC: 160M€   Départs: 69M€   Arrivées : 92M€</div>`)[0];
+                popup_2329c87f72388595d96086ffefed2fbd.setContent(html_2cc0bd8ca4c64c0d8f3c340b3e33f468);
             
         
 
-        circle_marker_9ba7295a701058d9d740e4fdc6194a9f.bindPopup(popup_57d56449cd09e0158130ea9c914a673e)
+        circle_marker_b04d01684b566560d4e776b26a2b8754.bindPopup(popup_2329c87f72388595d96086ffefed2fbd)
         ;
 
         
     
     
-            var circle_marker_3ea8c730e8cbe2adb337dd7960c6afa0 = L.circleMarker(
+            var feature_group_15bd1a6cd34bfd81ff4b6fd964e844de = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_19565299f3f4c3b64139f2a798aa747e = L.polyline(
+                [[51.474434, -0.221405], [52.62037, -1.142196]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_15bd1a6cd34bfd81ff4b6fd964e844de);
+        
+    
+            var regular_polygon_marker_7b552af410d4aca930ef6fdfc9778fe5 = new L.RegularPolygonMarker(
+                [52.62037, -1.142196],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_15bd1a6cd34bfd81ff4b6fd964e844de);
+        
+    
+            feature_group_15bd1a6cd34bfd81ff4b6fd964e844de.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_8d4dbf07061f08591dce68587e2eec98 = L.circleMarker(
                 [50.860911, -0.083689],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_e4bbecbb14e1c1de885ed7f5d6ec545f = L.popup({
+        var popup_d02c579ae6901ecb6f35a735b8a1d14d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_15059f57c02f1814f10ec9387b51ab42 = $(`<div id="html_15059f57c02f1814f10ec9387b51ab42" style="width: 100.0%; height: 100.0%;">Brighton & Hove Albion: 292M€   Départs: 48M€   Arrivées : 244M€</div>`)[0];
-                popup_e4bbecbb14e1c1de885ed7f5d6ec545f.setContent(html_15059f57c02f1814f10ec9387b51ab42);
+                var html_5b3850c5d181c6c531c0c1e089721548 = $(`<div id="html_5b3850c5d181c6c531c0c1e089721548" style="width: 100.0%; height: 100.0%;">Brighton & Hove Albion: 292M€   Départs: 48M€   Arrivées : 244M€</div>`)[0];
+                popup_d02c579ae6901ecb6f35a735b8a1d14d.setContent(html_5b3850c5d181c6c531c0c1e089721548);
             
         
 
-        circle_marker_3ea8c730e8cbe2adb337dd7960c6afa0.bindPopup(popup_e4bbecbb14e1c1de885ed7f5d6ec545f)
+        circle_marker_8d4dbf07061f08591dce68587e2eec98.bindPopup(popup_d02c579ae6901ecb6f35a735b8a1d14d)
         ;
 
         
     
     
-            var circle_marker_533e928f5265386f33a5a590f9351628 = L.circleMarker(
+            var feature_group_b4b2d53739b7490e96966cfff84095d6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_11c61974add3e372d994c8bf6dcb3377 = L.polyline(
+                [[50.860911, -0.083689], [50.90506, -1.23246]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b4b2d53739b7490e96966cfff84095d6);
+        
+    
+            var regular_polygon_marker_3bebeab93b14e413c0584ba1a9b8262c = new L.RegularPolygonMarker(
+                [50.90506, -1.23246],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_b4b2d53739b7490e96966cfff84095d6);
+        
+    
+            var poly_line_b2817801ed3dc432058bd582330aa5f0 = L.polyline(
+                [[50.860911, -0.083689], [52.62037, -1.142196]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b4b2d53739b7490e96966cfff84095d6);
+        
+    
+            var regular_polygon_marker_5febf42d836db5b22d765a7fe39dbbb0 = new L.RegularPolygonMarker(
+                [52.62037, -1.142196],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_b4b2d53739b7490e96966cfff84095d6);
+        
+    
+            var poly_line_36ce5f3fc66f0137e5f363e508f9c07b = L.polyline(
+                [[50.860911, -0.083689], [53.789152, -2.230662]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b4b2d53739b7490e96966cfff84095d6);
+        
+    
+            var regular_polygon_marker_c943112c7255095c285f3fc02b482ee6 = new L.RegularPolygonMarker(
+                [53.789152, -2.230662],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_b4b2d53739b7490e96966cfff84095d6);
+        
+    
+            var poly_line_a044076c623ebd0841f314ebfd27d867 = L.polyline(
+                [[50.860911, -0.083689], [53.777907, -1.572868]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b4b2d53739b7490e96966cfff84095d6);
+        
+    
+            var regular_polygon_marker_31ceb880549108c5b7d4bbda663132fd = new L.RegularPolygonMarker(
+                [53.777907, -1.572868],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_b4b2d53739b7490e96966cfff84095d6);
+        
+    
+            feature_group_b4b2d53739b7490e96966cfff84095d6.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_9493e66e266133e0f8e3c451a5d18503 = L.circleMarker(
                 [50.735204, -1.838137],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_93b5041be6eaa9005370e3e7d708eeb8 = L.popup({
+        var popup_dabc1ddcb237c5cae2c5f5290f9e07cf = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_bca52a24b93263b2feb7b67d5538c489 = $(`<div id="html_bca52a24b93263b2feb7b67d5538c489" style="width: 100.0%; height: 100.0%;">AFC Bournemouth: 170M€   Départs: 66M€   Arrivées : 104M€</div>`)[0];
-                popup_93b5041be6eaa9005370e3e7d708eeb8.setContent(html_bca52a24b93263b2feb7b67d5538c489);
+                var html_12a20e55adde00e32ef57aa5a119217d = $(`<div id="html_12a20e55adde00e32ef57aa5a119217d" style="width: 100.0%; height: 100.0%;">AFC Bournemouth: 170M€   Départs: 66M€   Arrivées : 104M€</div>`)[0];
+                popup_dabc1ddcb237c5cae2c5f5290f9e07cf.setContent(html_12a20e55adde00e32ef57aa5a119217d);
             
         
 
-        circle_marker_533e928f5265386f33a5a590f9351628.bindPopup(popup_93b5041be6eaa9005370e3e7d708eeb8)
+        circle_marker_9493e66e266133e0f8e3c451a5d18503.bindPopup(popup_dabc1ddcb237c5cae2c5f5290f9e07cf)
         ;
 
         
     
     
-            var circle_marker_eb84a5ca55d8756ff204ffbec07aa5b5 = L.circleMarker(
+            var feature_group_f53270fc23abc7c2a5ff414e839b11ea = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_fa4928570f0918edd48b84a351d0d019 = L.polyline(
+                [[50.735204, -1.838137], [53.370277, -1.470833]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var regular_polygon_marker_8548e55ef31338e3d3e83185ec262536 = new L.RegularPolygonMarker(
+                [53.370277, -1.470833],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var poly_line_ec7bfe7acd69262505a6bc95d68fb79b = L.polyline(
+                [[50.735204, -1.838137], [51.554888, -0.108438]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var regular_polygon_marker_8ead4599e7c06bfd2e037de2545bb82b = new L.RegularPolygonMarker(
+                [51.554888, -0.108438],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var poly_line_de286a88f2e97260bbe8c2000403acf0 = L.polyline(
+                [[50.735204, -1.838137], [53.777907, -1.572868]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var regular_polygon_marker_02bc2d062bec82eb7cf5c69f90756198 = new L.RegularPolygonMarker(
+                [53.777907, -1.572868],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var poly_line_be9b3a5e0d318a42af2eef40a262a301 = L.polyline(
+                [[50.735204, -1.838137], [53.777907, -1.572868]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var regular_polygon_marker_f22df2f2892fd0a5051b98c60e2e59b7 = new L.RegularPolygonMarker(
+                [53.777907, -1.572868],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var poly_line_37ef95d7a8085001cc41fdcd74823fb8 = L.polyline(
+                [[50.735204, -1.838137], [53.789152, -2.230662]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            var regular_polygon_marker_16ac93eb684ba4ae3a9e25bda5ae7de8 = new L.RegularPolygonMarker(
+                [53.789152, -2.230662],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_f53270fc23abc7c2a5ff414e839b11ea);
+        
+    
+            feature_group_f53270fc23abc7c2a5ff414e839b11ea.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_42a258d7887c50adb1ec79e3280ed02e = L.circleMarker(
                 [53.789152, -2.230662],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_159c6f0072f41d49a6117fdbc08467b4 = L.popup({
+        var popup_7725dafc394a816eeb967b104d2a04e1 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1d745b4ba7bd31dd21d76a8bb100ffa7 = $(`<div id="html_1d745b4ba7bd31dd21d76a8bb100ffa7" style="width: 100.0%; height: 100.0%;">Burnley: 10M€   Départs: 5M€   Arrivées : 5M€</div>`)[0];
-                popup_159c6f0072f41d49a6117fdbc08467b4.setContent(html_1d745b4ba7bd31dd21d76a8bb100ffa7);
+                var html_bedb4283ee4009d351dce373e49bb1b8 = $(`<div id="html_bedb4283ee4009d351dce373e49bb1b8" style="width: 100.0%; height: 100.0%;">Burnley: 0M€   Départs: 0M€   Arrivées : 0M€</div>`)[0];
+                popup_7725dafc394a816eeb967b104d2a04e1.setContent(html_bedb4283ee4009d351dce373e49bb1b8);
             
         
 
-        circle_marker_eb84a5ca55d8756ff204ffbec07aa5b5.bindPopup(popup_159c6f0072f41d49a6117fdbc08467b4)
+        circle_marker_42a258d7887c50adb1ec79e3280ed02e.bindPopup(popup_7725dafc394a816eeb967b104d2a04e1)
         ;
 
         
     
     
-            var circle_marker_29b68a6c6a10b196d8a4974bc0835605 = L.circleMarker(
+            var circle_marker_af23227f8f6258f53be9e2a8abfb1a45 = L.circleMarker(
                 [53.370277, -1.470833],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_94dd656ddeea78899bec0dc445cb2813 = L.popup({
+        var popup_15f06f5d1e93aeab881ad23207f938e4 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_cb6d84cb5982b09ad49d5fd99290e85e = $(`<div id="html_cb6d84cb5982b09ad49d5fd99290e85e" style="width: 100.0%; height: 100.0%;">Sheffield United: 10M€   Départs: 5M€   Arrivées : 5M€</div>`)[0];
-                popup_94dd656ddeea78899bec0dc445cb2813.setContent(html_cb6d84cb5982b09ad49d5fd99290e85e);
+                var html_1ea8daf01ecb11d5ac54eda4d9c0f158 = $(`<div id="html_1ea8daf01ecb11d5ac54eda4d9c0f158" style="width: 100.0%; height: 100.0%;">Sheffield United: 0M€   Départs: 0M€   Arrivées : 0M€</div>`)[0];
+                popup_15f06f5d1e93aeab881ad23207f938e4.setContent(html_1ea8daf01ecb11d5ac54eda4d9c0f158);
             
         
 
-        circle_marker_29b68a6c6a10b196d8a4974bc0835605.bindPopup(popup_94dd656ddeea78899bec0dc445cb2813)
+        circle_marker_af23227f8f6258f53be9e2a8abfb1a45.bindPopup(popup_15f06f5d1e93aeab881ad23207f938e4)
         ;
 
         
     
     
-            var circle_marker_9c6e5f904fad594f4d11eba88c522c67 = L.circleMarker(
+            var circle_marker_c8faf5e1b635458ce9ac612d9a39032c = L.circleMarker(
                 [52.03194, 1.08458],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_0b5c34ab701bf277f692be3688dfb2ad = L.popup({
+        var popup_e5415e14c6fe01a8db059107774652d0 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_16cd5f34f62db49214bf2dc2ef1a0f0d = $(`<div id="html_16cd5f34f62db49214bf2dc2ef1a0f0d" style="width: 100.0%; height: 100.0%;">Ipswich Town: 128M€   Départs: 2M€   Arrivées : 126M€</div>`)[0];
-                popup_0b5c34ab701bf277f692be3688dfb2ad.setContent(html_16cd5f34f62db49214bf2dc2ef1a0f0d);
+                var html_46c1271fb374b36d80bf7636e4531eba = $(`<div id="html_46c1271fb374b36d80bf7636e4531eba" style="width: 100.0%; height: 100.0%;">Ipswich Town: 128M€   Départs: 2M€   Arrivées : 126M€</div>`)[0];
+                popup_e5415e14c6fe01a8db059107774652d0.setContent(html_46c1271fb374b36d80bf7636e4531eba);
             
         
 
-        circle_marker_9c6e5f904fad594f4d11eba88c522c67.bindPopup(popup_0b5c34ab701bf277f692be3688dfb2ad)
+        circle_marker_c8faf5e1b635458ce9ac612d9a39032c.bindPopup(popup_e5415e14c6fe01a8db059107774652d0)
         ;
 
         
     
     
-            var circle_marker_e76cb63334410882a5987ac1b212f070 = L.circleMarker(
+            var feature_group_fe992a64fe24febffda5c993a3d4c900 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_bcaedb067c97484da2b3dcd486ae05b9 = L.polyline(
+                [[52.03194, 1.08458], [52.03194, 1.08458]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_fe992a64fe24febffda5c993a3d4c900);
+        
+    
+            var regular_polygon_marker_374f9f5efcc2d28c18a82de317dfff43 = new L.RegularPolygonMarker(
+                [52.03194, 1.08458],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_fe992a64fe24febffda5c993a3d4c900);
+        
+    
+            var poly_line_059e845cbebc3877c77d423926377569 = L.polyline(
+                [[52.03194, 1.08458], [53.789152, -2.230662]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_fe992a64fe24febffda5c993a3d4c900);
+        
+    
+            var regular_polygon_marker_29edc58ae6b1dad0273ff96eb6ef3eef = new L.RegularPolygonMarker(
+                [53.789152, -2.230662],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_fe992a64fe24febffda5c993a3d4c900);
+        
+    
+            feature_group_fe992a64fe24febffda5c993a3d4c900.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_f83126cb19be2b5a811e442ab101e02a = L.circleMarker(
                 [51.29258, -0.17195],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_f27b83ca7775df3786ffd1fe61e9dd2c = L.popup({
+        var popup_2802864bd0d7fa8b1da604e0ad9bfd92 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b1127ee288e02c261b665db7ba15e098 = $(`<div id="html_b1127ee288e02c261b665db7ba15e098" style="width: 100.0%; height: 100.0%;">Brentford FC: 172M€   Départs: 74M€   Arrivées : 98M€</div>`)[0];
-                popup_f27b83ca7775df3786ffd1fe61e9dd2c.setContent(html_b1127ee288e02c261b665db7ba15e098);
+                var html_19770ce1a88f099f6928a4faea1ac716 = $(`<div id="html_19770ce1a88f099f6928a4faea1ac716" style="width: 100.0%; height: 100.0%;">Brentford FC: 172M€   Départs: 74M€   Arrivées : 98M€</div>`)[0];
+                popup_2802864bd0d7fa8b1da604e0ad9bfd92.setContent(html_19770ce1a88f099f6928a4faea1ac716);
             
         
 
-        circle_marker_e76cb63334410882a5987ac1b212f070.bindPopup(popup_f27b83ca7775df3786ffd1fe61e9dd2c)
+        circle_marker_f83126cb19be2b5a811e442ab101e02a.bindPopup(popup_2802864bd0d7fa8b1da604e0ad9bfd92)
         ;
 
         
     
     
-            var circle_marker_a61ff963cdcfe7cb4631411cc72e0b56 = L.circleMarker(
+            var feature_group_697322ebbf0689b26352d35019bb6f93 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_b12f86a8eef05c3cdfd339269c3509d5 = L.polyline(
+                [[51.29258, -0.17195], [51.554888, -0.108438]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_697322ebbf0689b26352d35019bb6f93);
+        
+    
+            var regular_polygon_marker_4a2631f0337afa24b44be1f1170f24e8 = new L.RegularPolygonMarker(
+                [51.554888, -0.108438],
+                {
+  "stroke": true,
+  "color": "black",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 3,
+  "rotation": 60,
+}
+            ).addTo(feature_group_697322ebbf0689b26352d35019bb6f93);
+        
+    
+            feature_group_697322ebbf0689b26352d35019bb6f93.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var circle_marker_a700ed36733641cc795705f82a2f1d09 = L.circleMarker(
                 [50.90506, -1.23246],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
-            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
         
     
-        var popup_dcec0d9af47813342a93feb86887b12d = L.popup({
+        var popup_ed4a9c6461ea3134d887197e879e11f5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_18f44fd7ed6f6033be2d256d3ec0f422 = $(`<div id="html_18f44fd7ed6f6033be2d256d3ec0f422" style="width: 100.0%; height: 100.0%;">Southampton FC: 159M€   Départs: 42M€   Arrivées : 117M€</div>`)[0];
-                popup_dcec0d9af47813342a93feb86887b12d.setContent(html_18f44fd7ed6f6033be2d256d3ec0f422);
+                var html_e3eb44f845636542418476c38ee19f07 = $(`<div id="html_e3eb44f845636542418476c38ee19f07" style="width: 100.0%; height: 100.0%;">Southampton FC: 159M€   Départs: 42M€   Arrivées : 117M€</div>`)[0];
+                popup_ed4a9c6461ea3134d887197e879e11f5.setContent(html_e3eb44f845636542418476c38ee19f07);
             
         
 
-        circle_marker_a61ff963cdcfe7cb4631411cc72e0b56.bindPopup(popup_dcec0d9af47813342a93feb86887b12d)
+        circle_marker_a700ed36733641cc795705f82a2f1d09.bindPopup(popup_ed4a9c6461ea3134d887197e879e11f5)
         ;
 
         
     
+    
+            var feature_group_e577c0c588054b688ae01675fc1ec57a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_e577c0c588054b688ae01675fc1ec57a.addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+        
+    
+            var layer_control_ebb07bc39507a30c624790e76ed10fa2_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_07d25f50fb766c0e7824d074d8b7156e,
+                },
+                overlays :  {
+                    "Transferts depuis Manchester City" : feature_group_000a5baed8d63ae67fe8d3dc749fb276,
+                    "Transferts depuis Manchester United" : feature_group_2ac607b21f879577b40b6793f08e8744,
+                    "Transferts depuis Chelsea FC" : feature_group_407ac71f3fa8f882f3b5940cead3728c,
+                    "Transferts depuis Arsenal FC" : feature_group_4172c58db5c3432bc8754eed5406e62c,
+                    "Transferts depuis Tottenham Hotspur" : feature_group_fefb0c3c71d2f7e17020c4d980a2cd11,
+                    "Transferts depuis Liverpool FC" : feature_group_30b44d19623e19552dd1c83c8e5b18f5,
+                    "Transferts depuis Everton FC" : feature_group_4c643cf84ef5e315e46156fe0c2e4991,
+                    "Transferts depuis Wolverhampton Wanderers" : feature_group_1d88b55cb4d3fa4a0dcbe6a78eca1a92,
+                    "Transferts depuis Leicester City" : feature_group_2a992c54c23922c79cb34b35904a13a9,
+                    "Transferts depuis Aston Villa" : feature_group_44dc2ff5994a50edb20f29a7234d4de7,
+                    "Transferts depuis Newcastle United" : feature_group_981691d42b01a26a40f8402d0d1d3a1f,
+                    "Transferts depuis West Ham United" : feature_group_71f2dd67749d661f8f7c8ff967aef325,
+                    "Transferts depuis Crystal Palace" : feature_group_ec2b2f696c8c9d6ffa5981dba3dec81a,
+                    "Transferts depuis Nottingham Forest" : feature_group_e6ed25097342b0dc78f6ac809c4dec45,
+                    "Transferts depuis Fulham FC" : feature_group_15bd1a6cd34bfd81ff4b6fd964e844de,
+                    "Transferts depuis Brighton \u0026 Hove Albion" : feature_group_b4b2d53739b7490e96966cfff84095d6,
+                    "Transferts depuis AFC Bournemouth" : feature_group_f53270fc23abc7c2a5ff414e839b11ea,
+                    "Transferts depuis Ipswich Town" : feature_group_fe992a64fe24febffda5c993a3d4c900,
+                    "Transferts depuis Brentford FC" : feature_group_697322ebbf0689b26352d35019bb6f93,
+                    "Transferts depuis Southampton FC" : feature_group_e577c0c588054b688ae01675fc1ec57a,
+                },
+            };
+            let layer_control_ebb07bc39507a30c624790e76ed10fa2 = L.control.layers(
+                layer_control_ebb07bc39507a30c624790e76ed10fa2_layers.base_layers,
+                layer_control_ebb07bc39507a30c624790e76ed10fa2_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_51321fc7ef7166b3ae93e0996c0d446c);
+
+        
 </script>
 </html>
