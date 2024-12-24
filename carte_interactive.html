@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_097d7c6c89c24c2cd2d7707cf8cb4f85 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_097d7c6c89c24c2cd2d7707cf8cb4f85" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_097d7c6c89c24c2cd2d7707cf8cb4f85 = L.map(
+                "map_097d7c6c89c24c2cd2d7707cf8cb4f85",
+                {
+                    center: [52.40285565217392, -1.154223652173913],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0bc63177cbb8e9629047d6125f0248cd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0bc63177cbb8e9629047d6125f0248cd.addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+            var circle_marker_9b549f95268592d522aeb416370a79bb = L.circleMarker(
+                [53.483959, -2.242631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_999d48c0b511badc3f42008a33c18546 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31312453c9bf314a93883e0c35cff6df = $(`<div id="html_31312453c9bf314a93883e0c35cff6df" style="width: 100.0%; height: 100.0%;">Manchester City: 166M€   Départs: 141M€   Arrivées : 25M€</div>`)[0];
+                popup_999d48c0b511badc3f42008a33c18546.setContent(html_31312453c9bf314a93883e0c35cff6df);
+            
+        
+
+        circle_marker_9b549f95268592d522aeb416370a79bb.bindPopup(popup_999d48c0b511badc3f42008a33c18546)
+        ;
+
+        
+    
+    
+            var circle_marker_4b645fea2351bbf528fd6cbd1651d789 = L.circleMarker(
+                [53.463062, -2.29134],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_3689e39ec6479e8ca6459de47e4026c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_027edd98c81bd0a347d27775b6c20c1e = $(`<div id="html_027edd98c81bd0a347d27775b6c20c1e" style="width: 100.0%; height: 100.0%;">Manchester United: 318M€   Départs: 103M€   Arrivées : 214M€</div>`)[0];
+                popup_3689e39ec6479e8ca6459de47e4026c0.setContent(html_027edd98c81bd0a347d27775b6c20c1e);
+            
+        
+
+        circle_marker_4b645fea2351bbf528fd6cbd1651d789.bindPopup(popup_3689e39ec6479e8ca6459de47e4026c0)
+        ;
+
+        
+    
+    
+            var circle_marker_076f7ce6fc4b421d1f0fe3ab8d01a280 = L.circleMarker(
+                [51.481667, -0.190833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_05d4027e80a4924ef805f5b74c76fa41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_717234306f0520ad5136f23c92de5541 = $(`<div id="html_717234306f0520ad5136f23c92de5541" style="width: 100.0%; height: 100.0%;">Chelsea FC: 436M€   Départs: 198M€   Arrivées : 238M€</div>`)[0];
+                popup_05d4027e80a4924ef805f5b74c76fa41.setContent(html_717234306f0520ad5136f23c92de5541);
+            
+        
+
+        circle_marker_076f7ce6fc4b421d1f0fe3ab8d01a280.bindPopup(popup_05d4027e80a4924ef805f5b74c76fa41)
+        ;
+
+        
+    
+    
+            var circle_marker_bb3936ca6fb20090f09c92147a1daa57 = L.circleMarker(
+                [51.554888, -0.108438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_4af7e1e74743fb3333b264486a9d5da3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42c73e38956deab07ec7ecb86b9ab448 = $(`<div id="html_42c73e38956deab07ec7ecb86b9ab448" style="width: 100.0%; height: 100.0%;">Arsenal FC: 193M€   Départs: 84M€   Arrivées : 109M€</div>`)[0];
+                popup_4af7e1e74743fb3333b264486a9d5da3.setContent(html_42c73e38956deab07ec7ecb86b9ab448);
+            
+        
+
+        circle_marker_bb3936ca6fb20090f09c92147a1daa57.bindPopup(popup_4af7e1e74743fb3333b264486a9d5da3)
+        ;
+
+        
+    
+    
+            var circle_marker_2089c9f581347e56e62d03da21ebfbe1 = L.circleMarker(
+                [51.603231, -0.065735],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_b007cf13d62541fc8b83c439358e2f99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98b293365d53bc88dba3d3e655f0697b = $(`<div id="html_98b293365d53bc88dba3d3e655f0697b" style="width: 100.0%; height: 100.0%;">Tottenham Hotspur: 204M€   Départs: 55M€   Arrivées : 149M€</div>`)[0];
+                popup_b007cf13d62541fc8b83c439358e2f99.setContent(html_98b293365d53bc88dba3d3e655f0697b);
+            
+        
+
+        circle_marker_2089c9f581347e56e62d03da21ebfbe1.bindPopup(popup_b007cf13d62541fc8b83c439358e2f99)
+        ;
+
+        
+    
+    
+            var circle_marker_357d8805f1a4cd88f486da2115caf325 = L.circleMarker(
+                [53.430829, -2.96083],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_59ef768dcf5660605d1865f8f7dbd10a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adddcc732d5e216e2f519e67d64fc83a = $(`<div id="html_adddcc732d5e216e2f519e67d64fc83a" style="width: 100.0%; height: 100.0%;">Liverpool FC: 89M€   Départs: 47M€   Arrivées : 42M€</div>`)[0];
+                popup_59ef768dcf5660605d1865f8f7dbd10a.setContent(html_adddcc732d5e216e2f519e67d64fc83a);
+            
+        
+
+        circle_marker_357d8805f1a4cd88f486da2115caf325.bindPopup(popup_59ef768dcf5660605d1865f8f7dbd10a)
+        ;
+
+        
+    
+    
+            var circle_marker_c94d9bd82ca37266466d7325cd04245b = L.circleMarker(
+                [53.438787, -2.966298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_55713334fe56dd5ef5809ede8a233549 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b61e6dfe8f5ba437d72a1854b76950dc = $(`<div id="html_b61e6dfe8f5ba437d72a1854b76950dc" style="width: 100.0%; height: 100.0%;">Everton FC: 134M€   Départs: 84M€   Arrivées : 50M€</div>`)[0];
+                popup_55713334fe56dd5ef5809ede8a233549.setContent(html_b61e6dfe8f5ba437d72a1854b76950dc);
+            
+        
+
+        circle_marker_c94d9bd82ca37266466d7325cd04245b.bindPopup(popup_55713334fe56dd5ef5809ede8a233549)
+        ;
+
+        
+    
+    
+            var circle_marker_5ebc82722c62787d7ef688be8372a6ad = L.circleMarker(
+                [53.777907, -1.572868],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_6a5d7f02868a3dcc988a6c2a99cc9106 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84504adaba08d91908b09760a569e703 = $(`<div id="html_84504adaba08d91908b09760a569e703" style="width: 100.0%; height: 100.0%;">Leeds United: 10M€   Départs: 5M€   Arrivées : 5M€</div>`)[0];
+                popup_6a5d7f02868a3dcc988a6c2a99cc9106.setContent(html_84504adaba08d91908b09760a569e703);
+            
+        
+
+        circle_marker_5ebc82722c62787d7ef688be8372a6ad.bindPopup(popup_6a5d7f02868a3dcc988a6c2a99cc9106)
+        ;
+
+        
+    
+    
+            var circle_marker_3a7e74d9644e8e29bf5fd8e4f73a147b = L.circleMarker(
+                [52.590275, -2.130423],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_40e1931a2389f68668912c294b1e3130 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba661c6f308a07bbf56881d5e758aebd = $(`<div id="html_ba661c6f308a07bbf56881d5e758aebd" style="width: 100.0%; height: 100.0%;">Wolverhampton Wanderers: 187M€   Départs: 112M€   Arrivées : 74M€</div>`)[0];
+                popup_40e1931a2389f68668912c294b1e3130.setContent(html_ba661c6f308a07bbf56881d5e758aebd);
+            
+        
+
+        circle_marker_3a7e74d9644e8e29bf5fd8e4f73a147b.bindPopup(popup_40e1931a2389f68668912c294b1e3130)
+        ;
+
+        
+    
+    
+            var circle_marker_389d58df7b0479eb207741424fa3e505 = L.circleMarker(
+                [52.62037, -1.142196],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_331d89437d0563facf319bfb0fb4e595 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b4e1b0962b105fe0c95e79cb340f76a = $(`<div id="html_7b4e1b0962b105fe0c95e79cb340f76a" style="width: 100.0%; height: 100.0%;">Leicester City: 121M€   Départs: 35M€   Arrivées : 86M€</div>`)[0];
+                popup_331d89437d0563facf319bfb0fb4e595.setContent(html_7b4e1b0962b105fe0c95e79cb340f76a);
+            
+        
+
+        circle_marker_389d58df7b0479eb207741424fa3e505.bindPopup(popup_331d89437d0563facf319bfb0fb4e595)
+        ;
+
+        
+    
+    
+            var circle_marker_f1459446a94d54730fdaf2418f42e257 = L.circleMarker(
+                [52.509064, -1.884357],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_5b87ef9c908d77d3a8e5b4cdfbb3cf2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_004d4470d6a4bd2f388ebe79962a782d = $(`<div id="html_004d4470d6a4bd2f388ebe79962a782d" style="width: 100.0%; height: 100.0%;">Aston Villa: 321M€   Départs: 145M€   Arrivées : 176M€</div>`)[0];
+                popup_5b87ef9c908d77d3a8e5b4cdfbb3cf2a.setContent(html_004d4470d6a4bd2f388ebe79962a782d);
+            
+        
+
+        circle_marker_f1459446a94d54730fdaf2418f42e257.bindPopup(popup_5b87ef9c908d77d3a8e5b4cdfbb3cf2a)
+        ;
+
+        
+    
+    
+            var circle_marker_38dbc6963c9159fa57c33b43eecefa68 = L.circleMarker(
+                [54.975556, -1.621667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_d30395aaf129cd733f657fa631f32841 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f654871def4edba58b497d85c198e04 = $(`<div id="html_8f654871def4edba58b497d85c198e04" style="width: 100.0%; height: 100.0%;">Newcastle United: 144M€   Départs: 76M€   Arrivées : 68M€</div>`)[0];
+                popup_d30395aaf129cd733f657fa631f32841.setContent(html_8f654871def4edba58b497d85c198e04);
+            
+        
+
+        circle_marker_38dbc6963c9159fa57c33b43eecefa68.bindPopup(popup_d30395aaf129cd733f657fa631f32841)
+        ;
+
+        
+    
+    
+            var circle_marker_e6a219e43be5475521d5cc72143de55a = L.circleMarker(
+                [51.538611, 0.012778],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_8532d64e7c4a9f0d0f8d554201510491 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_237a2d27b437d8b802341a16b99d494e = $(`<div id="html_237a2d27b437d8b802341a16b99d494e" style="width: 100.0%; height: 100.0%;">West Ham United: 189M€   Départs: 45M€   Arrivées : 144M€</div>`)[0];
+                popup_8532d64e7c4a9f0d0f8d554201510491.setContent(html_237a2d27b437d8b802341a16b99d494e);
+            
+        
+
+        circle_marker_e6a219e43be5475521d5cc72143de55a.bindPopup(popup_8532d64e7c4a9f0d0f8d554201510491)
+        ;
+
+        
+    
+    
+            var circle_marker_3baa596e87d2d4e94db5351d29320d96 = L.circleMarker(
+                [51.398333, -0.085278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_091c40b026f4d70de8daba301147a34c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50b13a65dcaa0b72d7b03b1450076d99 = $(`<div id="html_50b13a65dcaa0b72d7b03b1450076d99" style="width: 100.0%; height: 100.0%;">Crystal Palace: 178M€   Départs: 101M€   Arrivées : 78M€</div>`)[0];
+                popup_091c40b026f4d70de8daba301147a34c.setContent(html_50b13a65dcaa0b72d7b03b1450076d99);
+            
+        
+
+        circle_marker_3baa596e87d2d4e94db5351d29320d96.bindPopup(popup_091c40b026f4d70de8daba301147a34c)
+        ;
+
+        
+    
+    
+            var circle_marker_6387a6ada9eac975877d4d65c5d9307a = L.circleMarker(
+                [52.939583, -1.132472],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_97b6afdbe23994d8e1e2666889c00aa3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f04d07c112d72fee68737132586c8e3 = $(`<div id="html_6f04d07c112d72fee68737132586c8e3" style="width: 100.0%; height: 100.0%;">Nottingham Forest: 192M€   Départs: 87M€   Arrivées : 106M€</div>`)[0];
+                popup_97b6afdbe23994d8e1e2666889c00aa3.setContent(html_6f04d07c112d72fee68737132586c8e3);
+            
+        
+
+        circle_marker_6387a6ada9eac975877d4d65c5d9307a.bindPopup(popup_97b6afdbe23994d8e1e2666889c00aa3)
+        ;
+
+        
+    
+    
+            var circle_marker_9ba7295a701058d9d740e4fdc6194a9f = L.circleMarker(
+                [51.474434, -0.221405],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_57d56449cd09e0158130ea9c914a673e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7a63156c4c1ed43426c303e36d3f80d = $(`<div id="html_e7a63156c4c1ed43426c303e36d3f80d" style="width: 100.0%; height: 100.0%;">Fulham FC: 160M€   Départs: 69M€   Arrivées : 92M€</div>`)[0];
+                popup_57d56449cd09e0158130ea9c914a673e.setContent(html_e7a63156c4c1ed43426c303e36d3f80d);
+            
+        
+
+        circle_marker_9ba7295a701058d9d740e4fdc6194a9f.bindPopup(popup_57d56449cd09e0158130ea9c914a673e)
+        ;
+
+        
+    
+    
+            var circle_marker_3ea8c730e8cbe2adb337dd7960c6afa0 = L.circleMarker(
+                [50.860911, -0.083689],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_e4bbecbb14e1c1de885ed7f5d6ec545f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15059f57c02f1814f10ec9387b51ab42 = $(`<div id="html_15059f57c02f1814f10ec9387b51ab42" style="width: 100.0%; height: 100.0%;">Brighton & Hove Albion: 292M€   Départs: 48M€   Arrivées : 244M€</div>`)[0];
+                popup_e4bbecbb14e1c1de885ed7f5d6ec545f.setContent(html_15059f57c02f1814f10ec9387b51ab42);
+            
+        
+
+        circle_marker_3ea8c730e8cbe2adb337dd7960c6afa0.bindPopup(popup_e4bbecbb14e1c1de885ed7f5d6ec545f)
+        ;
+
+        
+    
+    
+            var circle_marker_533e928f5265386f33a5a590f9351628 = L.circleMarker(
+                [50.735204, -1.838137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_93b5041be6eaa9005370e3e7d708eeb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bca52a24b93263b2feb7b67d5538c489 = $(`<div id="html_bca52a24b93263b2feb7b67d5538c489" style="width: 100.0%; height: 100.0%;">AFC Bournemouth: 170M€   Départs: 66M€   Arrivées : 104M€</div>`)[0];
+                popup_93b5041be6eaa9005370e3e7d708eeb8.setContent(html_bca52a24b93263b2feb7b67d5538c489);
+            
+        
+
+        circle_marker_533e928f5265386f33a5a590f9351628.bindPopup(popup_93b5041be6eaa9005370e3e7d708eeb8)
+        ;
+
+        
+    
+    
+            var circle_marker_eb84a5ca55d8756ff204ffbec07aa5b5 = L.circleMarker(
+                [53.789152, -2.230662],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_159c6f0072f41d49a6117fdbc08467b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d745b4ba7bd31dd21d76a8bb100ffa7 = $(`<div id="html_1d745b4ba7bd31dd21d76a8bb100ffa7" style="width: 100.0%; height: 100.0%;">Burnley: 10M€   Départs: 5M€   Arrivées : 5M€</div>`)[0];
+                popup_159c6f0072f41d49a6117fdbc08467b4.setContent(html_1d745b4ba7bd31dd21d76a8bb100ffa7);
+            
+        
+
+        circle_marker_eb84a5ca55d8756ff204ffbec07aa5b5.bindPopup(popup_159c6f0072f41d49a6117fdbc08467b4)
+        ;
+
+        
+    
+    
+            var circle_marker_29b68a6c6a10b196d8a4974bc0835605 = L.circleMarker(
+                [53.370277, -1.470833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_94dd656ddeea78899bec0dc445cb2813 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb6d84cb5982b09ad49d5fd99290e85e = $(`<div id="html_cb6d84cb5982b09ad49d5fd99290e85e" style="width: 100.0%; height: 100.0%;">Sheffield United: 10M€   Départs: 5M€   Arrivées : 5M€</div>`)[0];
+                popup_94dd656ddeea78899bec0dc445cb2813.setContent(html_cb6d84cb5982b09ad49d5fd99290e85e);
+            
+        
+
+        circle_marker_29b68a6c6a10b196d8a4974bc0835605.bindPopup(popup_94dd656ddeea78899bec0dc445cb2813)
+        ;
+
+        
+    
+    
+            var circle_marker_9c6e5f904fad594f4d11eba88c522c67 = L.circleMarker(
+                [52.03194, 1.08458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_0b5c34ab701bf277f692be3688dfb2ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16cd5f34f62db49214bf2dc2ef1a0f0d = $(`<div id="html_16cd5f34f62db49214bf2dc2ef1a0f0d" style="width: 100.0%; height: 100.0%;">Ipswich Town: 128M€   Départs: 2M€   Arrivées : 126M€</div>`)[0];
+                popup_0b5c34ab701bf277f692be3688dfb2ad.setContent(html_16cd5f34f62db49214bf2dc2ef1a0f0d);
+            
+        
+
+        circle_marker_9c6e5f904fad594f4d11eba88c522c67.bindPopup(popup_0b5c34ab701bf277f692be3688dfb2ad)
+        ;
+
+        
+    
+    
+            var circle_marker_e76cb63334410882a5987ac1b212f070 = L.circleMarker(
+                [51.29258, -0.17195],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_f27b83ca7775df3786ffd1fe61e9dd2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1127ee288e02c261b665db7ba15e098 = $(`<div id="html_b1127ee288e02c261b665db7ba15e098" style="width: 100.0%; height: 100.0%;">Brentford FC: 172M€   Départs: 74M€   Arrivées : 98M€</div>`)[0];
+                popup_f27b83ca7775df3786ffd1fe61e9dd2c.setContent(html_b1127ee288e02c261b665db7ba15e098);
+            
+        
+
+        circle_marker_e76cb63334410882a5987ac1b212f070.bindPopup(popup_f27b83ca7775df3786ffd1fe61e9dd2c)
+        ;
+
+        
+    
+    
+            var circle_marker_a61ff963cdcfe7cb4631411cc72e0b56 = L.circleMarker(
+                [50.90506, -1.23246],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_097d7c6c89c24c2cd2d7707cf8cb4f85);
+        
+    
+        var popup_dcec0d9af47813342a93feb86887b12d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18f44fd7ed6f6033be2d256d3ec0f422 = $(`<div id="html_18f44fd7ed6f6033be2d256d3ec0f422" style="width: 100.0%; height: 100.0%;">Southampton FC: 159M€   Départs: 42M€   Arrivées : 117M€</div>`)[0];
+                popup_dcec0d9af47813342a93feb86887b12d.setContent(html_18f44fd7ed6f6033be2d256d3ec0f422);
+            
+        
+
+        circle_marker_a61ff963cdcfe7cb4631411cc72e0b56.bindPopup(popup_dcec0d9af47813342a93feb86887b12d)
+        ;
+
+        
+    
+</script>
+</html>
