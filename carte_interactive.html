@@ -1,0 +1,6274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3061e9f1bcb306337cb2d2b04b7ae1b5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3061e9f1bcb306337cb2d2b04b7ae1b5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3061e9f1bcb306337cb2d2b04b7ae1b5 = L.map(
+                "map_3061e9f1bcb306337cb2d2b04b7ae1b5",
+                {
+                    center: [52.40285565217392, -1.154223652173913],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3a7a7f2a6ebefe9aac655253861620e8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3a7a7f2a6ebefe9aac655253861620e8.addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+            var circle_marker_34456ad1a7d404baeae256ef58c4bf29 = L.circleMarker(
+                [53.483959, -2.242631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_d09cbd606fb151da3499aa477f3f3afa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36f0bd2ea7e2238ca157524a66693d38 = $(`<div id="html_36f0bd2ea7e2238ca157524a66693d38" style="width: 100.0%; height: 100.0%;">Manchester City: 166M€   Départs: 141M€   Arrivées : 25M€</div>`)[0];
+                popup_d09cbd606fb151da3499aa477f3f3afa.setContent(html_36f0bd2ea7e2238ca157524a66693d38);
+            
+        
+
+        circle_marker_34456ad1a7d404baeae256ef58c4bf29.bindPopup(popup_d09cbd606fb151da3499aa477f3f3afa)
+        ;
+
+        
+    
+    
+            var feature_group_ff32c704c877c70d2facf2e9bf67edf7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_28a79a24c5a0ad6877d792ad1164a52c = L.polyline.antPath(
+              [[53.483959, -2.242631], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ff32c704c877c70d2facf2e9bf67edf7);
+        
+    
+        var popup_8dafafff1b326e3ccc780d1c8efd124c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b39b924b248f1326cc7dd4e785c18639 = $(`<div id="html_b39b924b248f1326cc7dd4e785c18639" style="width: 100.0%; height: 100.0%;">Joueur: Kalvin Phillips   loan transfer</div>`)[0];
+                popup_8dafafff1b326e3ccc780d1c8efd124c.setContent(html_b39b924b248f1326cc7dd4e785c18639);
+            
+        
+
+        ant_path_28a79a24c5a0ad6877d792ad1164a52c.bindPopup(popup_8dafafff1b326e3ccc780d1c8efd124c)
+        ;
+
+        
+    
+    
+            ant_path_42a84df74797545acedb990e704977d4 = L.polyline.antPath(
+              [[51.538611, 0.012778], [53.483959, -2.242631]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ff32c704c877c70d2facf2e9bf67edf7);
+        
+    
+        var popup_15a74775a7c9f9e993d692cc113278b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1be442ac139f07170de4db106e17f85 = $(`<div id="html_e1be442ac139f07170de4db106e17f85" style="width: 100.0%; height: 100.0%;">Joueur: Kalvin Phillips   End of loanJun 30, 2024</div>`)[0];
+                popup_15a74775a7c9f9e993d692cc113278b0.setContent(html_e1be442ac139f07170de4db106e17f85);
+            
+        
+
+        ant_path_42a84df74797545acedb990e704977d4.bindPopup(popup_15a74775a7c9f9e993d692cc113278b0)
+        ;
+
+        
+    
+    
+            var circle_marker_61ac360c58999b8732be7d22611074fe = L.circleMarker(
+                [53.463062, -2.29134],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_ebd4c9f0aab1b5fe2a6b48a03a96a0c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3eb78d248b575f428f2488e28043ff3 = $(`<div id="html_d3eb78d248b575f428f2488e28043ff3" style="width: 100.0%; height: 100.0%;">Manchester United: 318M€   Départs: 103M€   Arrivées : 214M€</div>`)[0];
+                popup_ebd4c9f0aab1b5fe2a6b48a03a96a0c2.setContent(html_d3eb78d248b575f428f2488e28043ff3);
+            
+        
+
+        circle_marker_61ac360c58999b8732be7d22611074fe.bindPopup(popup_ebd4c9f0aab1b5fe2a6b48a03a96a0c2)
+        ;
+
+        
+    
+    
+            var feature_group_8cd67e85269412d8e66c6753088fbee1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_87e5421b9dd2e3ee08e23ecd3e01e7bc = L.polyline.antPath(
+              [[53.463062, -2.29134], [53.777907, -1.572868]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_8cd67e85269412d8e66c6753088fbee1);
+        
+    
+        var popup_69b7248c531bcd0d2724f617649c63c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a27afb7bb3056c4dbdecd8e9ec98403b = $(`<div id="html_a27afb7bb3056c4dbdecd8e9ec98403b" style="width: 100.0%; height: 100.0%;">Joueur: Aaron Wan-Bissaka   17600.0</div>`)[0];
+                popup_69b7248c531bcd0d2724f617649c63c9.setContent(html_a27afb7bb3056c4dbdecd8e9ec98403b);
+            
+        
+
+        ant_path_87e5421b9dd2e3ee08e23ecd3e01e7bc.bindPopup(popup_69b7248c531bcd0d2724f617649c63c9)
+        ;
+
+        
+    
+    
+            ant_path_0de2ef53b0fcc81996ded26b2f4c54cb = L.polyline.antPath(
+              [[53.463062, -2.29134], [53.789152, -2.230662]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_8cd67e85269412d8e66c6753088fbee1);
+        
+    
+        var popup_7a3cbe58957c9f243fc105df071d35e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78eac1619e6413a96b6a09783ebd844e = $(`<div id="html_78eac1619e6413a96b6a09783ebd844e" style="width: 100.0%; height: 100.0%;">Joueur: Aníbal   6400.0</div>`)[0];
+                popup_7a3cbe58957c9f243fc105df071d35e0.setContent(html_78eac1619e6413a96b6a09783ebd844e);
+            
+        
+
+        ant_path_0de2ef53b0fcc81996ded26b2f4c54cb.bindPopup(popup_7a3cbe58957c9f243fc105df071d35e0)
+        ;
+
+        
+    
+    
+            var circle_marker_218e1a295031bf34705b65f880cce692 = L.circleMarker(
+                [51.481667, -0.190833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_080172e65112b6349fa6e0519602ea8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b3bed106f02d9d454abada3cd8de2af = $(`<div id="html_7b3bed106f02d9d454abada3cd8de2af" style="width: 100.0%; height: 100.0%;">Chelsea FC: 436M€   Départs: 198M€   Arrivées : 238M€</div>`)[0];
+                popup_080172e65112b6349fa6e0519602ea8d.setContent(html_7b3bed106f02d9d454abada3cd8de2af);
+            
+        
+
+        circle_marker_218e1a295031bf34705b65f880cce692.bindPopup(popup_080172e65112b6349fa6e0519602ea8d)
+        ;
+
+        
+    
+    
+            var feature_group_ef75f5447412157a2339c2caf9672c94 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_d440b66ef04efbf54ac3dfad6c3ad584 = L.polyline.antPath(
+              [[51.481667, -0.190833], [51.554888, -0.108438]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_98448beb86161192366e41eb598a66af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66af347f86d2c276ad00c44e4a1f6b9a = $(`<div id="html_66af347f86d2c276ad00c44e4a1f6b9a" style="width: 100.0%; height: 100.0%;">Joueur: Raheem Sterling   loan transfer</div>`)[0];
+                popup_98448beb86161192366e41eb598a66af.setContent(html_66af347f86d2c276ad00c44e4a1f6b9a);
+            
+        
+
+        ant_path_d440b66ef04efbf54ac3dfad6c3ad584.bindPopup(popup_98448beb86161192366e41eb598a66af)
+        ;
+
+        
+    
+    
+            ant_path_b95c001278a845dc135d33d30358b2d2 = L.polyline.antPath(
+              [[51.481667, -0.190833], [53.438787, -2.966298]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_a600d65cc10f553f7926ca4e4d970f31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8da2695ff73414ced4f87595a3a4df5e = $(`<div id="html_8da2695ff73414ced4f87595a3a4df5e" style="width: 100.0%; height: 100.0%;">Joueur: Armando Broja   loan transfer</div>`)[0];
+                popup_a600d65cc10f553f7926ca4e4d970f31.setContent(html_8da2695ff73414ced4f87595a3a4df5e);
+            
+        
+
+        ant_path_b95c001278a845dc135d33d30358b2d2.bindPopup(popup_a600d65cc10f553f7926ca4e4d970f31)
+        ;
+
+        
+    
+    
+            ant_path_00e9851ec11bbbdd798b92264e11745a = L.polyline.antPath(
+              [[51.481667, -0.190833], [51.398333, -0.085278]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_6f764546d392b5a8f5a40937fcc66416 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c7f5e224e3e8159581d9cd841640e3a = $(`<div id="html_6c7f5e224e3e8159581d9cd841640e3a" style="width: 100.0%; height: 100.0%;">Joueur: Trevoh Chalobah   loan transfer</div>`)[0];
+                popup_6f764546d392b5a8f5a40937fcc66416.setContent(html_6c7f5e224e3e8159581d9cd841640e3a);
+            
+        
+
+        ant_path_00e9851ec11bbbdd798b92264e11745a.bindPopup(popup_6f764546d392b5a8f5a40937fcc66416)
+        ;
+
+        
+    
+    
+            ant_path_cbfad8a2327f7ada9e57a105489e053a = L.polyline.antPath(
+              [[51.481667, -0.190833], [52.509064, -1.884357]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_0deb36a2f890a57df2aafbc8060160dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e3ade5b1240b45ffbdcc67f316f7bfa = $(`<div id="html_4e3ade5b1240b45ffbdcc67f316f7bfa" style="width: 100.0%; height: 100.0%;">Joueur: Ian Maatsen   44500.0</div>`)[0];
+                popup_0deb36a2f890a57df2aafbc8060160dc.setContent(html_4e3ade5b1240b45ffbdcc67f316f7bfa);
+            
+        
+
+        ant_path_cbfad8a2327f7ada9e57a105489e053a.bindPopup(popup_0deb36a2f890a57df2aafbc8060160dc)
+        ;
+
+        
+    
+    
+            ant_path_69694dc955a850e94e5c4e6ce6f851ac = L.polyline.antPath(
+              [[51.481667, -0.190833], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_8fc3e71fe8dd113d4916b8f9cca348e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6db925a4cca7b91e84e5dcabb8765e74 = $(`<div id="html_6db925a4cca7b91e84e5dcabb8765e74" style="width: 100.0%; height: 100.0%;">Joueur: Omari Hutchinson   23500.0</div>`)[0];
+                popup_8fc3e71fe8dd113d4916b8f9cca348e0.setContent(html_6db925a4cca7b91e84e5dcabb8765e74);
+            
+        
+
+        ant_path_69694dc955a850e94e5c4e6ce6f851ac.bindPopup(popup_8fc3e71fe8dd113d4916b8f9cca348e0)
+        ;
+
+        
+    
+    
+            ant_path_8bbe2d143ca9d0d7b06684e90550586d = L.polyline.antPath(
+              [[51.481667, -0.190833], [53.789152, -2.230662]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_881c133e617cb2f80c01140004d99a42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3a64f9d5c8bfb0f2ecfd5e7289e7e0c = $(`<div id="html_e3a64f9d5c8bfb0f2ecfd5e7289e7e0c" style="width: 100.0%; height: 100.0%;">Joueur: Bashir Humphreys   loan transfer</div>`)[0];
+                popup_881c133e617cb2f80c01140004d99a42.setContent(html_e3a64f9d5c8bfb0f2ecfd5e7289e7e0c);
+            
+        
+
+        ant_path_8bbe2d143ca9d0d7b06684e90550586d.bindPopup(popup_881c133e617cb2f80c01140004d99a42)
+        ;
+
+        
+    
+    
+            ant_path_d0d9c9ee142ebbc9d6901470cdc53a7d = L.polyline.antPath(
+              [[51.481667, -0.190833], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_ee52dbbe909a36c3be118a18d9d079da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b957fcff26eae0bceb4b87f085b17c9d = $(`<div id="html_b957fcff26eae0bceb4b87f085b17c9d" style="width: 100.0%; height: 100.0%;">Joueur: Eddie Beach   loan transfer</div>`)[0];
+                popup_ee52dbbe909a36c3be118a18d9d079da.setContent(html_b957fcff26eae0bceb4b87f085b17c9d);
+            
+        
+
+        ant_path_d0d9c9ee142ebbc9d6901470cdc53a7d.bindPopup(popup_ee52dbbe909a36c3be118a18d9d079da)
+        ;
+
+        
+    
+    
+            ant_path_20daf8f06a471b54474f515ba9ca7c64 = L.polyline.antPath(
+              [[51.474434, -0.221405], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_644575690f195b0853a888ee638e052e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd0b600f0023e823a3b204f041e5577c = $(`<div id="html_bd0b600f0023e823a3b204f041e5577c" style="width: 100.0%; height: 100.0%;">Joueur: Tosin Adarabioyo   free transfer</div>`)[0];
+                popup_644575690f195b0853a888ee638e052e.setContent(html_bd0b600f0023e823a3b204f041e5577c);
+            
+        
+
+        ant_path_20daf8f06a471b54474f515ba9ca7c64.bindPopup(popup_644575690f195b0853a888ee638e052e)
+        ;
+
+        
+    
+    
+            ant_path_9d0dbd2bfc044a9112296294572f2763 = L.polyline.antPath(
+              [[51.554888, -0.108438], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_967ea11a906302251e90e70a0b443a56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d51bb2cbf0b4e8dae9a243e846b7215 = $(`<div id="html_8d51bb2cbf0b4e8dae9a243e846b7215" style="width: 100.0%; height: 100.0%;">Joueur: Raheem Sterling   End of loanMay 31, 2025</div>`)[0];
+                popup_967ea11a906302251e90e70a0b443a56.setContent(html_8d51bb2cbf0b4e8dae9a243e846b7215);
+            
+        
+
+        ant_path_9d0dbd2bfc044a9112296294572f2763.bindPopup(popup_967ea11a906302251e90e70a0b443a56)
+        ;
+
+        
+    
+    
+            ant_path_32fe452fad667ec798846a15af259873 = L.polyline.antPath(
+              [[53.438787, -2.966298], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_649f217ec0a24a195eda181c8ea52032 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_702be1b70b129a29bb44aeba18c77a94 = $(`<div id="html_702be1b70b129a29bb44aeba18c77a94" style="width: 100.0%; height: 100.0%;">Joueur: Armando Broja   End of loanMay 31, 2025</div>`)[0];
+                popup_649f217ec0a24a195eda181c8ea52032.setContent(html_702be1b70b129a29bb44aeba18c77a94);
+            
+        
+
+        ant_path_32fe452fad667ec798846a15af259873.bindPopup(popup_649f217ec0a24a195eda181c8ea52032)
+        ;
+
+        
+    
+    
+            ant_path_cc05992e86483f97dc3e285308952355 = L.polyline.antPath(
+              [[51.398333, -0.085278], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_e6cd016a7629427912de91070e6972b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf2649f3a4b0fb24aae7d52f5ef886a2 = $(`<div id="html_bf2649f3a4b0fb24aae7d52f5ef886a2" style="width: 100.0%; height: 100.0%;">Joueur: Trevoh Chalobah   End of loanMay 31, 2025</div>`)[0];
+                popup_e6cd016a7629427912de91070e6972b5.setContent(html_bf2649f3a4b0fb24aae7d52f5ef886a2);
+            
+        
+
+        ant_path_cc05992e86483f97dc3e285308952355.bindPopup(popup_e6cd016a7629427912de91070e6972b5)
+        ;
+
+        
+    
+    
+            ant_path_41dd86f1491fbf7d384f3cd8884d2579 = L.polyline.antPath(
+              [[50.735204, -1.838137], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_76fa1833e0082db7f7eb5feceab3a36a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51a6a3a55620f459f55cecbf2c451274 = $(`<div id="html_51a6a3a55620f459f55cecbf2c451274" style="width: 100.0%; height: 100.0%;">Joueur: Kepa Arrizabalaga   End of loanMay 31, 2025</div>`)[0];
+                popup_76fa1833e0082db7f7eb5feceab3a36a.setContent(html_51a6a3a55620f459f55cecbf2c451274);
+            
+        
+
+        ant_path_41dd86f1491fbf7d384f3cd8884d2579.bindPopup(popup_76fa1833e0082db7f7eb5feceab3a36a)
+        ;
+
+        
+    
+    
+            ant_path_ab6d0a8f487c92e5afaf329da7d45260 = L.polyline.antPath(
+              [[53.370277, -1.470833], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_06302bab2cbdaa511fef356c99139eaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2edafaa7eba7e9d77551967678a089a4 = $(`<div id="html_2edafaa7eba7e9d77551967678a089a4" style="width: 100.0%; height: 100.0%;">Joueur: Alfie Gilchrist   End of loanMay 31, 2025</div>`)[0];
+                popup_06302bab2cbdaa511fef356c99139eaa.setContent(html_2edafaa7eba7e9d77551967678a089a4);
+            
+        
+
+        ant_path_ab6d0a8f487c92e5afaf329da7d45260.bindPopup(popup_06302bab2cbdaa511fef356c99139eaa)
+        ;
+
+        
+    
+    
+            ant_path_ac83d5e84d36088994244f2a491c76dc = L.polyline.antPath(
+              [[53.789152, -2.230662], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_05f262b67c799e476db42a3398cdb40a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_853b3e5c09a1abb31e438b34f56cee9b = $(`<div id="html_853b3e5c09a1abb31e438b34f56cee9b" style="width: 100.0%; height: 100.0%;">Joueur: Bashir Humphreys   End of loanMay 31, 2025</div>`)[0];
+                popup_05f262b67c799e476db42a3398cdb40a.setContent(html_853b3e5c09a1abb31e438b34f56cee9b);
+            
+        
+
+        ant_path_ac83d5e84d36088994244f2a491c76dc.bindPopup(popup_05f262b67c799e476db42a3398cdb40a)
+        ;
+
+        
+    
+    
+            ant_path_063b36356d6f7ad51332ff9b9bb6d88c = L.polyline.antPath(
+              [[52.03194, 1.08458], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_7af1851ba2b4dda9adc8604ca6e4917d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b514a6333d2b01ebb0b852946a222b7a = $(`<div id="html_b514a6333d2b01ebb0b852946a222b7a" style="width: 100.0%; height: 100.0%;">Joueur: Eddie Beach   End of loanMay 31, 2025</div>`)[0];
+                popup_7af1851ba2b4dda9adc8604ca6e4917d.setContent(html_b514a6333d2b01ebb0b852946a222b7a);
+            
+        
+
+        ant_path_063b36356d6f7ad51332ff9b9bb6d88c.bindPopup(popup_7af1851ba2b4dda9adc8604ca6e4917d)
+        ;
+
+        
+    
+    
+            ant_path_ec154cf142977477cc4b9fb0f7f5d705 = L.polyline.antPath(
+              [[52.62037, -1.142196], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_ef75f5447412157a2339c2caf9672c94);
+        
+    
+        var popup_41740006414130d28384cfa498dda650 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_588e585638e80ad875e0c702982611db = $(`<div id="html_588e585638e80ad875e0c702982611db" style="width: 100.0%; height: 100.0%;">Joueur: Kiernan Dewsbury-Hall   35400.0</div>`)[0];
+                popup_41740006414130d28384cfa498dda650.setContent(html_588e585638e80ad875e0c702982611db);
+            
+        
+
+        ant_path_ec154cf142977477cc4b9fb0f7f5d705.bindPopup(popup_41740006414130d28384cfa498dda650)
+        ;
+
+        
+    
+    
+            var circle_marker_a7f0584f334161a2d8cb778f417327d7 = L.circleMarker(
+                [51.554888, -0.108438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_50c8d2d7cbd0cf8d5c0d2a835b839b87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5216f2be13cb2f21a5094a17766c5c9c = $(`<div id="html_5216f2be13cb2f21a5094a17766c5c9c" style="width: 100.0%; height: 100.0%;">Arsenal FC: 193M€   Départs: 84M€   Arrivées : 109M€</div>`)[0];
+                popup_50c8d2d7cbd0cf8d5c0d2a835b839b87.setContent(html_5216f2be13cb2f21a5094a17766c5c9c);
+            
+        
+
+        circle_marker_a7f0584f334161a2d8cb778f417327d7.bindPopup(popup_50c8d2d7cbd0cf8d5c0d2a835b839b87)
+        ;
+
+        
+    
+    
+            var feature_group_b402ff90f15498398a5d2eb46143279d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_e881aadac3edaf9166837405d40d4767 = L.polyline.antPath(
+              [[51.554888, -0.108438], [51.398333, -0.085278]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b402ff90f15498398a5d2eb46143279d);
+        
+    
+        var popup_d3e705864802e752aef9ec6b6235a651 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3fc34d41f9265a718ac37d74d2a4351 = $(`<div id="html_f3fc34d41f9265a718ac37d74d2a4351" style="width: 100.0%; height: 100.0%;">Joueur: Eddie Nketiah   29700.0</div>`)[0];
+                popup_d3e705864802e752aef9ec6b6235a651.setContent(html_f3fc34d41f9265a718ac37d74d2a4351);
+            
+        
+
+        ant_path_e881aadac3edaf9166837405d40d4767.bindPopup(popup_d3e705864802e752aef9ec6b6235a651)
+        ;
+
+        
+    
+    
+            ant_path_2644fa73dbb755a60d87f1998d80d2c7 = L.polyline.antPath(
+              [[51.554888, -0.108438], [51.474434, -0.221405]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b402ff90f15498398a5d2eb46143279d);
+        
+    
+        var popup_8a3b26374a6db6b7985401c8a3ab353b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fef014a0689af4e04ecd0056c29f54c5 = $(`<div id="html_fef014a0689af4e04ecd0056c29f54c5" style="width: 100.0%; height: 100.0%;">Joueur: Reiss Nelson   loan transfer</div>`)[0];
+                popup_8a3b26374a6db6b7985401c8a3ab353b.setContent(html_fef014a0689af4e04ecd0056c29f54c5);
+            
+        
+
+        ant_path_2644fa73dbb755a60d87f1998d80d2c7.bindPopup(popup_8a3b26374a6db6b7985401c8a3ab353b)
+        ;
+
+        
+    
+    
+            ant_path_0bd6789b24dccc61e3839d1b7667085a = L.polyline.antPath(
+              [[51.554888, -0.108438], [51.29258, -0.17195]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b402ff90f15498398a5d2eb46143279d);
+        
+    
+        var popup_a32ece1f9d63981664c66bafa4a42b14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cfe30535961537e7faac30c6fe699a6 = $(`<div id="html_8cfe30535961537e7faac30c6fe699a6" style="width: 100.0%; height: 100.0%;">Joueur: David Raya   End of loanJun 30, 2024</div>`)[0];
+                popup_a32ece1f9d63981664c66bafa4a42b14.setContent(html_8cfe30535961537e7faac30c6fe699a6);
+            
+        
+
+        ant_path_0bd6789b24dccc61e3839d1b7667085a.bindPopup(popup_a32ece1f9d63981664c66bafa4a42b14)
+        ;
+
+        
+    
+    
+            ant_path_9083276c354716a90260944a2849ec20 = L.polyline.antPath(
+              [[51.481667, -0.190833], [51.554888, -0.108438]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b402ff90f15498398a5d2eb46143279d);
+        
+    
+        var popup_190cfd8c6f85dcb106c157b1f7f0becd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dfac5f22e72ce38822c4f2d1bbf415d = $(`<div id="html_9dfac5f22e72ce38822c4f2d1bbf415d" style="width: 100.0%; height: 100.0%;">Joueur: Raheem Sterling   loan transfer</div>`)[0];
+                popup_190cfd8c6f85dcb106c157b1f7f0becd.setContent(html_9dfac5f22e72ce38822c4f2d1bbf415d);
+            
+        
+
+        ant_path_9083276c354716a90260944a2849ec20.bindPopup(popup_190cfd8c6f85dcb106c157b1f7f0becd)
+        ;
+
+        
+    
+    
+            ant_path_1f9cf0a6949c93877932aa5dad39f939 = L.polyline.antPath(
+              [[52.939583, -1.132472], [51.554888, -0.108438]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b402ff90f15498398a5d2eb46143279d);
+        
+    
+        var popup_6d7301be7b167fa3904f6d77bcb9e394 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89c79b7a020c2604cb7206f1d0d3ba5d = $(`<div id="html_89c79b7a020c2604cb7206f1d0d3ba5d" style="width: 100.0%; height: 100.0%;">Joueur: Nuno Tavares   End of loanJun 30, 2024</div>`)[0];
+                popup_6d7301be7b167fa3904f6d77bcb9e394.setContent(html_89c79b7a020c2604cb7206f1d0d3ba5d);
+            
+        
+
+        ant_path_1f9cf0a6949c93877932aa5dad39f939.bindPopup(popup_6d7301be7b167fa3904f6d77bcb9e394)
+        ;
+
+        
+    
+    
+            var circle_marker_49d5cb94ee09ebcfa3cd0783fe44b008 = L.circleMarker(
+                [51.603231, -0.065735],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_00e9a4f14161ae3ee7a2cf2df623bf32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a06e91febe221da39853d453cb75b0b3 = $(`<div id="html_a06e91febe221da39853d453cb75b0b3" style="width: 100.0%; height: 100.0%;">Tottenham Hotspur: 204M€   Départs: 55M€   Arrivées : 149M€</div>`)[0];
+                popup_00e9a4f14161ae3ee7a2cf2df623bf32.setContent(html_a06e91febe221da39853d453cb75b0b3);
+            
+        
+
+        circle_marker_49d5cb94ee09ebcfa3cd0783fe44b008.bindPopup(popup_00e9a4f14161ae3ee7a2cf2df623bf32)
+        ;
+
+        
+    
+    
+            var feature_group_b078cb03d079782a2ff5bbbf72100605 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_37081b6f472146f3b5f3afd48c47accf = L.polyline.antPath(
+              [[51.603231, -0.065735], [51.474434, -0.221405]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b078cb03d079782a2ff5bbbf72100605);
+        
+    
+        var popup_61700585775f251bf9ae165b47099d0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d0a8d5a457d965e68ee63793963b94d = $(`<div id="html_1d0a8d5a457d965e68ee63793963b94d" style="width: 100.0%; height: 100.0%;">Joueur: Ryan Sessegnon   free transfer</div>`)[0];
+                popup_61700585775f251bf9ae165b47099d0e.setContent(html_1d0a8d5a457d965e68ee63793963b94d);
+            
+        
+
+        ant_path_37081b6f472146f3b5f3afd48c47accf.bindPopup(popup_61700585775f251bf9ae165b47099d0e)
+        ;
+
+        
+    
+    
+            ant_path_cd8984319ac5277fb2ccf944524a8f7f = L.polyline.antPath(
+              [[51.603231, -0.065735], [53.777907, -1.572868]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b078cb03d079782a2ff5bbbf72100605);
+        
+    
+        var popup_1615be87720d94e2f520814ff58d67b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77c47d606d4b7a0c6c42121e63fcff59 = $(`<div id="html_77c47d606d4b7a0c6c42121e63fcff59" style="width: 100.0%; height: 100.0%;">Joueur: Manor Solomon   loan transfer</div>`)[0];
+                popup_1615be87720d94e2f520814ff58d67b0.setContent(html_77c47d606d4b7a0c6c42121e63fcff59);
+            
+        
+
+        ant_path_cd8984319ac5277fb2ccf944524a8f7f.bindPopup(popup_1615be87720d94e2f520814ff58d67b0)
+        ;
+
+        
+    
+    
+            ant_path_4a7cd5610dcbd22aaac5a269e3de1b0e = L.polyline.antPath(
+              [[51.603231, -0.065735], [53.777907, -1.572868]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b078cb03d079782a2ff5bbbf72100605);
+        
+    
+        var popup_386e5659c04e9be87b946aa5f3c12e1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_407ffa02c8f72389c5d6fd53ca7ffd41 = $(`<div id="html_407ffa02c8f72389c5d6fd53ca7ffd41" style="width: 100.0%; height: 100.0%;">Joueur: Joe Rodon   11800.0</div>`)[0];
+                popup_386e5659c04e9be87b946aa5f3c12e1f.setContent(html_407ffa02c8f72389c5d6fd53ca7ffd41);
+            
+        
+
+        ant_path_4a7cd5610dcbd22aaac5a269e3de1b0e.bindPopup(popup_386e5659c04e9be87b946aa5f3c12e1f)
+        ;
+
+        
+    
+    
+            ant_path_a2d49976d5c48eb1333f98d3979b4463 = L.polyline.antPath(
+              [[51.603231, -0.065735], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b078cb03d079782a2ff5bbbf72100605);
+        
+    
+        var popup_f8849bb97f1b80cf5218071b05eb420a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_035e4c496bc2666701c48a15e6207487 = $(`<div id="html_035e4c496bc2666701c48a15e6207487" style="width: 100.0%; height: 100.0%;">Joueur: Oliver Skipp   23500.0</div>`)[0];
+                popup_f8849bb97f1b80cf5218071b05eb420a.setContent(html_035e4c496bc2666701c48a15e6207487);
+            
+        
+
+        ant_path_a2d49976d5c48eb1333f98d3979b4463.bindPopup(popup_f8849bb97f1b80cf5218071b05eb420a)
+        ;
+
+        
+    
+    
+            ant_path_8a58bd19aa42b06aaa053f3ce84912ef = L.polyline.antPath(
+              [[53.777907, -1.572868], [51.603231, -0.065735]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b078cb03d079782a2ff5bbbf72100605);
+        
+    
+        var popup_1a1c442b1583a96e38fc863c0895c047 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75f5a33f37f8b9e58a5e7955bcdc499b = $(`<div id="html_75f5a33f37f8b9e58a5e7955bcdc499b" style="width: 100.0%; height: 100.0%;">Joueur: Archie Gray   41250.0</div>`)[0];
+                popup_1a1c442b1583a96e38fc863c0895c047.setContent(html_75f5a33f37f8b9e58a5e7955bcdc499b);
+            
+        
+
+        ant_path_8a58bd19aa42b06aaa053f3ce84912ef.bindPopup(popup_1a1c442b1583a96e38fc863c0895c047)
+        ;
+
+        
+    
+    
+            ant_path_65466d970018c0bbc7f9569acb3b189b = L.polyline.antPath(
+              [[53.777907, -1.572868], [51.603231, -0.065735]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b078cb03d079782a2ff5bbbf72100605);
+        
+    
+        var popup_2e4ac3f075cc4a02b5a44c6db5850529 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae6a6f63575a35a306c0adbd74eedc18 = $(`<div id="html_ae6a6f63575a35a306c0adbd74eedc18" style="width: 100.0%; height: 100.0%;">Joueur: Manor Solomon   End of loanMay 31, 2025</div>`)[0];
+                popup_2e4ac3f075cc4a02b5a44c6db5850529.setContent(html_ae6a6f63575a35a306c0adbd74eedc18);
+            
+        
+
+        ant_path_65466d970018c0bbc7f9569acb3b189b.bindPopup(popup_2e4ac3f075cc4a02b5a44c6db5850529)
+        ;
+
+        
+    
+    
+            ant_path_b57db6844b405cf417c9338719573cee = L.polyline.antPath(
+              [[53.789152, -2.230662], [51.603231, -0.065735]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b078cb03d079782a2ff5bbbf72100605);
+        
+    
+        var popup_db100dc3f92233b444645b4b9ad3e750 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c14a0431ffecf18a017aef30d4acb26f = $(`<div id="html_c14a0431ffecf18a017aef30d4acb26f" style="width: 100.0%; height: 100.0%;">Joueur: Wilson Odobert   29300.0</div>`)[0];
+                popup_db100dc3f92233b444645b4b9ad3e750.setContent(html_c14a0431ffecf18a017aef30d4acb26f);
+            
+        
+
+        ant_path_b57db6844b405cf417c9338719573cee.bindPopup(popup_db100dc3f92233b444645b4b9ad3e750)
+        ;
+
+        
+    
+    
+            var circle_marker_49f9390778861d9997f038ed53d35f57 = L.circleMarker(
+                [53.430829, -2.96083],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_6b6802c0e15a45aa8bcea23b623c4227 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1dca8befd7dd30dcc0a6037c9a6b2b0 = $(`<div id="html_c1dca8befd7dd30dcc0a6037c9a6b2b0" style="width: 100.0%; height: 100.0%;">Liverpool FC: 89M€   Départs: 47M€   Arrivées : 42M€</div>`)[0];
+                popup_6b6802c0e15a45aa8bcea23b623c4227.setContent(html_c1dca8befd7dd30dcc0a6037c9a6b2b0);
+            
+        
+
+        circle_marker_49f9390778861d9997f038ed53d35f57.bindPopup(popup_6b6802c0e15a45aa8bcea23b623c4227)
+        ;
+
+        
+    
+    
+            var feature_group_b9d6686f2cba9c817c7100738f38cf44 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_19048442e204e84b24c0b142102838a0 = L.polyline.antPath(
+              [[53.430829, -2.96083], [51.29258, -0.17195]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b9d6686f2cba9c817c7100738f38cf44);
+        
+    
+        var popup_786dbe0d33bed15e62a5804a0cd5a44c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a962ce2bfd4435fc440a173a33ed233f = $(`<div id="html_a962ce2bfd4435fc440a173a33ed233f" style="width: 100.0%; height: 100.0%;">Joueur: Fábio Carvalho   23400.0</div>`)[0];
+                popup_786dbe0d33bed15e62a5804a0cd5a44c.setContent(html_a962ce2bfd4435fc440a173a33ed233f);
+            
+        
+
+        ant_path_19048442e204e84b24c0b142102838a0.bindPopup(popup_786dbe0d33bed15e62a5804a0cd5a44c)
+        ;
+
+        
+    
+    
+            var circle_marker_070a074de69c7f811e80ac8daf00958c = L.circleMarker(
+                [53.438787, -2.966298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_a1dc4c1a9998e3d00875b1c7e462e122 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0b89bc73fb7b110cc8721bfab0a7028 = $(`<div id="html_b0b89bc73fb7b110cc8721bfab0a7028" style="width: 100.0%; height: 100.0%;">Everton FC: 134M€   Départs: 84M€   Arrivées : 50M€</div>`)[0];
+                popup_a1dc4c1a9998e3d00875b1c7e462e122.setContent(html_b0b89bc73fb7b110cc8721bfab0a7028);
+            
+        
+
+        circle_marker_070a074de69c7f811e80ac8daf00958c.bindPopup(popup_a1dc4c1a9998e3d00875b1c7e462e122)
+        ;
+
+        
+    
+    
+            var feature_group_30cea7b99b187608121f1ce2c837844d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_d580a802d64daac41fb1999b02227a27 = L.polyline.antPath(
+              [[53.438787, -2.966298], [52.509064, -1.884357]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_30cea7b99b187608121f1ce2c837844d);
+        
+    
+        var popup_080f1a17c456c416c7b09f747da2414b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b543b273f144c8e300bcbfb83581dd1c = $(`<div id="html_b543b273f144c8e300bcbfb83581dd1c" style="width: 100.0%; height: 100.0%;">Joueur: Lewis Dobbin   11800.0</div>`)[0];
+                popup_080f1a17c456c416c7b09f747da2414b.setContent(html_b543b273f144c8e300bcbfb83581dd1c);
+            
+        
+
+        ant_path_d580a802d64daac41fb1999b02227a27.bindPopup(popup_080f1a17c456c416c7b09f747da2414b)
+        ;
+
+        
+    
+    
+            ant_path_8225f15206c18d290586a1c9d9b1ae74 = L.polyline.antPath(
+              [[53.438787, -2.966298], [52.509064, -1.884357]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_30cea7b99b187608121f1ce2c837844d);
+        
+    
+        var popup_6dc3e8efde8f9a5306a69a9c63766dae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d287ab327621cc7c489638c6f2581186 = $(`<div id="html_d287ab327621cc7c489638c6f2581186" style="width: 100.0%; height: 100.0%;">Joueur: Amadou Onana   59350.0</div>`)[0];
+                popup_6dc3e8efde8f9a5306a69a9c63766dae.setContent(html_d287ab327621cc7c489638c6f2581186);
+            
+        
+
+        ant_path_8225f15206c18d290586a1c9d9b1ae74.bindPopup(popup_6dc3e8efde8f9a5306a69a9c63766dae)
+        ;
+
+        
+    
+    
+            ant_path_082d0a130d2c355036b32593b114a10d = L.polyline.antPath(
+              [[51.481667, -0.190833], [53.438787, -2.966298]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_30cea7b99b187608121f1ce2c837844d);
+        
+    
+        var popup_5b740df7b5a4b8f39f1a8ec90ff73ea6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6021660470ea933b0c929260e3e9355 = $(`<div id="html_d6021660470ea933b0c929260e3e9355" style="width: 100.0%; height: 100.0%;">Joueur: Armando Broja   loan transfer</div>`)[0];
+                popup_5b740df7b5a4b8f39f1a8ec90ff73ea6.setContent(html_d6021660470ea933b0c929260e3e9355);
+            
+        
+
+        ant_path_082d0a130d2c355036b32593b114a10d.bindPopup(popup_5b740df7b5a4b8f39f1a8ec90ff73ea6)
+        ;
+
+        
+    
+    
+            ant_path_2e0c2a2a1b6583aab48a36dcc152d4fa = L.polyline.antPath(
+              [[51.29258, -0.17195], [53.438787, -2.966298]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_30cea7b99b187608121f1ce2c837844d);
+        
+    
+        var popup_6801be798f6801a469971480a4bb668a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ebb363c985b233f07c467a778a98721 = $(`<div id="html_5ebb363c985b233f07c467a778a98721" style="width: 100.0%; height: 100.0%;">Joueur: Neal Maupay   End of loanJun 30, 2024</div>`)[0];
+                popup_6801be798f6801a469971480a4bb668a.setContent(html_5ebb363c985b233f07c467a778a98721);
+            
+        
+
+        ant_path_2e0c2a2a1b6583aab48a36dcc152d4fa.bindPopup(popup_6801be798f6801a469971480a4bb668a)
+        ;
+
+        
+    
+    
+            ant_path_7ec4cf285671a56a2169d6016d4e587b = L.polyline.antPath(
+              [[52.509064, -1.884357], [53.438787, -2.966298]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_30cea7b99b187608121f1ce2c837844d);
+        
+    
+        var popup_db9295d8c8b8c8ff664efb220a066329 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_390ac896fb3be33fe2767b1864b05b86 = $(`<div id="html_390ac896fb3be33fe2767b1864b05b86" style="width: 100.0%; height: 100.0%;">Joueur: Tim Iroegbunam   10700.0</div>`)[0];
+                popup_db9295d8c8b8c8ff664efb220a066329.setContent(html_390ac896fb3be33fe2767b1864b05b86);
+            
+        
+
+        ant_path_7ec4cf285671a56a2169d6016d4e587b.bindPopup(popup_db9295d8c8b8c8ff664efb220a066329)
+        ;
+
+        
+    
+    
+            var circle_marker_c05a462db3cc66de02ecbca383fb2b29 = L.circleMarker(
+                [53.777907, -1.572868],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_3be0da8573f0d3cf06d73b4cd682f0de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_319d9db9d3f82aaf6afeefd8aa0a837b = $(`<div id="html_319d9db9d3f82aaf6afeefd8aa0a837b" style="width: 100.0%; height: 100.0%;">Leeds United: 0M€   Départs: 0M€   Arrivées : 0M€</div>`)[0];
+                popup_3be0da8573f0d3cf06d73b4cd682f0de.setContent(html_319d9db9d3f82aaf6afeefd8aa0a837b);
+            
+        
+
+        circle_marker_c05a462db3cc66de02ecbca383fb2b29.bindPopup(popup_3be0da8573f0d3cf06d73b4cd682f0de)
+        ;
+
+        
+    
+    
+            var circle_marker_486101f706732f52fc0a1f3bf6367853 = L.circleMarker(
+                [52.590275, -2.130423],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_903fff8ea00db7764dc989968f3bc8fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f007e64cd48f069778904c542a07e28d = $(`<div id="html_f007e64cd48f069778904c542a07e28d" style="width: 100.0%; height: 100.0%;">Wolverhampton Wanderers: 187M€   Départs: 112M€   Arrivées : 74M€</div>`)[0];
+                popup_903fff8ea00db7764dc989968f3bc8fb.setContent(html_f007e64cd48f069778904c542a07e28d);
+            
+        
+
+        circle_marker_486101f706732f52fc0a1f3bf6367853.bindPopup(popup_903fff8ea00db7764dc989968f3bc8fb)
+        ;
+
+        
+    
+    
+            var feature_group_a3dc6b5b74f0f74573c5121674cd2ef3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_a50cc06d1bb74a34fe08a78aca95ed11 = L.polyline.antPath(
+              [[52.590275, -2.130423], [51.538611, 0.012778]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_a3dc6b5b74f0f74573c5121674cd2ef3);
+        
+    
+        var popup_7d108f106945898c5a97ff67d5eee1b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ec78634c4fdfe208b75a9d43d08e3b2 = $(`<div id="html_1ec78634c4fdfe208b75a9d43d08e3b2" style="width: 100.0%; height: 100.0%;">Joueur: Maximilian Kilman   47500.0</div>`)[0];
+                popup_7d108f106945898c5a97ff67d5eee1b1.setContent(html_1ec78634c4fdfe208b75a9d43d08e3b2);
+            
+        
+
+        ant_path_a50cc06d1bb74a34fe08a78aca95ed11.bindPopup(popup_7d108f106945898c5a97ff67d5eee1b1)
+        ;
+
+        
+    
+    
+            ant_path_35cc0fa690a64e07ea0df46dd8f8e493 = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.590275, -2.130423]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_a3dc6b5b74f0f74573c5121674cd2ef3);
+        
+    
+        var popup_9fc8daafc69d1c1ebf00cbe4f1636810 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bfd2bcbe2af074c357c4261768f813c = $(`<div id="html_8bfd2bcbe2af074c357c4261768f813c" style="width: 100.0%; height: 100.0%;">Joueur: Sam Johnstone   11900.0</div>`)[0];
+                popup_9fc8daafc69d1c1ebf00cbe4f1636810.setContent(html_8bfd2bcbe2af074c357c4261768f813c);
+            
+        
+
+        ant_path_35cc0fa690a64e07ea0df46dd8f8e493.bindPopup(popup_9fc8daafc69d1c1ebf00cbe4f1636810)
+        ;
+
+        
+    
+    
+            ant_path_ed66016a01aeec642ec09c30a64d4d69 = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.590275, -2.130423]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_a3dc6b5b74f0f74573c5121674cd2ef3);
+        
+    
+        var popup_f28d69863d83c4dee72a97d1017351db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f61bb5be40c579c1d30154c41801b24e = $(`<div id="html_f61bb5be40c579c1d30154c41801b24e" style="width: 100.0%; height: 100.0%;">Joueur: Daniel Podence   End of loanJun 30, 2024</div>`)[0];
+                popup_f28d69863d83c4dee72a97d1017351db.setContent(html_f61bb5be40c579c1d30154c41801b24e);
+            
+        
+
+        ant_path_ed66016a01aeec642ec09c30a64d4d69.bindPopup(popup_f28d69863d83c4dee72a97d1017351db)
+        ;
+
+        
+    
+    
+            ant_path_1a0801a1ebe8da1312847946afd10c02 = L.polyline.antPath(
+              [[53.483959, -2.242631], [52.590275, -2.130423]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_a3dc6b5b74f0f74573c5121674cd2ef3);
+        
+    
+        var popup_99ebca55928652da9bfcfe023d7e3913 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06b91df4ccd931911508a6795f7fedcb = $(`<div id="html_06b91df4ccd931911508a6795f7fedcb" style="width: 100.0%; height: 100.0%;">Joueur: Tommy Doyle   5000.0</div>`)[0];
+                popup_99ebca55928652da9bfcfe023d7e3913.setContent(html_06b91df4ccd931911508a6795f7fedcb);
+            
+        
+
+        ant_path_1a0801a1ebe8da1312847946afd10c02.bindPopup(popup_99ebca55928652da9bfcfe023d7e3913)
+        ;
+
+        
+    
+    
+            var circle_marker_e89fda535b6a6df48e173b975b0bc54c = L.circleMarker(
+                [52.62037, -1.142196],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_e5a71bdc43b768bd3af71ab27648f7d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfa11b9145bdfb0362c1acec25968231 = $(`<div id="html_cfa11b9145bdfb0362c1acec25968231" style="width: 100.0%; height: 100.0%;">Leicester City: 121M€   Départs: 35M€   Arrivées : 86M€</div>`)[0];
+                popup_e5a71bdc43b768bd3af71ab27648f7d4.setContent(html_cfa11b9145bdfb0362c1acec25968231);
+            
+        
+
+        circle_marker_e89fda535b6a6df48e173b975b0bc54c.bindPopup(popup_e5a71bdc43b768bd3af71ab27648f7d4)
+        ;
+
+        
+    
+    
+            var feature_group_d411741014627ac4dfa556d56c68272d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_83501b210ded5c836139b5abdc6365e0 = L.polyline.antPath(
+              [[52.62037, -1.142196], [53.370277, -1.470833]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d411741014627ac4dfa556d56c68272d);
+        
+    
+        var popup_41994655fc4e2baee7a6ab728bf019a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_877c024c169fe996191568b614b068e0 = $(`<div id="html_877c024c169fe996191568b614b068e0" style="width: 100.0%; height: 100.0%;">Joueur: Harry Souttar   loan transfer</div>`)[0];
+                popup_41994655fc4e2baee7a6ab728bf019a3.setContent(html_877c024c169fe996191568b614b068e0);
+            
+        
+
+        ant_path_83501b210ded5c836139b5abdc6365e0.bindPopup(popup_41994655fc4e2baee7a6ab728bf019a3)
+        ;
+
+        
+    
+    
+            ant_path_f8aaa18f3518e72142dff9ed62022517 = L.polyline.antPath(
+              [[52.62037, -1.142196], [51.398333, -0.085278]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d411741014627ac4dfa556d56c68272d);
+        
+    
+        var popup_c91cb19eff16a41139a77940d87de2e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_143dc334310b6e19361820d379c44047 = $(`<div id="html_143dc334310b6e19361820d379c44047" style="width: 100.0%; height: 100.0%;">Joueur: Dany Mota   loan transfer</div>`)[0];
+                popup_c91cb19eff16a41139a77940d87de2e0.setContent(html_143dc334310b6e19361820d379c44047);
+            
+        
+
+        ant_path_f8aaa18f3518e72142dff9ed62022517.bindPopup(popup_c91cb19eff16a41139a77940d87de2e0)
+        ;
+
+        
+    
+    
+            ant_path_a9c0a33296aa99fb730d79e3fbcfe92b = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d411741014627ac4dfa556d56c68272d);
+        
+    
+        var popup_1d4b78af6fc73a6a8a72ae5cf34863c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be789ee22fe25e13eceb56ea343971e5 = $(`<div id="html_be789ee22fe25e13eceb56ea343971e5" style="width: 100.0%; height: 100.0%;">Joueur: Odsonne Edouard   loan transfer</div>`)[0];
+                popup_1d4b78af6fc73a6a8a72ae5cf34863c9.setContent(html_be789ee22fe25e13eceb56ea343971e5);
+            
+        
+
+        ant_path_a9c0a33296aa99fb730d79e3fbcfe92b.bindPopup(popup_1d4b78af6fc73a6a8a72ae5cf34863c9)
+        ;
+
+        
+    
+    
+            ant_path_41f8f01ed79fb9e5b7ed5896e6bda2b3 = L.polyline.antPath(
+              [[53.370277, -1.470833], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d411741014627ac4dfa556d56c68272d);
+        
+    
+        var popup_6aa7d4c2f70b91f001e53e02de8d80e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e6c58d9e8da7c1d61eb84026bed33ac = $(`<div id="html_2e6c58d9e8da7c1d61eb84026bed33ac" style="width: 100.0%; height: 100.0%;">Joueur: Harry Souttar   End of loanMay 31, 2025</div>`)[0];
+                popup_6aa7d4c2f70b91f001e53e02de8d80e0.setContent(html_2e6c58d9e8da7c1d61eb84026bed33ac);
+            
+        
+
+        ant_path_41f8f01ed79fb9e5b7ed5896e6bda2b3.bindPopup(popup_6aa7d4c2f70b91f001e53e02de8d80e0)
+        ;
+
+        
+    
+    
+            ant_path_1a3c61b7b46b12cc47fca0803cc2b887 = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d411741014627ac4dfa556d56c68272d);
+        
+    
+        var popup_1524331b6779d9b76320a82bac1b0ce0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4f347fe10a95415686c93bc26ce061d = $(`<div id="html_d4f347fe10a95415686c93bc26ce061d" style="width: 100.0%; height: 100.0%;">Joueur: Jordan Ayew   5900.0</div>`)[0];
+                popup_1524331b6779d9b76320a82bac1b0ce0.setContent(html_d4f347fe10a95415686c93bc26ce061d);
+            
+        
+
+        ant_path_1a3c61b7b46b12cc47fca0803cc2b887.bindPopup(popup_1524331b6779d9b76320a82bac1b0ce0)
+        ;
+
+        
+    
+    
+            var circle_marker_bf6cc65cdbedfac912d47a52699e16d3 = L.circleMarker(
+                [52.509064, -1.884357],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_d911fd0e96a0a547b4e0bc387753e229 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cffdcf1114e69b7f67351b69d748060 = $(`<div id="html_6cffdcf1114e69b7f67351b69d748060" style="width: 100.0%; height: 100.0%;">Aston Villa: 321M€   Départs: 145M€   Arrivées : 176M€</div>`)[0];
+                popup_d911fd0e96a0a547b4e0bc387753e229.setContent(html_6cffdcf1114e69b7f67351b69d748060);
+            
+        
+
+        circle_marker_bf6cc65cdbedfac912d47a52699e16d3.bindPopup(popup_d911fd0e96a0a547b4e0bc387753e229)
+        ;
+
+        
+    
+    
+            var feature_group_3fc5974e0eca2476356b65683a9991db = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_50b16d6518038ac6b1bf000187135c2e = L.polyline.antPath(
+              [[52.509064, -1.884357], [53.438787, -2.966298]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3fc5974e0eca2476356b65683a9991db);
+        
+    
+        var popup_ed836ab771d2dcfe5ebf67b4452c65ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b41a2c6362d3ae210da3011f3acfe62 = $(`<div id="html_0b41a2c6362d3ae210da3011f3acfe62" style="width: 100.0%; height: 100.0%;">Joueur: Tim Iroegbunam   10700.0</div>`)[0];
+                popup_ed836ab771d2dcfe5ebf67b4452c65ab.setContent(html_0b41a2c6362d3ae210da3011f3acfe62);
+            
+        
+
+        ant_path_50b16d6518038ac6b1bf000187135c2e.bindPopup(popup_ed836ab771d2dcfe5ebf67b4452c65ab)
+        ;
+
+        
+    
+    
+            ant_path_7339bc04a327970b49d34b16d5f213ec = L.polyline.antPath(
+              [[52.509064, -1.884357], [52.939583, -1.132472]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3fc5974e0eca2476356b65683a9991db);
+        
+    
+        var popup_4d752f3fca968240576cc52cc777f34b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef4476ebc2347ce8ec6fdbd1e3f56744 = $(`<div id="html_ef4476ebc2347ce8ec6fdbd1e3f56744" style="width: 100.0%; height: 100.0%;">Joueur: Álex Moreno   loan transfer</div>`)[0];
+                popup_4d752f3fca968240576cc52cc777f34b.setContent(html_ef4476ebc2347ce8ec6fdbd1e3f56744);
+            
+        
+
+        ant_path_7339bc04a327970b49d34b16d5f213ec.bindPopup(popup_4d752f3fca968240576cc52cc777f34b)
+        ;
+
+        
+    
+    
+            ant_path_ec020aaeba567ec0299d076ec9d5c068 = L.polyline.antPath(
+              [[51.481667, -0.190833], [52.509064, -1.884357]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3fc5974e0eca2476356b65683a9991db);
+        
+    
+        var popup_8a84227f836a2ec03b23d9fc8b0e7818 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1cef4626cbe8cfe44e60c5b9832c1fc = $(`<div id="html_f1cef4626cbe8cfe44e60c5b9832c1fc" style="width: 100.0%; height: 100.0%;">Joueur: Ian Maatsen   44500.0</div>`)[0];
+                popup_8a84227f836a2ec03b23d9fc8b0e7818.setContent(html_f1cef4626cbe8cfe44e60c5b9832c1fc);
+            
+        
+
+        ant_path_ec020aaeba567ec0299d076ec9d5c068.bindPopup(popup_8a84227f836a2ec03b23d9fc8b0e7818)
+        ;
+
+        
+    
+    
+            ant_path_8257c133c4747a54859a7ff20479faf7 = L.polyline.antPath(
+              [[53.438787, -2.966298], [52.509064, -1.884357]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3fc5974e0eca2476356b65683a9991db);
+        
+    
+        var popup_e1f8753cd270fa7f4040d608575b94a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b33997550cf5792214ccea419e124a0d = $(`<div id="html_b33997550cf5792214ccea419e124a0d" style="width: 100.0%; height: 100.0%;">Joueur: Lewis Dobbin   11800.0</div>`)[0];
+                popup_e1f8753cd270fa7f4040d608575b94a8.setContent(html_b33997550cf5792214ccea419e124a0d);
+            
+        
+
+        ant_path_8257c133c4747a54859a7ff20479faf7.bindPopup(popup_e1f8753cd270fa7f4040d608575b94a8)
+        ;
+
+        
+    
+    
+            ant_path_46b8859c268ca913c5728f4c3a12dfbf = L.polyline.antPath(
+              [[52.939583, -1.132472], [52.509064, -1.884357]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3fc5974e0eca2476356b65683a9991db);
+        
+    
+        var popup_2ed6cddfea95244be7b10a5b97943026 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb60b412bfae05ed26962e3226f28079 = $(`<div id="html_bb60b412bfae05ed26962e3226f28079" style="width: 100.0%; height: 100.0%;">Joueur: Álex Moreno   End of loanMay 31, 2025</div>`)[0];
+                popup_2ed6cddfea95244be7b10a5b97943026.setContent(html_bb60b412bfae05ed26962e3226f28079);
+            
+        
+
+        ant_path_46b8859c268ca913c5728f4c3a12dfbf.bindPopup(popup_2ed6cddfea95244be7b10a5b97943026)
+        ;
+
+        
+    
+    
+            ant_path_b20f80c3584388640fc5ea0c40541b96 = L.polyline.antPath(
+              [[52.509064, -1.884357], [52.509064, -1.884357]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3fc5974e0eca2476356b65683a9991db);
+        
+    
+        var popup_3d458131bed8c99af9d26f0834f7e95f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a871a7568cd874fd9aa891e07cb09281 = $(`<div id="html_a871a7568cd874fd9aa891e07cb09281" style="width: 100.0%; height: 100.0%;">Joueur: Lamare Bogarde   -</div>`)[0];
+                popup_3d458131bed8c99af9d26f0834f7e95f.setContent(html_a871a7568cd874fd9aa891e07cb09281);
+            
+        
+
+        ant_path_b20f80c3584388640fc5ea0c40541b96.bindPopup(popup_3d458131bed8c99af9d26f0834f7e95f)
+        ;
+
+        
+    
+    
+            var circle_marker_ccc4953637752df0d46c8ea48aba5a55 = L.circleMarker(
+                [54.975556, -1.621667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_307600152dac91978b39dd7e8e639af8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8106166b8dc38d68f73acf8117b7a851 = $(`<div id="html_8106166b8dc38d68f73acf8117b7a851" style="width: 100.0%; height: 100.0%;">Newcastle United: 144M€   Départs: 76M€   Arrivées : 68M€</div>`)[0];
+                popup_307600152dac91978b39dd7e8e639af8.setContent(html_8106166b8dc38d68f73acf8117b7a851);
+            
+        
+
+        circle_marker_ccc4953637752df0d46c8ea48aba5a55.bindPopup(popup_307600152dac91978b39dd7e8e639af8)
+        ;
+
+        
+    
+    
+            var feature_group_66af54cfbacb3f28aedbc8403cb3c091 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_b44cb24b85c729f90667a08e09a3260e = L.polyline.antPath(
+              [[54.975556, -1.621667], [50.860911, -0.083689]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_66af54cfbacb3f28aedbc8403cb3c091);
+        
+    
+        var popup_5283382dac4977d30ecf8e78bcf4f621 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3eb6bcf8d21e4a143117897ee931e25 = $(`<div id="html_e3eb6bcf8d21e4a143117897ee931e25" style="width: 100.0%; height: 100.0%;">Joueur: Yankuba Minteh   35000.0</div>`)[0];
+                popup_5283382dac4977d30ecf8e78bcf4f621.setContent(html_e3eb6bcf8d21e4a143117897ee931e25);
+            
+        
+
+        ant_path_b44cb24b85c729f90667a08e09a3260e.bindPopup(popup_5283382dac4977d30ecf8e78bcf4f621)
+        ;
+
+        
+    
+    
+            ant_path_21fc755382ce1b21945df72bcae1f9cb = L.polyline.antPath(
+              [[54.975556, -1.621667], [51.481667, -0.190833]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_66af54cfbacb3f28aedbc8403cb3c091);
+        
+    
+        var popup_6fbdc34bbabaf6c6d449e9c7dbba0ae4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20e5dfe7ae5b23a22ef8e80c41a56181 = $(`<div id="html_20e5dfe7ae5b23a22ef8e80c41a56181" style="width: 100.0%; height: 100.0%;">Joueur: Lewis Hall   End of loanJun 30, 2024</div>`)[0];
+                popup_6fbdc34bbabaf6c6d449e9c7dbba0ae4.setContent(html_20e5dfe7ae5b23a22ef8e80c41a56181);
+            
+        
+
+        ant_path_21fc755382ce1b21945df72bcae1f9cb.bindPopup(popup_6fbdc34bbabaf6c6d449e9c7dbba0ae4)
+        ;
+
+        
+    
+    
+            ant_path_ae1435de4cc487c9b8e9b4e340b0cc8e = L.polyline.antPath(
+              [[54.975556, -1.621667], [53.777907, -1.572868]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_66af54cfbacb3f28aedbc8403cb3c091);
+        
+    
+        var popup_7ccbbb1c027edceb9ba111f092828dcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe9a1775310eb60fe13fd40a4b14478d = $(`<div id="html_fe9a1775310eb60fe13fd40a4b14478d" style="width: 100.0%; height: 100.0%;">Joueur: Kelland Watts   free transfer</div>`)[0];
+                popup_7ccbbb1c027edceb9ba111f092828dcb.setContent(html_fe9a1775310eb60fe13fd40a4b14478d);
+            
+        
+
+        ant_path_ae1435de4cc487c9b8e9b4e340b0cc8e.bindPopup(popup_7ccbbb1c027edceb9ba111f092828dcb)
+        ;
+
+        
+    
+    
+            ant_path_446a693acdee4c5960e118d052c329d5 = L.polyline.antPath(
+              [[52.939583, -1.132472], [54.975556, -1.621667]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_66af54cfbacb3f28aedbc8403cb3c091);
+        
+    
+        var popup_0cf27fae09be1131fc62d96f662751f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0f55cfc2e706fdd4d3d5641c36f49d4 = $(`<div id="html_b0f55cfc2e706fdd4d3d5641c36f49d4" style="width: 100.0%; height: 100.0%;">Joueur: Odysseas Vlachodimos   23600.0</div>`)[0];
+                popup_0cf27fae09be1131fc62d96f662751f7.setContent(html_b0f55cfc2e706fdd4d3d5641c36f49d4);
+            
+        
+
+        ant_path_446a693acdee4c5960e118d052c329d5.bindPopup(popup_0cf27fae09be1131fc62d96f662751f7)
+        ;
+
+        
+    
+    
+            ant_path_87fc482caf50819dfb3e5cad65e17c46 = L.polyline.antPath(
+              [[50.735204, -1.838137], [54.975556, -1.621667]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_66af54cfbacb3f28aedbc8403cb3c091);
+        
+    
+        var popup_594e0cefa12237007e992f05dcad3eb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc1e92c78018dadeef93e15e4edeeda6 = $(`<div id="html_cc1e92c78018dadeef93e15e4edeeda6" style="width: 100.0%; height: 100.0%;">Joueur: Lloyd Kelly   free transfer</div>`)[0];
+                popup_594e0cefa12237007e992f05dcad3eb6.setContent(html_cc1e92c78018dadeef93e15e4edeeda6);
+            
+        
+
+        ant_path_87fc482caf50819dfb3e5cad65e17c46.bindPopup(popup_594e0cefa12237007e992f05dcad3eb6)
+        ;
+
+        
+    
+    
+            ant_path_4240a79d01ded0ce5b55dc32a6825cc6 = L.polyline.antPath(
+              [[53.777907, -1.572868], [54.975556, -1.621667]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_66af54cfbacb3f28aedbc8403cb3c091);
+        
+    
+        var popup_4e741b41628852e3aa4c0a68ca269669 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e58fc261d5bb3d014907191caabc041c = $(`<div id="html_e58fc261d5bb3d014907191caabc041c" style="width: 100.0%; height: 100.0%;">Joueur: Yankuba Minteh   End of loanJun 30, 2024</div>`)[0];
+                popup_4e741b41628852e3aa4c0a68ca269669.setContent(html_e58fc261d5bb3d014907191caabc041c);
+            
+        
+
+        ant_path_4240a79d01ded0ce5b55dc32a6825cc6.bindPopup(popup_4e741b41628852e3aa4c0a68ca269669)
+        ;
+
+        
+    
+    
+            var circle_marker_9db83076d659a033cb4b47d9d3762c5a = L.circleMarker(
+                [51.538611, 0.012778],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_a50c91b6fe4af7c4b287da5c18c5b776 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25555b11c17dca7501ada895351ed211 = $(`<div id="html_25555b11c17dca7501ada895351ed211" style="width: 100.0%; height: 100.0%;">West Ham United: 189M€   Départs: 45M€   Arrivées : 144M€</div>`)[0];
+                popup_a50c91b6fe4af7c4b287da5c18c5b776.setContent(html_25555b11c17dca7501ada895351ed211);
+            
+        
+
+        circle_marker_9db83076d659a033cb4b47d9d3762c5a.bindPopup(popup_a50c91b6fe4af7c4b287da5c18c5b776)
+        ;
+
+        
+    
+    
+            var feature_group_87d60ea4f3f24073a1dfe78ec06f10a6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_7511fbfa3350b6d73820ce083db46341 = L.polyline.antPath(
+              [[51.538611, 0.012778], [52.939583, -1.132472]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_87d60ea4f3f24073a1dfe78ec06f10a6);
+        
+    
+        var popup_3ee855274565ed9ae886b58c4549cf77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a99345b8bae3527f4d4c44a1af79ea50 = $(`<div id="html_a99345b8bae3527f4d4c44a1af79ea50" style="width: 100.0%; height: 100.0%;">Joueur: James Ward-Prowse   loan transfer</div>`)[0];
+                popup_3ee855274565ed9ae886b58c4549cf77.setContent(html_a99345b8bae3527f4d4c44a1af79ea50);
+            
+        
+
+        ant_path_7511fbfa3350b6d73820ce083db46341.bindPopup(popup_3ee855274565ed9ae886b58c4549cf77)
+        ;
+
+        
+    
+    
+            ant_path_05d21855a5c7289f4bc0a4055e460c67 = L.polyline.antPath(
+              [[51.538611, 0.012778], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_87d60ea4f3f24073a1dfe78ec06f10a6);
+        
+    
+        var popup_9f84ff586b093a418cb3acc69a9bb716 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d30bdf3f9447d55bc6f7160a7fac0cf = $(`<div id="html_8d30bdf3f9447d55bc6f7160a7fac0cf" style="width: 100.0%; height: 100.0%;">Joueur: Maxwel Cornet   loan transfer</div>`)[0];
+                popup_9f84ff586b093a418cb3acc69a9bb716.setContent(html_8d30bdf3f9447d55bc6f7160a7fac0cf);
+            
+        
+
+        ant_path_05d21855a5c7289f4bc0a4055e460c67.bindPopup(popup_9f84ff586b093a418cb3acc69a9bb716)
+        ;
+
+        
+    
+    
+            ant_path_746c23147e0fb879ba1914122a5ec372 = L.polyline.antPath(
+              [[51.538611, 0.012778], [53.483959, -2.242631]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_87d60ea4f3f24073a1dfe78ec06f10a6);
+        
+    
+        var popup_588884143a54aaed9cf4acc5bc7b59a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83d5ff7e157ce0b0c2684e3836572de9 = $(`<div id="html_83d5ff7e157ce0b0c2684e3836572de9" style="width: 100.0%; height: 100.0%;">Joueur: Kalvin Phillips   End of loanJun 30, 2024</div>`)[0];
+                popup_588884143a54aaed9cf4acc5bc7b59a0.setContent(html_83d5ff7e157ce0b0c2684e3836572de9);
+            
+        
+
+        ant_path_746c23147e0fb879ba1914122a5ec372.bindPopup(popup_588884143a54aaed9cf4acc5bc7b59a0)
+        ;
+
+        
+    
+    
+            ant_path_44b0630ff02414f3af057027df1d9a9d = L.polyline.antPath(
+              [[51.538611, 0.012778], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_87d60ea4f3f24073a1dfe78ec06f10a6);
+        
+    
+        var popup_be87538a75f7e9a49b3b6ceb1349ebe7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68e902bdd1541bdd07c2a4bfa6d7f05f = $(`<div id="html_68e902bdd1541bdd07c2a4bfa6d7f05f" style="width: 100.0%; height: 100.0%;">Joueur: Ben Johnson   free transfer</div>`)[0];
+                popup_be87538a75f7e9a49b3b6ceb1349ebe7.setContent(html_68e902bdd1541bdd07c2a4bfa6d7f05f);
+            
+        
+
+        ant_path_44b0630ff02414f3af057027df1d9a9d.bindPopup(popup_be87538a75f7e9a49b3b6ceb1349ebe7)
+        ;
+
+        
+    
+    
+            ant_path_994bb216b6163166bfe6af1798ed553d = L.polyline.antPath(
+              [[53.777907, -1.572868], [51.538611, 0.012778]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_87d60ea4f3f24073a1dfe78ec06f10a6);
+        
+    
+        var popup_e9b595755950508e3fcc10e5a7a5b6a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6cc5017777e23d6b02fc9e3bceda49d = $(`<div id="html_c6cc5017777e23d6b02fc9e3bceda49d" style="width: 100.0%; height: 100.0%;">Joueur: Crysencio Summerville   29300.0</div>`)[0];
+                popup_e9b595755950508e3fcc10e5a7a5b6a4.setContent(html_c6cc5017777e23d6b02fc9e3bceda49d);
+            
+        
+
+        ant_path_994bb216b6163166bfe6af1798ed553d.bindPopup(popup_e9b595755950508e3fcc10e5a7a5b6a4)
+        ;
+
+        
+    
+    
+            var circle_marker_99e6108a5d79893b2ed045e3c5d587e2 = L.circleMarker(
+                [51.398333, -0.085278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_3c9009d54bcd22099b6d027f1d25e13b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e6b9f425a0a968a4a2a0d7fd30557f4 = $(`<div id="html_5e6b9f425a0a968a4a2a0d7fd30557f4" style="width: 100.0%; height: 100.0%;">Crystal Palace: 178M€   Départs: 101M€   Arrivées : 78M€</div>`)[0];
+                popup_3c9009d54bcd22099b6d027f1d25e13b.setContent(html_5e6b9f425a0a968a4a2a0d7fd30557f4);
+            
+        
+
+        circle_marker_99e6108a5d79893b2ed045e3c5d587e2.bindPopup(popup_3c9009d54bcd22099b6d027f1d25e13b)
+        ;
+
+        
+    
+    
+            var feature_group_b3d117d0fb4e504c780bb45d6ccb61b2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_8e16875e34be9367b19d612cce5a3c18 = L.polyline.antPath(
+              [[51.398333, -0.085278], [51.474434, -0.221405]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b3d117d0fb4e504c780bb45d6ccb61b2);
+        
+    
+        var popup_68c8f53b44377b38f27d06a1cebafba3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b8399eaa28cf467b0415eb8825be3fa = $(`<div id="html_8b8399eaa28cf467b0415eb8825be3fa" style="width: 100.0%; height: 100.0%;">Joueur: Joachim Andersen   29500.0</div>`)[0];
+                popup_68c8f53b44377b38f27d06a1cebafba3.setContent(html_8b8399eaa28cf467b0415eb8825be3fa);
+            
+        
+
+        ant_path_8e16875e34be9367b19d612cce5a3c18.bindPopup(popup_68c8f53b44377b38f27d06a1cebafba3)
+        ;
+
+        
+    
+    
+            ant_path_ab6dc759737846e42ea38c98ce2cbacd = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b3d117d0fb4e504c780bb45d6ccb61b2);
+        
+    
+        var popup_c1c514e48101a7d48e84110a006b6478 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6228359329ee2e4970fedf8f298bd046 = $(`<div id="html_6228359329ee2e4970fedf8f298bd046" style="width: 100.0%; height: 100.0%;">Joueur: Jordan Ayew   5900.0</div>`)[0];
+                popup_c1c514e48101a7d48e84110a006b6478.setContent(html_6228359329ee2e4970fedf8f298bd046);
+            
+        
+
+        ant_path_ab6dc759737846e42ea38c98ce2cbacd.bindPopup(popup_c1c514e48101a7d48e84110a006b6478)
+        ;
+
+        
+    
+    
+            ant_path_7b43775101ee74ccf4191604a6c3565f = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b3d117d0fb4e504c780bb45d6ccb61b2);
+        
+    
+        var popup_782f07fc68b9ffd1232ef41b3531a1f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e52e0a9641afb9d0d32e5ae992c6c1f = $(`<div id="html_7e52e0a9641afb9d0d32e5ae992c6c1f" style="width: 100.0%; height: 100.0%;">Joueur: Joseph Whitworth   loan transfer</div>`)[0];
+                popup_782f07fc68b9ffd1232ef41b3531a1f0.setContent(html_7e52e0a9641afb9d0d32e5ae992c6c1f);
+            
+        
+
+        ant_path_7b43775101ee74ccf4191604a6c3565f.bindPopup(popup_782f07fc68b9ffd1232ef41b3531a1f0)
+        ;
+
+        
+    
+    
+            ant_path_36dfb3c492ad6f9ed2e13e5a0157a371 = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b3d117d0fb4e504c780bb45d6ccb61b2);
+        
+    
+        var popup_bd1dc45b4cbc225a56b63d3b47be4e16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2957427d449a54b26acf9344d72390b5 = $(`<div id="html_2957427d449a54b26acf9344d72390b5" style="width: 100.0%; height: 100.0%;">Joueur: Odsonne Édouard   loan transfer</div>`)[0];
+                popup_bd1dc45b4cbc225a56b63d3b47be4e16.setContent(html_2957427d449a54b26acf9344d72390b5);
+            
+        
+
+        ant_path_36dfb3c492ad6f9ed2e13e5a0157a371.bindPopup(popup_bd1dc45b4cbc225a56b63d3b47be4e16)
+        ;
+
+        
+    
+    
+            ant_path_5a86b1dbdfeee62283dae0c43aab42cd = L.polyline.antPath(
+              [[51.481667, -0.190833], [51.398333, -0.085278]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b3d117d0fb4e504c780bb45d6ccb61b2);
+        
+    
+        var popup_9704615924bc0685e520beca9d9dc511 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a0174dc65dbbabf26ce0364bb84494c = $(`<div id="html_9a0174dc65dbbabf26ce0364bb84494c" style="width: 100.0%; height: 100.0%;">Joueur: Trevoh Chalobah   loan transfer</div>`)[0];
+                popup_9704615924bc0685e520beca9d9dc511.setContent(html_9a0174dc65dbbabf26ce0364bb84494c);
+            
+        
+
+        ant_path_5a86b1dbdfeee62283dae0c43aab42cd.bindPopup(popup_9704615924bc0685e520beca9d9dc511)
+        ;
+
+        
+    
+    
+            ant_path_c312e20acd78fd2e7e874573d12aa0cc = L.polyline.antPath(
+              [[53.777907, -1.572868], [51.398333, -0.085278]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_b3d117d0fb4e504c780bb45d6ccb61b2);
+        
+    
+        var popup_1d5d5b5e26656fe27c1cb3a1179f6c6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03d7a15c4385bc57c5047fdda969cc34 = $(`<div id="html_03d7a15c4385bc57c5047fdda969cc34" style="width: 100.0%; height: 100.0%;">Joueur: Malcolm Ebiowei   End of loanMay 31, 2025</div>`)[0];
+                popup_1d5d5b5e26656fe27c1cb3a1179f6c6a.setContent(html_03d7a15c4385bc57c5047fdda969cc34);
+            
+        
+
+        ant_path_c312e20acd78fd2e7e874573d12aa0cc.bindPopup(popup_1d5d5b5e26656fe27c1cb3a1179f6c6a)
+        ;
+
+        
+    
+    
+            var circle_marker_9a661bfc6a0a083fa339a1cd848ed8a9 = L.circleMarker(
+                [52.939583, -1.132472],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_dcb5608179c53c86f7877e78acac9535 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7984e5657601613381e3e819b49f635 = $(`<div id="html_e7984e5657601613381e3e819b49f635" style="width: 100.0%; height: 100.0%;">Nottingham Forest: 192M€   Départs: 87M€   Arrivées : 106M€</div>`)[0];
+                popup_dcb5608179c53c86f7877e78acac9535.setContent(html_e7984e5657601613381e3e819b49f635);
+            
+        
+
+        circle_marker_9a661bfc6a0a083fa339a1cd848ed8a9.bindPopup(popup_dcb5608179c53c86f7877e78acac9535)
+        ;
+
+        
+    
+    
+            var feature_group_25473688e36fcf877d09761f6ea2c69d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_217ebbd398c2b28ba85e82f241910e3e = L.polyline.antPath(
+              [[52.939583, -1.132472], [54.975556, -1.621667]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_25473688e36fcf877d09761f6ea2c69d);
+        
+    
+        var popup_71c034c41e91bc55881f48d261e93ce3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f0229d257fa0634f69c29a3c4a120ae = $(`<div id="html_1f0229d257fa0634f69c29a3c4a120ae" style="width: 100.0%; height: 100.0%;">Joueur: Odysseas Vlachodimos   23600.0</div>`)[0];
+                popup_71c034c41e91bc55881f48d261e93ce3.setContent(html_1f0229d257fa0634f69c29a3c4a120ae);
+            
+        
+
+        ant_path_217ebbd398c2b28ba85e82f241910e3e.bindPopup(popup_71c034c41e91bc55881f48d261e93ce3)
+        ;
+
+        
+    
+    
+            ant_path_b28e0fa35506cf4def4fe4cb2075d233 = L.polyline.antPath(
+              [[52.939583, -1.132472], [52.509064, -1.884357]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_25473688e36fcf877d09761f6ea2c69d);
+        
+    
+        var popup_59c8c34282adf659327169bc20183a9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4fa4cb9dbefecf3e8b2585546d426a9 = $(`<div id="html_b4fa4cb9dbefecf3e8b2585546d426a9" style="width: 100.0%; height: 100.0%;">Joueur: Álex Moreno   End of loanMay 31, 2025</div>`)[0];
+                popup_59c8c34282adf659327169bc20183a9b.setContent(html_b4fa4cb9dbefecf3e8b2585546d426a9);
+            
+        
+
+        ant_path_b28e0fa35506cf4def4fe4cb2075d233.bindPopup(popup_59c8c34282adf659327169bc20183a9b)
+        ;
+
+        
+    
+    
+            ant_path_16f74075e6849a442b9e0bb6ab1b9fb9 = L.polyline.antPath(
+              [[52.939583, -1.132472], [51.398333, -0.085278]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_25473688e36fcf877d09761f6ea2c69d);
+        
+    
+        var popup_6d939956149b3e5fa941d025f2807851 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_874279a0e4675b257df7c35710f69168 = $(`<div id="html_874279a0e4675b257df7c35710f69168" style="width: 100.0%; height: 100.0%;">Joueur: Matt Turner   loan transfer</div>`)[0];
+                popup_6d939956149b3e5fa941d025f2807851.setContent(html_874279a0e4675b257df7c35710f69168);
+            
+        
+
+        ant_path_16f74075e6849a442b9e0bb6ab1b9fb9.bindPopup(popup_6d939956149b3e5fa941d025f2807851)
+        ;
+
+        
+    
+    
+            ant_path_9a945fe6782990b638925eede26e8ffd = L.polyline.antPath(
+              [[52.939583, -1.132472], [51.398333, -0.085278]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_25473688e36fcf877d09761f6ea2c69d);
+        
+    
+        var popup_72f57f00655f7e6e705022995d24cf09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7ceac5de303a255962646ed2b233882 = $(`<div id="html_d7ceac5de303a255962646ed2b233882" style="width: 100.0%; height: 100.0%;">Joueur: Marko Lazetić   loan transfer</div>`)[0];
+                popup_72f57f00655f7e6e705022995d24cf09.setContent(html_d7ceac5de303a255962646ed2b233882);
+            
+        
+
+        ant_path_9a945fe6782990b638925eede26e8ffd.bindPopup(popup_72f57f00655f7e6e705022995d24cf09)
+        ;
+
+        
+    
+    
+            ant_path_4b809ff6a166d990dc8f02e8276caeb8 = L.polyline.antPath(
+              [[51.538611, 0.012778], [52.939583, -1.132472]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_25473688e36fcf877d09761f6ea2c69d);
+        
+    
+        var popup_ea56635377d0214936c75b1219c66b3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e74a66e4bd269de48ccdeb6f30a8700e = $(`<div id="html_e74a66e4bd269de48ccdeb6f30a8700e" style="width: 100.0%; height: 100.0%;">Joueur: James Ward-Prowse   loan transfer</div>`)[0];
+                popup_ea56635377d0214936c75b1219c66b3b.setContent(html_e74a66e4bd269de48ccdeb6f30a8700e);
+            
+        
+
+        ant_path_4b809ff6a166d990dc8f02e8276caeb8.bindPopup(popup_ea56635377d0214936c75b1219c66b3b)
+        ;
+
+        
+    
+    
+            ant_path_97737bdc5a6db20da70a5e8342b55102 = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.939583, -1.132472]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_25473688e36fcf877d09761f6ea2c69d);
+        
+    
+        var popup_d457a957f3a0ddf3042e1ca2b3a088d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cfafed8baf21220d2c0e66263b3ef3a = $(`<div id="html_1cfafed8baf21220d2c0e66263b3ef3a" style="width: 100.0%; height: 100.0%;">Joueur: Omar Richards   End of loanJun 30, 2024</div>`)[0];
+                popup_d457a957f3a0ddf3042e1ca2b3a088d7.setContent(html_1cfafed8baf21220d2c0e66263b3ef3a);
+            
+        
+
+        ant_path_97737bdc5a6db20da70a5e8342b55102.bindPopup(popup_d457a957f3a0ddf3042e1ca2b3a088d7)
+        ;
+
+        
+    
+    
+            ant_path_f3a5408ab608885e9b4363dd4b717a2c = L.polyline.antPath(
+              [[51.398333, -0.085278], [52.939583, -1.132472]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_25473688e36fcf877d09761f6ea2c69d);
+        
+    
+        var popup_7cb89c03f7c908f1650de99f2aed4621 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e7714a8bb1c4b5414a67ddda118c5b7 = $(`<div id="html_4e7714a8bb1c4b5414a67ddda118c5b7" style="width: 100.0%; height: 100.0%;">Joueur: Marko Lazetić   5500.0</div>`)[0];
+                popup_7cb89c03f7c908f1650de99f2aed4621.setContent(html_4e7714a8bb1c4b5414a67ddda118c5b7);
+            
+        
+
+        ant_path_f3a5408ab608885e9b4363dd4b717a2c.bindPopup(popup_7cb89c03f7c908f1650de99f2aed4621)
+        ;
+
+        
+    
+    
+            ant_path_7414b5fd28559a6f8569aaba4652a2c4 = L.polyline.antPath(
+              [[52.509064, -1.884357], [52.939583, -1.132472]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_25473688e36fcf877d09761f6ea2c69d);
+        
+    
+        var popup_24fbf14fe6f67e08c99b839874139868 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82999afa0fc3e00cdeb56a2c678f580a = $(`<div id="html_82999afa0fc3e00cdeb56a2c678f580a" style="width: 100.0%; height: 100.0%;">Joueur: Álex Moreno   loan transfer</div>`)[0];
+                popup_24fbf14fe6f67e08c99b839874139868.setContent(html_82999afa0fc3e00cdeb56a2c678f580a);
+            
+        
+
+        ant_path_7414b5fd28559a6f8569aaba4652a2c4.bindPopup(popup_24fbf14fe6f67e08c99b839874139868)
+        ;
+
+        
+    
+    
+            var circle_marker_4e7fe527190f9a319135662a11c67e60 = L.circleMarker(
+                [51.474434, -0.221405],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_73afd26439084fc5dd82c2e5e8358d05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68fceed8c89d13164bcf2ab08ae4e2c2 = $(`<div id="html_68fceed8c89d13164bcf2ab08ae4e2c2" style="width: 100.0%; height: 100.0%;">Fulham FC: 160M€   Départs: 69M€   Arrivées : 92M€</div>`)[0];
+                popup_73afd26439084fc5dd82c2e5e8358d05.setContent(html_68fceed8c89d13164bcf2ab08ae4e2c2);
+            
+        
+
+        circle_marker_4e7fe527190f9a319135662a11c67e60.bindPopup(popup_73afd26439084fc5dd82c2e5e8358d05)
+        ;
+
+        
+    
+    
+            var feature_group_3f5237d64e33431de147da43115c9d7c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_5211b43546a5be5b850a0d0b8db8a229 = L.polyline.antPath(
+              [[51.474434, -0.221405], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3f5237d64e33431de147da43115c9d7c);
+        
+    
+        var popup_4b5d3d7d1181c617f84bc7d4dea8b4fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3472cee1b9ae197c097a18700d9624d7 = $(`<div id="html_3472cee1b9ae197c097a18700d9624d7" style="width: 100.0%; height: 100.0%;">Joueur: Bobby De Cordova-Reid   free transfer</div>`)[0];
+                popup_4b5d3d7d1181c617f84bc7d4dea8b4fa.setContent(html_3472cee1b9ae197c097a18700d9624d7);
+            
+        
+
+        ant_path_5211b43546a5be5b850a0d0b8db8a229.bindPopup(popup_4b5d3d7d1181c617f84bc7d4dea8b4fa)
+        ;
+
+        
+    
+    
+            ant_path_9568e8ba51c7915189bbb7205d3cd6ba = L.polyline.antPath(
+              [[51.398333, -0.085278], [51.474434, -0.221405]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3f5237d64e33431de147da43115c9d7c);
+        
+    
+        var popup_04310ff7e996379bf2c8f7bcadc41e35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73375aa6e14acdfe25c8d97290e792d8 = $(`<div id="html_73375aa6e14acdfe25c8d97290e792d8" style="width: 100.0%; height: 100.0%;">Joueur: Joachim Andersen   29500.0</div>`)[0];
+                popup_04310ff7e996379bf2c8f7bcadc41e35.setContent(html_73375aa6e14acdfe25c8d97290e792d8);
+            
+        
+
+        ant_path_9568e8ba51c7915189bbb7205d3cd6ba.bindPopup(popup_04310ff7e996379bf2c8f7bcadc41e35)
+        ;
+
+        
+    
+    
+            ant_path_a94e420e46c36e7647e37c2e14795b12 = L.polyline.antPath(
+              [[51.554888, -0.108438], [51.474434, -0.221405]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3f5237d64e33431de147da43115c9d7c);
+        
+    
+        var popup_789d9b74375697e35ebbdf81b62f3bed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3988fcdc7754e23ca5a3b3ed4c35244f = $(`<div id="html_3988fcdc7754e23ca5a3b3ed4c35244f" style="width: 100.0%; height: 100.0%;">Joueur: Reiss Nelson   loan transfer</div>`)[0];
+                popup_789d9b74375697e35ebbdf81b62f3bed.setContent(html_3988fcdc7754e23ca5a3b3ed4c35244f);
+            
+        
+
+        ant_path_a94e420e46c36e7647e37c2e14795b12.bindPopup(popup_789d9b74375697e35ebbdf81b62f3bed)
+        ;
+
+        
+    
+    
+            ant_path_93738f259aa25e816b9a2ba857a27823 = L.polyline.antPath(
+              [[53.789152, -2.230662], [51.474434, -0.221405]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3f5237d64e33431de147da43115c9d7c);
+        
+    
+        var popup_eb74081302120cea23ad1af4cce512e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f5b1a76162c992498184adb145fe80c = $(`<div id="html_9f5b1a76162c992498184adb145fe80c" style="width: 100.0%; height: 100.0%;">Joueur: Sander Berge   23550.0</div>`)[0];
+                popup_eb74081302120cea23ad1af4cce512e2.setContent(html_9f5b1a76162c992498184adb145fe80c);
+            
+        
+
+        ant_path_93738f259aa25e816b9a2ba857a27823.bindPopup(popup_eb74081302120cea23ad1af4cce512e2)
+        ;
+
+        
+    
+    
+            ant_path_d17446a95db82010da6d70b8c22b1488 = L.polyline.antPath(
+              [[52.509064, -1.884357], [51.474434, -0.221405]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_3f5237d64e33431de147da43115c9d7c);
+        
+    
+        var popup_66e16c05be06322c50cc0ffa796376d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e26ca4ae7d282de09c2f58ab19c7ca34 = $(`<div id="html_e26ca4ae7d282de09c2f58ab19c7ca34" style="width: 100.0%; height: 100.0%;">Joueur: Terence Kongolo   End of loanJun 30, 2024</div>`)[0];
+                popup_66e16c05be06322c50cc0ffa796376d2.setContent(html_e26ca4ae7d282de09c2f58ab19c7ca34);
+            
+        
+
+        ant_path_d17446a95db82010da6d70b8c22b1488.bindPopup(popup_66e16c05be06322c50cc0ffa796376d2)
+        ;
+
+        
+    
+    
+            var circle_marker_94eaf5756effd7e3f7618d3993f6b136 = L.circleMarker(
+                [50.860911, -0.083689],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_2edcce3f4103ea59387dc4616842cb2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8b88209c23a22f5f58781128cffd789 = $(`<div id="html_c8b88209c23a22f5f58781128cffd789" style="width: 100.0%; height: 100.0%;">Brighton & Hove Albion: 292M€   Départs: 48M€   Arrivées : 244M€</div>`)[0];
+                popup_2edcce3f4103ea59387dc4616842cb2f.setContent(html_c8b88209c23a22f5f58781128cffd789);
+            
+        
+
+        circle_marker_94eaf5756effd7e3f7618d3993f6b136.bindPopup(popup_2edcce3f4103ea59387dc4616842cb2f)
+        ;
+
+        
+    
+    
+            var feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_3ab283075ee7cd36f89b371750542e70 = L.polyline.antPath(
+              [[50.860911, -0.083689], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5);
+        
+    
+        var popup_a610706bb96fc39e94ce62b451257e55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4120ce572ad8fcdb88bc6869b48cb6b0 = $(`<div id="html_4120ce572ad8fcdb88bc6869b48cb6b0" style="width: 100.0%; height: 100.0%;">Joueur: Adam Lallana   free transfer</div>`)[0];
+                popup_a610706bb96fc39e94ce62b451257e55.setContent(html_4120ce572ad8fcdb88bc6869b48cb6b0);
+            
+        
+
+        ant_path_3ab283075ee7cd36f89b371750542e70.bindPopup(popup_a610706bb96fc39e94ce62b451257e55)
+        ;
+
+        
+    
+    
+            ant_path_b31f56b2a652a802424e905043595a4e = L.polyline.antPath(
+              [[50.860911, -0.083689], [52.62037, -1.142196]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5);
+        
+    
+        var popup_f636b5c1a4d78a62b4c840e977270a92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6d67156cee5896eaabf7dcc63a337cc = $(`<div id="html_f6d67156cee5896eaabf7dcc63a337cc" style="width: 100.0%; height: 100.0%;">Joueur: Facundo Buonanotte   loan transfer</div>`)[0];
+                popup_f636b5c1a4d78a62b4c840e977270a92.setContent(html_f6d67156cee5896eaabf7dcc63a337cc);
+            
+        
+
+        ant_path_b31f56b2a652a802424e905043595a4e.bindPopup(popup_f636b5c1a4d78a62b4c840e977270a92)
+        ;
+
+        
+    
+    
+            ant_path_170401b052345b32842952d52795566f = L.polyline.antPath(
+              [[50.860911, -0.083689], [53.789152, -2.230662]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5);
+        
+    
+        var popup_303e22355070b508e8a5121139ef2875 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d0a0278bf5f9f481f74401377cbeb1c = $(`<div id="html_4d0a0278bf5f9f481f74401377cbeb1c" style="width: 100.0%; height: 100.0%;">Joueur: Jeremy Sarmiento   loan transfer</div>`)[0];
+                popup_303e22355070b508e8a5121139ef2875.setContent(html_4d0a0278bf5f9f481f74401377cbeb1c);
+            
+        
+
+        ant_path_170401b052345b32842952d52795566f.bindPopup(popup_303e22355070b508e8a5121139ef2875)
+        ;
+
+        
+    
+    
+            ant_path_6a4bb7642e7ec5db27c872c0d131855b = L.polyline.antPath(
+              [[50.860911, -0.083689], [53.777907, -1.572868]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5);
+        
+    
+        var popup_e24524abd5343b1379af16d2c19b23c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e98c355069d3104c91346a3cea42d315 = $(`<div id="html_e98c355069d3104c91346a3cea42d315" style="width: 100.0%; height: 100.0%;">Joueur: Ibrahim Maza   loan transfer</div>`)[0];
+                popup_e24524abd5343b1379af16d2c19b23c0.setContent(html_e98c355069d3104c91346a3cea42d315);
+            
+        
+
+        ant_path_6a4bb7642e7ec5db27c872c0d131855b.bindPopup(popup_e24524abd5343b1379af16d2c19b23c0)
+        ;
+
+        
+    
+    
+            ant_path_c452ec4c2817dbcd5efa9fc8aaed7f2e = L.polyline.antPath(
+              [[54.975556, -1.621667], [50.860911, -0.083689]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5);
+        
+    
+        var popup_c551a27f24581a9fe0b40540b6dda1e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4eb9a57a76bf19ceeb69116adba7d8e0 = $(`<div id="html_4eb9a57a76bf19ceeb69116adba7d8e0" style="width: 100.0%; height: 100.0%;">Joueur: Yankuba Minteh   35000.0</div>`)[0];
+                popup_c551a27f24581a9fe0b40540b6dda1e4.setContent(html_4eb9a57a76bf19ceeb69116adba7d8e0);
+            
+        
+
+        ant_path_c452ec4c2817dbcd5efa9fc8aaed7f2e.bindPopup(popup_c551a27f24581a9fe0b40540b6dda1e4)
+        ;
+
+        
+    
+    
+            ant_path_48cc1f676e5fc2a5673f87d543a6fbed = L.polyline.antPath(
+              [[53.777907, -1.572868], [50.860911, -0.083689]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5);
+        
+    
+        var popup_6110104069352049d6a2979cd59b617b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_378b0efbb2ee83a93d4cc41f7e0f09e1 = $(`<div id="html_378b0efbb2ee83a93d4cc41f7e0f09e1" style="width: 100.0%; height: 100.0%;">Joueur: Georginio Rutter   46700.0</div>`)[0];
+                popup_6110104069352049d6a2979cd59b617b.setContent(html_378b0efbb2ee83a93d4cc41f7e0f09e1);
+            
+        
+
+        ant_path_48cc1f676e5fc2a5673f87d543a6fbed.bindPopup(popup_6110104069352049d6a2979cd59b617b)
+        ;
+
+        
+    
+    
+            ant_path_455ed6f63f2f3010ab655364b13f1df1 = L.polyline.antPath(
+              [[53.777907, -1.572868], [50.860911, -0.083689]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5);
+        
+    
+        var popup_0bac42fe580e47c3cd5c79f72ec65ebc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32f3a725386d3ac37e572e05e1bc4b3a = $(`<div id="html_32f3a725386d3ac37e572e05e1bc4b3a" style="width: 100.0%; height: 100.0%;">Joueur: Mats Wieffer   32000.0</div>`)[0];
+                popup_0bac42fe580e47c3cd5c79f72ec65ebc.setContent(html_32f3a725386d3ac37e572e05e1bc4b3a);
+            
+        
+
+        ant_path_455ed6f63f2f3010ab655364b13f1df1.bindPopup(popup_0bac42fe580e47c3cd5c79f72ec65ebc)
+        ;
+
+        
+    
+    
+            var circle_marker_dcfda7cadb0d10eb06d6b74329f40ad4 = L.circleMarker(
+                [50.735204, -1.838137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_ca1717198171065ee02cca0a1593ea4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a58910ca3983460401ccd51248dbd37 = $(`<div id="html_0a58910ca3983460401ccd51248dbd37" style="width: 100.0%; height: 100.0%;">AFC Bournemouth: 170M€   Départs: 66M€   Arrivées : 104M€</div>`)[0];
+                popup_ca1717198171065ee02cca0a1593ea4c.setContent(html_0a58910ca3983460401ccd51248dbd37);
+            
+        
+
+        circle_marker_dcfda7cadb0d10eb06d6b74329f40ad4.bindPopup(popup_ca1717198171065ee02cca0a1593ea4c)
+        ;
+
+        
+    
+    
+            var feature_group_2045fa184983f839639e0d4dbde4baf2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_e1790cd1eec3c37ce3ce5db9557394fd = L.polyline.antPath(
+              [[50.735204, -1.838137], [53.370277, -1.470833]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_581d18ab6bce366ebe27cdf20d2b3730 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_964de45a6002a1de67788d0c3e76bf59 = $(`<div id="html_964de45a6002a1de67788d0c3e76bf59" style="width: 100.0%; height: 100.0%;">Joueur: Kieffer Moore   1790.0</div>`)[0];
+                popup_581d18ab6bce366ebe27cdf20d2b3730.setContent(html_964de45a6002a1de67788d0c3e76bf59);
+            
+        
+
+        ant_path_e1790cd1eec3c37ce3ce5db9557394fd.bindPopup(popup_581d18ab6bce366ebe27cdf20d2b3730)
+        ;
+
+        
+    
+    
+            ant_path_e02349a2f8d5d813a67c75ec6b132d4c = L.polyline.antPath(
+              [[50.735204, -1.838137], [51.554888, -0.108438]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_f41a89741efe45526dd7fefcc6f11550 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed28b6c1b2ee03cb38ed314e56e6b7bb = $(`<div id="html_ed28b6c1b2ee03cb38ed314e56e6b7bb" style="width: 100.0%; height: 100.0%;">Joueur: Neto   loan transfer</div>`)[0];
+                popup_f41a89741efe45526dd7fefcc6f11550.setContent(html_ed28b6c1b2ee03cb38ed314e56e6b7bb);
+            
+        
+
+        ant_path_e02349a2f8d5d813a67c75ec6b132d4c.bindPopup(popup_f41a89741efe45526dd7fefcc6f11550)
+        ;
+
+        
+    
+    
+            ant_path_3d6759bb1791b110ba02b4f6ac2ff36e = L.polyline.antPath(
+              [[50.735204, -1.838137], [53.777907, -1.572868]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_d90607d70cd1bc6a56a7727133c3f90b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32655810edff43a2a4ca7ffb3b2c484e = $(`<div id="html_32655810edff43a2a4ca7ffb3b2c484e" style="width: 100.0%; height: 100.0%;">Joueur: Luis Sinisterra   End of loanJun 30, 2024</div>`)[0];
+                popup_d90607d70cd1bc6a56a7727133c3f90b.setContent(html_32655810edff43a2a4ca7ffb3b2c484e);
+            
+        
+
+        ant_path_3d6759bb1791b110ba02b4f6ac2ff36e.bindPopup(popup_d90607d70cd1bc6a56a7727133c3f90b)
+        ;
+
+        
+    
+    
+            ant_path_6b9345eef8d39544d120342f47a9b012 = L.polyline.antPath(
+              [[50.735204, -1.838137], [53.777907, -1.572868]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_4c5645d8602cb763598009c26c4cc143 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbbd46e86ca8d3fd0e2140c06cc2bfc8 = $(`<div id="html_dbbd46e86ca8d3fd0e2140c06cc2bfc8" style="width: 100.0%; height: 100.0%;">Joueur: Joe Rothwell   loan transfer</div>`)[0];
+                popup_4c5645d8602cb763598009c26c4cc143.setContent(html_dbbd46e86ca8d3fd0e2140c06cc2bfc8);
+            
+        
+
+        ant_path_6b9345eef8d39544d120342f47a9b012.bindPopup(popup_4c5645d8602cb763598009c26c4cc143)
+        ;
+
+        
+    
+    
+            ant_path_30af292975fa9028931a2d37b6c908a7 = L.polyline.antPath(
+              [[50.735204, -1.838137], [53.789152, -2.230662]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_e82acf976975e00b47a9cdbf44844580 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecb2d85576b4cb7a3233b16271689c66 = $(`<div id="html_ecb2d85576b4cb7a3233b16271689c66" style="width: 100.0%; height: 100.0%;">Joueur: Jaidon Anthony   loan transfer</div>`)[0];
+                popup_e82acf976975e00b47a9cdbf44844580.setContent(html_ecb2d85576b4cb7a3233b16271689c66);
+            
+        
+
+        ant_path_30af292975fa9028931a2d37b6c908a7.bindPopup(popup_e82acf976975e00b47a9cdbf44844580)
+        ;
+
+        
+    
+    
+            ant_path_53515024e9e834e07fb1dd5a47c08e40 = L.polyline.antPath(
+              [[53.777907, -1.572868], [50.735204, -1.838137]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_4cef6728a493145eb9fc02117a44c0f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc029a4ff05c77d1afeaba56697ae0f1 = $(`<div id="html_dc029a4ff05c77d1afeaba56697ae0f1" style="width: 100.0%; height: 100.0%;">Joueur: Luis Sinisterra   23400.0</div>`)[0];
+                popup_4cef6728a493145eb9fc02117a44c0f3.setContent(html_dc029a4ff05c77d1afeaba56697ae0f1);
+            
+        
+
+        ant_path_53515024e9e834e07fb1dd5a47c08e40.bindPopup(popup_4cef6728a493145eb9fc02117a44c0f3)
+        ;
+
+        
+    
+    
+            ant_path_134a49c8a14211a4b1b13962e9bf2d5b = L.polyline.antPath(
+              [[51.481667, -0.190833], [50.735204, -1.838137]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_aa5821440383194f999caf895e76d49a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33218ed3a8f966c399423ea7cde795ce = $(`<div id="html_33218ed3a8f966c399423ea7cde795ce" style="width: 100.0%; height: 100.0%;">Joueur: Kepa Arrizabalaga   loan transfer</div>`)[0];
+                popup_aa5821440383194f999caf895e76d49a.setContent(html_33218ed3a8f966c399423ea7cde795ce);
+            
+        
+
+        ant_path_134a49c8a14211a4b1b13962e9bf2d5b.bindPopup(popup_aa5821440383194f999caf895e76d49a)
+        ;
+
+        
+    
+    
+            ant_path_f02a0a17c6ace71c4ce41465cca2b6bb = L.polyline.antPath(
+              [[53.777907, -1.572868], [50.735204, -1.838137]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_0cfa4c91caf4d74de840e2504f3b5c32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_621f4bf82f90af1473dabf2b365b52ae = $(`<div id="html_621f4bf82f90af1473dabf2b365b52ae" style="width: 100.0%; height: 100.0%;">Joueur: Joe Rothwell   End of loanMay 31, 2025</div>`)[0];
+                popup_0cfa4c91caf4d74de840e2504f3b5c32.setContent(html_621f4bf82f90af1473dabf2b365b52ae);
+            
+        
+
+        ant_path_f02a0a17c6ace71c4ce41465cca2b6bb.bindPopup(popup_0cfa4c91caf4d74de840e2504f3b5c32)
+        ;
+
+        
+    
+    
+            ant_path_ded4c0a1f7828b3a58cbfbcff5932ca7 = L.polyline.antPath(
+              [[53.789152, -2.230662], [50.735204, -1.838137]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_2045fa184983f839639e0d4dbde4baf2);
+        
+    
+        var popup_ecbbd1362a95aaa5523e12f39887bff3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8ce7669dff112fd1e47ada5b2489997 = $(`<div id="html_c8ce7669dff112fd1e47ada5b2489997" style="width: 100.0%; height: 100.0%;">Joueur: Jaidon Anthony   End of loanMay 31, 2025</div>`)[0];
+                popup_ecbbd1362a95aaa5523e12f39887bff3.setContent(html_c8ce7669dff112fd1e47ada5b2489997);
+            
+        
+
+        ant_path_ded4c0a1f7828b3a58cbfbcff5932ca7.bindPopup(popup_ecbbd1362a95aaa5523e12f39887bff3)
+        ;
+
+        
+    
+    
+            var circle_marker_37b74642753e07b57591eeaa0d55f1b6 = L.circleMarker(
+                [53.789152, -2.230662],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_78e61e659dcc54dc5c56f4060de5525e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b2da9e83302b83682a3528c8e89697a = $(`<div id="html_7b2da9e83302b83682a3528c8e89697a" style="width: 100.0%; height: 100.0%;">Burnley: 0M€   Départs: 0M€   Arrivées : 0M€</div>`)[0];
+                popup_78e61e659dcc54dc5c56f4060de5525e.setContent(html_7b2da9e83302b83682a3528c8e89697a);
+            
+        
+
+        circle_marker_37b74642753e07b57591eeaa0d55f1b6.bindPopup(popup_78e61e659dcc54dc5c56f4060de5525e)
+        ;
+
+        
+    
+    
+            var circle_marker_66762c3c39a4f8067e2c1ed1476d9a63 = L.circleMarker(
+                [53.370277, -1.470833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_55ca030ab662e29f943760a23bb89886 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79b34cf75deb27fc31ed12cf07149614 = $(`<div id="html_79b34cf75deb27fc31ed12cf07149614" style="width: 100.0%; height: 100.0%;">Sheffield United: 0M€   Départs: 0M€   Arrivées : 0M€</div>`)[0];
+                popup_55ca030ab662e29f943760a23bb89886.setContent(html_79b34cf75deb27fc31ed12cf07149614);
+            
+        
+
+        circle_marker_66762c3c39a4f8067e2c1ed1476d9a63.bindPopup(popup_55ca030ab662e29f943760a23bb89886)
+        ;
+
+        
+    
+    
+            var circle_marker_0666e6942fb120d24b24eb0b3dd67660 = L.circleMarker(
+                [52.03194, 1.08458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_cd1e2e7894ce7b1b67481d9185c499e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_560916078febb03586a24760eedd1d0a = $(`<div id="html_560916078febb03586a24760eedd1d0a" style="width: 100.0%; height: 100.0%;">Ipswich Town: 128M€   Départs: 2M€   Arrivées : 126M€</div>`)[0];
+                popup_cd1e2e7894ce7b1b67481d9185c499e5.setContent(html_560916078febb03586a24760eedd1d0a);
+            
+        
+
+        circle_marker_0666e6942fb120d24b24eb0b3dd67660.bindPopup(popup_cd1e2e7894ce7b1b67481d9185c499e5)
+        ;
+
+        
+    
+    
+            var feature_group_d3835f518980c5aab095bac9967406db = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_c54ea0680c20ab2b91a1728e2b58d390 = L.polyline.antPath(
+              [[52.03194, 1.08458], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d3835f518980c5aab095bac9967406db);
+        
+    
+        var popup_3e01f59b54c3fe926e02d3fc4e60f0bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a937215dec4e1dc76e466d136421e82f = $(`<div id="html_a937215dec4e1dc76e466d136421e82f" style="width: 100.0%; height: 100.0%;">Joueur: Lamine Camara   free transfer</div>`)[0];
+                popup_3e01f59b54c3fe926e02d3fc4e60f0bc.setContent(html_a937215dec4e1dc76e466d136421e82f);
+            
+        
+
+        ant_path_c54ea0680c20ab2b91a1728e2b58d390.bindPopup(popup_3e01f59b54c3fe926e02d3fc4e60f0bc)
+        ;
+
+        
+    
+    
+            ant_path_dcc59c7321a35098d7f604870c82465f = L.polyline.antPath(
+              [[52.03194, 1.08458], [53.789152, -2.230662]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d3835f518980c5aab095bac9967406db);
+        
+    
+        var popup_41f583183e39efe14367ec5fa5a53971 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b0402e7fba1f3b3c240357c4155efcf = $(`<div id="html_0b0402e7fba1f3b3c240357c4155efcf" style="width: 100.0%; height: 100.0%;">Joueur: Václav Kadlec   free transfer</div>`)[0];
+                popup_41f583183e39efe14367ec5fa5a53971.setContent(html_0b0402e7fba1f3b3c240357c4155efcf);
+            
+        
+
+        ant_path_dcc59c7321a35098d7f604870c82465f.bindPopup(popup_41f583183e39efe14367ec5fa5a53971)
+        ;
+
+        
+    
+    
+            ant_path_74936da284995869bd85cbd3cf8dcdf4 = L.polyline.antPath(
+              [[53.483959, -2.242631], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d3835f518980c5aab095bac9967406db);
+        
+    
+        var popup_dea2e41335d842ec83898d1cacd33117 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc02ba57d3e16b7a7ed09c3babc3c4f1 = $(`<div id="html_cc02ba57d3e16b7a7ed09c3babc3c4f1" style="width: 100.0%; height: 100.0%;">Joueur: Kalvin Phillips   loan transfer</div>`)[0];
+                popup_dea2e41335d842ec83898d1cacd33117.setContent(html_cc02ba57d3e16b7a7ed09c3babc3c4f1);
+            
+        
+
+        ant_path_74936da284995869bd85cbd3cf8dcdf4.bindPopup(popup_dea2e41335d842ec83898d1cacd33117)
+        ;
+
+        
+    
+    
+            ant_path_77d719e6a4f9e723770d89c2d229bb1d = L.polyline.antPath(
+              [[53.483959, -2.242631], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d3835f518980c5aab095bac9967406db);
+        
+    
+        var popup_a883b1d6bc78fcc4dde235bdd741b484 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf68fa6f65d20bf9df04346ba160a50e = $(`<div id="html_cf68fa6f65d20bf9df04346ba160a50e" style="width: 100.0%; height: 100.0%;">Joueur: Liam Delap   17850.0</div>`)[0];
+                popup_a883b1d6bc78fcc4dde235bdd741b484.setContent(html_cf68fa6f65d20bf9df04346ba160a50e);
+            
+        
+
+        ant_path_77d719e6a4f9e723770d89c2d229bb1d.bindPopup(popup_a883b1d6bc78fcc4dde235bdd741b484)
+        ;
+
+        
+    
+    
+            ant_path_26deb699e696e1ae51f1f7022f7d0e6e = L.polyline.antPath(
+              [[53.789152, -2.230662], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d3835f518980c5aab095bac9967406db);
+        
+    
+        var popup_1cce482eb4181b7bd17acc3bb865c01b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_755fa8c67e13fc50d279830409cf4b37 = $(`<div id="html_755fa8c67e13fc50d279830409cf4b37" style="width: 100.0%; height: 100.0%;">Joueur: Arijanet Muric   9550.0</div>`)[0];
+                popup_1cce482eb4181b7bd17acc3bb865c01b.setContent(html_755fa8c67e13fc50d279830409cf4b37);
+            
+        
+
+        ant_path_26deb699e696e1ae51f1f7022f7d0e6e.bindPopup(popup_1cce482eb4181b7bd17acc3bb865c01b)
+        ;
+
+        
+    
+    
+            ant_path_c848b3fe9408c0e8a1f2041d5e394ef7 = L.polyline.antPath(
+              [[53.777907, -1.572868], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d3835f518980c5aab095bac9967406db);
+        
+    
+        var popup_f182b398f12cefe9c385b4ca2cd0499a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a9238e937d381760cadeec88dd1cd70 = $(`<div id="html_3a9238e937d381760cadeec88dd1cd70" style="width: 100.0%; height: 100.0%;">Joueur: Ben Johnson   free transfer</div>`)[0];
+                popup_f182b398f12cefe9c385b4ca2cd0499a.setContent(html_3a9238e937d381760cadeec88dd1cd70);
+            
+        
+
+        ant_path_c848b3fe9408c0e8a1f2041d5e394ef7.bindPopup(popup_f182b398f12cefe9c385b4ca2cd0499a)
+        ;
+
+        
+    
+    
+            ant_path_d705ae554fcaefe38203daea4e91f2f6 = L.polyline.antPath(
+              [[53.789152, -2.230662], [52.03194, 1.08458]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_d3835f518980c5aab095bac9967406db);
+        
+    
+        var popup_8b8e52657ef7aa2062237b3531919e5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f22ed6580e8cc1001cf3f4763a0868af = $(`<div id="html_f22ed6580e8cc1001cf3f4763a0868af" style="width: 100.0%; height: 100.0%;">Joueur: Dara O'Shea   14200.0</div>`)[0];
+                popup_8b8e52657ef7aa2062237b3531919e5b.setContent(html_f22ed6580e8cc1001cf3f4763a0868af);
+            
+        
+
+        ant_path_d705ae554fcaefe38203daea4e91f2f6.bindPopup(popup_8b8e52657ef7aa2062237b3531919e5b)
+        ;
+
+        
+    
+    
+            var circle_marker_2d44cabfcbf52f087615e0eda77b8846 = L.circleMarker(
+                [51.29258, -0.17195],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_02647fa30e7b614383f6f1870f97034b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e627c33813d88ef920a1731ea00789ad = $(`<div id="html_e627c33813d88ef920a1731ea00789ad" style="width: 100.0%; height: 100.0%;">Brentford FC: 172M€   Départs: 74M€   Arrivées : 98M€</div>`)[0];
+                popup_02647fa30e7b614383f6f1870f97034b.setContent(html_e627c33813d88ef920a1731ea00789ad);
+            
+        
+
+        circle_marker_2d44cabfcbf52f087615e0eda77b8846.bindPopup(popup_02647fa30e7b614383f6f1870f97034b)
+        ;
+
+        
+    
+    
+            var feature_group_c36bddb4ea29566eec89cbf44bbb0606 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_54eb978b0840b73a61e0b514132485c2 = L.polyline.antPath(
+              [[51.29258, -0.17195], [51.554888, -0.108438]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_c36bddb4ea29566eec89cbf44bbb0606);
+        
+    
+        var popup_5372a18b7cc197c531a5e87b70550718 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_177d83f431bd83d9ced6fbb826b2c219 = $(`<div id="html_177d83f431bd83d9ced6fbb826b2c219" style="width: 100.0%; height: 100.0%;">Joueur: David Raya   31900.0</div>`)[0];
+                popup_5372a18b7cc197c531a5e87b70550718.setContent(html_177d83f431bd83d9ced6fbb826b2c219);
+            
+        
+
+        ant_path_54eb978b0840b73a61e0b514132485c2.bindPopup(popup_5372a18b7cc197c531a5e87b70550718)
+        ;
+
+        
+    
+    
+            ant_path_6bfd365ca0b03a1e580ed7bb1728d996 = L.polyline.antPath(
+              [[53.430829, -2.96083], [51.29258, -0.17195]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_c36bddb4ea29566eec89cbf44bbb0606);
+        
+    
+        var popup_584379a7dbda04d26725ff70883b7815 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3affcdf93f3d1efa414666a22932cb0 = $(`<div id="html_c3affcdf93f3d1efa414666a22932cb0" style="width: 100.0%; height: 100.0%;">Joueur: Sepp van den Berg   23600.0</div>`)[0];
+                popup_584379a7dbda04d26725ff70883b7815.setContent(html_c3affcdf93f3d1efa414666a22932cb0);
+            
+        
+
+        ant_path_6bfd365ca0b03a1e580ed7bb1728d996.bindPopup(popup_584379a7dbda04d26725ff70883b7815)
+        ;
+
+        
+    
+    
+            ant_path_9a67591330fa5491578d6a9eaebc4d08 = L.polyline.antPath(
+              [[51.554888, -0.108438], [51.29258, -0.17195]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_c36bddb4ea29566eec89cbf44bbb0606);
+        
+    
+        var popup_2f24a00a069615800610371ecd834925 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_232206d9d24fcc952989b9840372e7f9 = $(`<div id="html_232206d9d24fcc952989b9840372e7f9" style="width: 100.0%; height: 100.0%;">Joueur: David Raya   End of loanJun 30, 2024</div>`)[0];
+                popup_2f24a00a069615800610371ecd834925.setContent(html_232206d9d24fcc952989b9840372e7f9);
+            
+        
+
+        ant_path_9a67591330fa5491578d6a9eaebc4d08.bindPopup(popup_2f24a00a069615800610371ecd834925)
+        ;
+
+        
+    
+    
+            var circle_marker_8f94ae78eedbb0ba5e16b2a65bb9d9c0 = L.circleMarker(
+                [50.90506, -1.23246],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+        
+    
+        var popup_410160913f46e6528a9022080dd1d922 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf697a9e5fd3b4698f0b9d0ec62b99d6 = $(`<div id="html_cf697a9e5fd3b4698f0b9d0ec62b99d6" style="width: 100.0%; height: 100.0%;">Southampton FC: 159M€   Départs: 42M€   Arrivées : 117M€</div>`)[0];
+                popup_410160913f46e6528a9022080dd1d922.setContent(html_cf697a9e5fd3b4698f0b9d0ec62b99d6);
+            
+        
+
+        circle_marker_8f94ae78eedbb0ba5e16b2a65bb9d9c0.bindPopup(popup_410160913f46e6528a9022080dd1d922)
+        ;
+
+        
+    
+    
+            var feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            ant_path_7c19fa81716b26e3ce32c8ba4062dbb5 = L.polyline.antPath(
+              [[51.554888, -0.108438], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769);
+        
+    
+        var popup_5fac011c3dfdc11af77400a6b39ea32b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90701f5becbc4b501aeed6e23559554e = $(`<div id="html_90701f5becbc4b501aeed6e23559554e" style="width: 100.0%; height: 100.0%;">Joueur: Aaron Ramsdale   21400.0</div>`)[0];
+                popup_5fac011c3dfdc11af77400a6b39ea32b.setContent(html_90701f5becbc4b501aeed6e23559554e);
+            
+        
+
+        ant_path_7c19fa81716b26e3ce32c8ba4062dbb5.bindPopup(popup_5fac011c3dfdc11af77400a6b39ea32b)
+        ;
+
+        
+    
+    
+            ant_path_e26c6e9bac38b81dade5bc10995e8534 = L.polyline.antPath(
+              [[52.509064, -1.884357], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769);
+        
+    
+        var popup_5d6e2eb8eb428f296c2355c4ed584491 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c469fb3ffe3a5abf72880be97bb1f88a = $(`<div id="html_c469fb3ffe3a5abf72880be97bb1f88a" style="width: 100.0%; height: 100.0%;">Joueur: Cameron Archer   17600.0</div>`)[0];
+                popup_5d6e2eb8eb428f296c2355c4ed584491.setContent(html_c469fb3ffe3a5abf72880be97bb1f88a);
+            
+        
+
+        ant_path_e26c6e9bac38b81dade5bc10995e8534.bindPopup(popup_5d6e2eb8eb428f296c2355c4ed584491)
+        ;
+
+        
+    
+    
+            ant_path_d240e9e9c839dab5e87bcafa0b8d9851 = L.polyline.antPath(
+              [[54.975556, -1.621667], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769);
+        
+    
+        var popup_b1c6e9627e4b39b22dac24d2a62780ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_546bad327eb433251c9d44ce7ae151c8 = $(`<div id="html_546bad327eb433251c9d44ce7ae151c8" style="width: 100.0%; height: 100.0%;">Joueur: Ryan Fraser   free transfer</div>`)[0];
+                popup_b1c6e9627e4b39b22dac24d2a62780ce.setContent(html_546bad327eb433251c9d44ce7ae151c8);
+            
+        
+
+        ant_path_d240e9e9c839dab5e87bcafa0b8d9851.bindPopup(popup_b1c6e9627e4b39b22dac24d2a62780ce)
+        ;
+
+        
+    
+    
+            ant_path_fe96dc4fc6b57182d768a0527663cb95 = L.polyline.antPath(
+              [[51.538611, 0.012778], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769);
+        
+    
+        var popup_bd0be1c5e3be6859b5e547c74a2e5423 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1df53cb424f1303b9013b3747d60db9 = $(`<div id="html_d1df53cb424f1303b9013b3747d60db9" style="width: 100.0%; height: 100.0%;">Joueur: Maxwel Cornet   loan transfer</div>`)[0];
+                popup_bd0be1c5e3be6859b5e547c74a2e5423.setContent(html_d1df53cb424f1303b9013b3747d60db9);
+            
+        
+
+        ant_path_fe96dc4fc6b57182d768a0527663cb95.bindPopup(popup_bd0be1c5e3be6859b5e547c74a2e5423)
+        ;
+
+        
+    
+    
+            ant_path_d7838dfcf2573284f67462daebb294f3 = L.polyline.antPath(
+              [[53.483959, -2.242631], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769);
+        
+    
+        var popup_edcd6bbe41d3f4ed1124fc45854cde54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_673f9456453230acf8a669ffca2c9f99 = $(`<div id="html_673f9456453230acf8a669ffca2c9f99" style="width: 100.0%; height: 100.0%;">Joueur: Taylor Harwood-Bellis   23000.0</div>`)[0];
+                popup_edcd6bbe41d3f4ed1124fc45854cde54.setContent(html_673f9456453230acf8a669ffca2c9f99);
+            
+        
+
+        ant_path_d7838dfcf2573284f67462daebb294f3.bindPopup(popup_edcd6bbe41d3f4ed1124fc45854cde54)
+        ;
+
+        
+    
+    
+            ant_path_0fba741460ba015ed69992e9f7f6a25e = L.polyline.antPath(
+              [[53.777907, -1.572868], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769);
+        
+    
+        var popup_20dbd9472a0275c3e05f13c3e811363b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7e8c728af751920b014f330c375d12e = $(`<div id="html_a7e8c728af751920b014f330c375d12e" style="width: 100.0%; height: 100.0%;">Joueur: Ronnie Edwards   3500.0</div>`)[0];
+                popup_20dbd9472a0275c3e05f13c3e811363b.setContent(html_a7e8c728af751920b014f330c375d12e);
+            
+        
+
+        ant_path_0fba741460ba015ed69992e9f7f6a25e.bindPopup(popup_20dbd9472a0275c3e05f13c3e811363b)
+        ;
+
+        
+    
+    
+            ant_path_3b1c21bdc8e2d7eac0e7fb32f519e43b = L.polyline.antPath(
+              [[53.777907, -1.572868], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769);
+        
+    
+        var popup_59aa97271560ee3faf597640f275f2ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc96e074e603ae5b15b03bab18be40f0 = $(`<div id="html_fc96e074e603ae5b15b03bab18be40f0" style="width: 100.0%; height: 100.0%;">Joueur: Flynn Downes   17850.0</div>`)[0];
+                popup_59aa97271560ee3faf597640f275f2ec.setContent(html_fc96e074e603ae5b15b03bab18be40f0);
+            
+        
+
+        ant_path_3b1c21bdc8e2d7eac0e7fb32f519e43b.bindPopup(popup_59aa97271560ee3faf597640f275f2ec)
+        ;
+
+        
+    
+    
+            ant_path_4acc209ece54da0cf8823eaa923a874d = L.polyline.antPath(
+              [[53.789152, -2.230662], [50.90506, -1.23246]],
+              {
+  "stroke": true,
+  "color": "green",
+  "weight": 5,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769);
+        
+    
+        var popup_4451bea771b042e17e90842169024d03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_540a1283025f81bbecf00bb54f4eef51 = $(`<div id="html_540a1283025f81bbecf00bb54f4eef51" style="width: 100.0%; height: 100.0%;">Joueur: Charlie Taylor   free transfer</div>`)[0];
+                popup_4451bea771b042e17e90842169024d03.setContent(html_540a1283025f81bbecf00bb54f4eef51);
+            
+        
+
+        ant_path_4acc209ece54da0cf8823eaa923a874d.bindPopup(popup_4451bea771b042e17e90842169024d03)
+        ;
+
+        
+    
+    
+            var layer_control_d5fd6be8f7ab2fbdd1b22d95a944af5e_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3a7a7f2a6ebefe9aac655253861620e8,
+                },
+                overlays :  {
+                    "Manchester City" : feature_group_ff32c704c877c70d2facf2e9bf67edf7,
+                    "Manchester United" : feature_group_8cd67e85269412d8e66c6753088fbee1,
+                    "Chelsea FC" : feature_group_ef75f5447412157a2339c2caf9672c94,
+                    "Arsenal FC" : feature_group_b402ff90f15498398a5d2eb46143279d,
+                    "Tottenham Hotspur" : feature_group_b078cb03d079782a2ff5bbbf72100605,
+                    "Liverpool FC" : feature_group_b9d6686f2cba9c817c7100738f38cf44,
+                    "Everton FC" : feature_group_30cea7b99b187608121f1ce2c837844d,
+                    "Wolverhampton Wanderers" : feature_group_a3dc6b5b74f0f74573c5121674cd2ef3,
+                    "Leicester City" : feature_group_d411741014627ac4dfa556d56c68272d,
+                    "Aston Villa" : feature_group_3fc5974e0eca2476356b65683a9991db,
+                    "Newcastle United" : feature_group_66af54cfbacb3f28aedbc8403cb3c091,
+                    "West Ham United" : feature_group_87d60ea4f3f24073a1dfe78ec06f10a6,
+                    "Crystal Palace" : feature_group_b3d117d0fb4e504c780bb45d6ccb61b2,
+                    "Nottingham Forest" : feature_group_25473688e36fcf877d09761f6ea2c69d,
+                    "Fulham FC" : feature_group_3f5237d64e33431de147da43115c9d7c,
+                    "Brighton \u0026 Hove Albion" : feature_group_04a4aac0f91c4f93fe3f8f4d3e8a49d5,
+                    "AFC Bournemouth" : feature_group_2045fa184983f839639e0d4dbde4baf2,
+                    "Ipswich Town" : feature_group_d3835f518980c5aab095bac9967406db,
+                    "Brentford FC" : feature_group_c36bddb4ea29566eec89cbf44bbb0606,
+                    "Southampton FC" : feature_group_1b6ef3c9f22e5b90c45cacb2d1e42769,
+                },
+            };
+            let layer_control_d5fd6be8f7ab2fbdd1b22d95a944af5e = L.control.layers(
+                layer_control_d5fd6be8f7ab2fbdd1b22d95a944af5e_layers.base_layers,
+                layer_control_d5fd6be8f7ab2fbdd1b22d95a944af5e_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_3061e9f1bcb306337cb2d2b04b7ae1b5);
+
+        
+</script>
+</html>
