@@ -1,109 +1,139 @@
 ,0
-Season,Season
-Age,Age at season start
-Country,Flag and name of the country.
-Comp,Competition
-LgRank,Squad finish in competition
-90s,90s Played
-Gls,Goals
-Sh,GCA (Shot)
-SoT,Shots on Target
-SoT%,Shots on Target %
-Sh/90,Shots Total/90
-SoT/90,Shots on target/90
-G/Sh,Goals/Shot
-G/SoT,Goals/Shot on Target
-Dist,Average Shot Distance
-FK,Passes from Free Kicks
-PK,Penalty Kicks Made
-PKatt,Penalty Kicks Attempted
-xG,xG
-npxG,npxG
-npxG/Sh,npxG/Shot
-G-xG,Goals - xG
-np:G-xG,Non-Penalty Goals - npxG
-Cmp,Passes Completed
-Att,Take-Ons Attempted
-Cmp%,Pass Completion % (Long)
-TotDist,Total Carrying Distance
-PrgDist,Progressive Carrying Distance
-Ast,Assists
-xAG,xAG
-xA,xA
-A-xAG,Assists - xAG
-KP,Key Passes
-1/3,Carries into Final Third
-PPA,Passes into Penalty Area
-CrsPA,Crosses into Penalty Area
-PrgP,Progressive Passes
-Live,Touches (Live-Ball)
-Dead,Dead-ball Passes
-TB,Through Balls
-Sw,Switches
-Crs,Crosses
-TI,Throw-ins Taken
-CK,Corner Kicks
-In,Inswinging Corner Kicks
-Out,Outswinging Corner Kicks
-Str,Straight Corner Kicks
-Off,Offsides
-Blocks,Passes Blocked
-SCA,Shot-Creating Actions
-SCA90,Shot-Creating Actions/90
-PassLive,GCA (Live-ball Pass)
-PassDead,GCA (Dead-ball Pass)
-TO,GCA (Take-On)
-Fld,Fouls Drawn
-Def,GCA (Defensive Action)
-GCA,Goal-Creating Actions
-GCA90,Goal-Creating Actions/90
-MP,Matches Played
-Min,Minutes
-Mn/MP,Minutes Per Match Played
-Min%,Percentage of Squad Minutes Played
-Starts,Game or games started by player
-Mn/Start,Minutes Per Match Started
-Compl,Complete Matches Played
-Subs,Substitute Appearances
-Mn/Sub,Minutes Per Substitution
-unSub,Matches as Unused Sub
-PPM,Points per Match
-onG,Goals Scored (on pitch)
-onGA,Goals Allowed (on pitch)
-+/-,Plus/Minus
-+/-90,Plus/Minus/90
-On-Off,xG On-Off
-onxG,xG (on pitch)
-onxGA,xGA (on pitch)
-xG+/-,xG Plus/Minus
-xG+/-90,xG Plus/Minus/90
-Touches,Number of times a player touched the ball. Note
-Def Pen,Touches (Def Pen)
-Def 3rd,Touches (Def 3rd)
-Mid 3rd,Touches (Mid 3rd)
-Att 3rd,Touches (Att 3rd)
-Att Pen,Touches (Att Pen)
-Succ,Successful Take-Ons
-Succ%,Successful Take-On %
-Tkld,Times Tackled During Take-On
-Tkld%,Tackled During Take-On Percentage
-Carries,Number of times the player controlled the ball with their feet
-PrgC,Progressive Carries
-CPA,Carries into Penalty Area
-Mis,Miscontrols
-Dis,Dispossessed
-Rec,Passes Received
-PrgR,Progressive Passes Rec
-CrdY,Yellow Cards
-CrdR,Red Cards
-2CrdY,Second Yellow Card
-Fls,Fouls Committed
-Int,Interceptions
-TklW,Tackles Won
-PKwon,Penalty Kicks Won
-PKcon,Penalty Kicks Conceded
-OG,Own Goals
-Recov,Ball Recoveries
-Won,Aerials Won
-Lost,Aerials Lost
-Won%,% of Aerials Won
+comp_level,Competition
+minutes_90s,90s Played
+goals,Goals
+shots,Shots Total
+shots_on_target,Shots on Target
+shots_on_target_pct,Shots on Target %
+shots_per90,Shots Total/90
+shots_on_target_per90,Shots on target/90
+goals_per_shot,Goals/Shot
+goals_per_shot_on_target,Goals/Shot on Target
+average_shot_distance,Average Shot Distance
+shots_free_kicks,Shots from Free Kicks
+pens_made,Penalty Kicks Made
+pens_att,Penalty Kicks Attempted
+xg,xG: Expected Goals
+npxg,npxG: Non-Penalty xG
+npxg_per_shot,npxG/Shot
+xg_net,Goals - xG
+npxg_net,Non-Penalty Goals - npxG
+passes_completed,Passes Completed
+passes,Passes Attempted
+passes_pct,Pass Completion %
+passes_total_distance,Total Passing Distance
+passes_progressive_distance,Progressive Passing Distance
+passes_completed_short,Passes Completed (Short)
+passes_short,Passes Attempted (Short)
+passes_pct_short,Pass Completion % (Short)
+passes_completed_medium,Passes Completed (Medium)
+passes_medium,Passes Attempted (Medium)
+passes_pct_medium,Pass Completion % (Medium)
+passes_completed_long,Passes Completed (Long)
+passes_long,Passes Attempted (Long)
+passes_pct_long,Pass Completion % (Long)
+assists,Assists
+xg_assist,xAG: Exp. Assisted Goals
+pass_xa,xA: Expected Assists
+xg_assist_net,Assists - xAG
+assisted_shots,Key Passes
+passes_into_final_third,Passes into Final Third
+passes_into_penalty_area,Passes into Penalty Area
+crosses_into_penalty_area,Crosses into Penalty Area
+progressive_passes,Progressive Passes
+passes_live,Live-ball Passes
+passes_dead,Dead-ball Passes
+passes_free_kicks,Passes from Free Kicks
+through_balls,Through Balls
+passes_switches,Switches
+crosses,Crosses
+throw_ins,Throw-ins Taken
+corner_kicks,Corner Kicks
+corner_kicks_in,Inswinging Corner Kicks
+corner_kicks_out,Outswinging Corner Kicks
+corner_kicks_straight,Straight Corner Kicks
+passes_offsides,Passes Offside
+passes_blocked,Passes Blocked
+sca,Shot-Creating Actions
+sca_per90,Shot-Creating Actions/90
+sca_passes_live,SCA (Live-ball Pass)
+sca_passes_dead,SCA (Dead-ball Pass)
+sca_take_ons,SCA (Take-On)
+sca_shots,SCA (Shot)
+sca_fouled,SCA (Fouls Drawn)
+sca_defense,SCA (Defensive Action)
+gca,Goal-Creating Actions
+gca_per90,Goal-Creating Actions/90
+gca_passes_live,GCA (Live-ball Pass)
+gca_passes_dead,GCA (Dead-ball Pass)
+gca_take_ons,GCA (Take-On)
+gca_shots,GCA (Shot)
+gca_fouled,GCA (Fouls Drawn)
+gca_defense,GCA (Defensive Action)
+tackles,Tackles
+tackles_won,Tackles Won
+tackles_def_3rd,Tackles (Def 3rd)
+tackles_mid_3rd,Tackles (Mid 3rd)
+tackles_att_3rd,Tackles (Att 3rd)
+challenge_tackles,Dribblers Tackled
+challenges,Dribbles Challenged
+challenge_tackles_pct,% of Dribblers Tackled
+challenges_lost,Challenges Lost
+blocked_shots,Shots Blocked
+blocked_passes,Passes Blocked
+interceptions,Interceptions
+clearances,Clearances
+errors,Errors
+touches_def_pen_area,Touches (Def Pen)
+touches_def_3rd,Touches (Def 3rd)
+touches_mid_3rd,Touches (Mid 3rd)
+touches_att_3rd,Touches (Att 3rd)
+touches_att_pen_area,Touches (Att Pen)
+touches_live_ball,Touches (Live-Ball)
+take_ons,Take-Ons Attempted
+take_ons_won,Successful Take-Ons
+take_ons_won_pct,Successful Take-On %
+take_ons_tackled,Times Tackled During Take-On
+take_ons_tackled_pct,Tackled During Take-On Percentage
+carries_distance,Total Carrying Distance
+carries_progressive_distance,Progressive Carrying Distance
+progressive_carries,Progressive Carries
+carries_into_final_third,Carries into Final Third
+carries_into_penalty_area,Carries into Penalty Area
+miscontrols,Miscontrols
+dispossessed,Dispossessed
+passes_received,Passes Received
+progressive_passes_received,Progressive Passes Rec
+games,Matches Played
+minutes,Minutes
+minutes_per_game,Minutes Per Match Played
+minutes_pct,Percentage of Squad Minutes Played
+minutes_per_start,Minutes Per Match Started
+games_complete,Complete Matches Played
+games_subs,Substitute Appearances
+minutes_per_sub,Minutes Per Substitution
+unused_subs,Matches as Unused Sub
+points_per_game,Points per Match
+on_goals_for,Goals Scored (on pitch)
+on_goals_against,Goals Allowed (on pitch)
+plus_minus,Plus/Minus
+plus_minus_per90,Plus/Minus/90
+plus_minus_wowy,Plus/Minus Net per 90 Minutes
+on_xg_for,xG (on pitch)
+on_xg_against,xGA (on pitch)
+xg_plus_minus,xG Plus/Minus
+xg_plus_minus_per90,xG Plus/Minus/90
+xg_plus_minus_wowy,xG On-Off
+cards_yellow,Yellow Cards
+cards_red,Red Cards
+cards_yellow_red,Second Yellow Card
+fouls,Fouls Committed
+fouled,Fouls Drawn
+offsides,Offsides
+pens_won,Penalty Kicks Won
+pens_conceded,Penalty Kicks Conceded
+own_goals,Own Goals
+ball_recoveries,Ball Recoveries
+aerials_won,Aerials Won
+aerials_lost,Aerials Lost
+aerials_won_pct,% of Aerials Won
