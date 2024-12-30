@@ -55,7 +55,13 @@ Les données sont soit **scrapées** directement *(via `requests`, `BeautifulSou
   - Contenant une version “exécutée” qui présente les résultats et les visualisations *(radars, cartes interactives, courbes de loss, etc.)*, même en cas d’indisponibilité ponctuelle des sources. C’est cette version exécutée qui fait office de **rapport final**.
 
 - **`data/`**  
-  - Contient une copie locale de certaines données.
+  - Ce dossier contient plusieurs sous-dossiers :  
+    - **`cartes/`** : éléments pour la génération et la sauvegarde de nos cartes interactives.  
+    - **`fbref_data/`** : données issues de FBref (statistiques de joueurs, d’équipes, glossaire, etc.).  
+    - **`images/`** : illustrations ou visualisations statiques générées lors des analyses.  
+    - **`models/`** : fichiers de sauvegarde (checkpoints, poids) pour nos modèles de prédiction.  
+    - **`sf_data/`** : notes (ratings) et informations issues de SofaScore.  
+    - **`tm_data/`** : données issues de Transfermarkt (transferts, valeurs marchandes, etc.).
 
 - **`requirements.txt`**  
   - Liste des bibliothèques nécessaires pour le projet *(pandas, numpy, matplotlib, etc.)*.  
