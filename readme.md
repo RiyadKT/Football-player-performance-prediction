@@ -39,7 +39,7 @@ Nous nous sommes principalement appuyés sur :
 - **FBref** : pour les statistiques de match et de performance des joueurs *(buts, passes, minutes jouées, etc.)*.  
 - **Transfermarkt** : pour connaître la valeur marchande et l’historique des transferts.  
 - **SofaScore** : pour récupérer les notes *(ratings)* attribuées aux joueurs.  
-- **Latitude/longitude des clubs** : nous avons réuni les coordonnées géographiques de chaque club dans un fichier `.csv`, afin d’afficher leurs positions sur une carte interactive.
+- **Latitude/longitude des clubs** : nous avons réuni les coordonnées géographiques de chaque club dans un fichier `pl_clubs_latlon.csv`, afin d’afficher leurs positions sur une carte interactive.
 
 Les données sont soit **scrapées** directement *(via `requests`, `BeautifulSoup`)*, soit chargées depuis des **APIs publiques** lorsque disponibles. Les fichiers obtenus (pkl, csv…) sont stockés localement dans des dossiers tels que `fbref_data/`, `tm_data/`, `sf_data/`, etc.
 
