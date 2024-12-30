@@ -1,9 +1,9 @@
 # Table des matières
 
-1. [Définitions](#définitions)  
-2. [Objectifs](#objectifs)  
-3. [Sources des données](#sources-des-données)  
-4. [Présentation du dépôt](#présentation-du-dépôt)
+1. [Définitions](#1-définitions)  
+2. [Objectifs](#2-objectifs)  
+3. [Sources des données](#3-sources-des-données)  
+4. [Présentation du dépôt](#4-présentation-du-dépôt)
 
 ---
 
@@ -39,7 +39,7 @@ Nous nous sommes principalement appuyés sur :
 - **FBref** : pour les statistiques de match et de performance des joueurs *(buts, passes, minutes jouées, etc.)*.  
 - **Transfermarkt** : pour connaître la valeur marchande et l’historique des transferts.  
 - **SofaScore** : pour récupérer les notes *(ratings)* attribuées aux joueurs.  
-- **Données internes d’équipes** : afin de compléter l’analyse sur la concurrence au poste et le classement de l’équipe.
+- **Latitude/longitude des clubs** : nous avons réuni les coordonnées géographiques de chaque club dans un fichier `.csv`, afin d’afficher leurs positions sur une carte interactive.
 
 Les données sont soit **scrapées** directement *(via `requests`, `BeautifulSoup`)*, soit chargées depuis des **APIs publiques** lorsque disponibles. Les fichiers obtenus (pkl, csv…) sont stockés localement dans des dossiers tels que `fbref_data/`, `tm_data/`, `sf_data/`, etc.
 
