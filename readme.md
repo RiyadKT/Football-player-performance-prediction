@@ -47,6 +47,7 @@ Nous nous sommes principalement appuyés sur :
 
 Les données sont soit **scrapées** directement *(via `requests`, `BeautifulSoup`)*, soit chargées depuis des **APIs publiques** lorsque disponibles. Les fichiers obtenus (pkl, csv…) sont stockés localement dans des dossiers tels que `fbref_data/`, `tm_data/`, `sf_data/`, etc.
 
+Note: Le scrapping de l'ensemble des données est très long étant donné les contraintes des différents sites, il est donc préférable d'exécuter la cellule en début de code pour tout importer dès le départ
 ---
 
 ## 4. Présentation du dépôt
